@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import os
 
 def change_basic_terrain(tags_root: ET.Element, attribute='Strata'):
-    tag = tags_root.find(".//*[@name='Strata']")
+    tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['name'] = "StrataChanged"
     return tags_root
 

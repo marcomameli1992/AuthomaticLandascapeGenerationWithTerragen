@@ -85,6 +85,14 @@ def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
     tag.attrib['strata_tilt_angle'] = '25'
     return tags_root
 
+def change_twist(tags_root: ET.Element, attribute="Twist") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '0'
+    tag.attrib['lean_factor'] = '24'
+    tag.attrib['lean_direction'] = '2 0 1'
+    tag.attrib['base_altitude'] = '3'
+    return tags_root
+
 # opening the file
 file_path = os.path.join('..', 'TerragenOriginalFile', 'Base.tgd')
 tree = ET.parse(file_path)
@@ -95,4 +103,5 @@ tag = root.find(".//*[@name='Strata']") # Search query for the XML by the name i
 changed = change_basic_terrain(root)
 changed = change_stone(root)
 changed = change_strata(root)
+changed = change_twist(root)
 print(changed)

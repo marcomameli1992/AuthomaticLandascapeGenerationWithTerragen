@@ -93,3 +93,35 @@ def change_surface_shader(tags_root: ET.Element, attribute="Grass") -> ET.Elemen
     tag.attrib['intersection_shift'] = '154'
     tag.attrib['min_intersection_shift'] = '100'
     return tags_root
+
+def change_twist(tags_root: ET.Element, attribute="TwistShear") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '0'
+    tag.attrib['lean_factor'] = '24'
+    tag.attrib['lean_direction'] = '2 0 1'
+    tag.attrib['base_altitude'] = '3'
+    return tags_root
+
+def change_distribution_shader(tags_root: ET.Element, attribute="DistributionColour") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = "0"  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['colour'] = '1 5 0'
+    tag.attrib['coverage'] = '0.25'  # or 1
+    tag.attrib['fractal_breakup'] = '0'  # or 1
+    tag.attrib['fractal_contrast'] = '4'
+    tag.attrib['invert_breakup'] = '5'
+    tag.attrib['limit_maximum_altitude'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['maximum_altitude'] = '100'
+    tag.attrib['max_alt_fuzzy_zone'] = '85'
+    tag.attrib['limit_minimum_altitude'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['minimum_altitude'] = '100'
+    tag.attrib['min_alt_fuzzy_zone'] = '85'
+    tag.attrib['altitude_key'] = '0' # or 1
+    tag.attrib['limit_maximum_slope'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['maximum_slpoe_angle'] = '200'  # TODO it is in degree
+    tag.attrib['max_slope_fuzzy_zone'] = '52'
+    tag.attrib['limit_minimum_slope'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['minimum_slpoe_angle'] = '200'  # TODO it is in degree
+    tag.attrib['min_slope_fuzzy_zone'] = '52'
+    tag.attrib['slope_key'] = '1'  # TODO random generate between 0 and 2 INTEGERS
+    return tags_root

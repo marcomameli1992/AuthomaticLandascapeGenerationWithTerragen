@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 
 # TODO define the range for all the parameters
 
-def change_basic_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
+def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
     '''
 
     :param tags_root:
@@ -79,4 +79,16 @@ def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
     tag.attrib['variatioin_in_red'] = '3'
     tag.attrib['variatioin_in_green'] = '3'
     tag.attrib['variatioin_in_blue'] = '3'
+    return tags_root
+
+def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '0'  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['hard_layer_altitude'] = '25'
+    tag.attrib['hard_layer_depth'] = '2'
+    tag.attrib['hard_layer_steepness'] = '25'
+    tag.attrib['plateau_buildup'] = '25'
+    tag.attrib['num_octaves'] = '25'
+    tag.attrib['strata_tilt_direction'] = '24'
+    tag.attrib['strata_tilt_angle'] = '25'
     return tags_root

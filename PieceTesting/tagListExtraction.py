@@ -54,6 +54,25 @@ def change_basic_terrain(tags_root: ET.Element, name='BasicTerrain'):
 
     return tags_root
 
+def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '1'  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['stone_scale'] = '25' # TODO random  value also FLOAT
+    tag.attrib['stone_density'] = '0.75' # TODO random generation FLOATING from 0 to 1
+    tag.attrib['vary_density'] = '1' # TODO value can be used are 0 or 1
+    tag.attrib['density_seed'] = '3'
+    tag.attrib['density_variation_scale'] = '3'
+    tag.attrib['stone_tallness'] = '3'
+    tag.attrib['pancake_effect'] = '3'
+    tag.attrib['only_displace_upwards'] = '1' # TODO activation is 1 , 0 is deactivated
+    tag.attrib['apply_colour'] = '3'
+    tag.attrib['diffuse_colour'] = '3'
+    tag.attrib['colour_variatioin'] = '1'
+    tag.attrib['variatioin_in_red'] = '3'
+    tag.attrib['variatioin_in_green'] = '3'
+    tag.attrib['variatioin_in_blue'] = '3'
+    return tags_root
+
 # opening the file
 file_path = os.path.join('..', 'TerragenOriginalFile', 'Base.tgd')
 tree = ET.parse(file_path)
@@ -62,3 +81,5 @@ root = tree.getroot()
 tag = root.find(".//*[@name='Strata']") # Search query for the XML by the name in the TAG
 
 changed = change_basic_terrain(root)
+changed = change_stone(root)
+print(changed)

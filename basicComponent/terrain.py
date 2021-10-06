@@ -100,3 +100,13 @@ def change_twist(tags_root: ET.Element, attribute="Twist") -> ET.Element:
     tag.attrib['lean_direction'] = '2 0 1'
     tag.attrib['base_altitude'] = '3'
     return tags_root
+
+def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '0'  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['scale'] = '25'
+    tag.attrib['warp_ammount'] = '2'
+    tag.attrib['variation'] = '25'
+    tag.attrib['roughness'] = '25'
+    tag.attrib['obey_smoothing_filter'] = '1' # TODO only value 1 or 0 are ok
+    return tags_root

@@ -129,7 +129,7 @@ def change_fractal_alpine(tags_root: ET.Element, attribute="AlpineTerrain") -> E
     return tags_root
 
 # opening the file
-file_path = os.path.join('..', 'TerragenOriginalFile', 'Base.tgd')
+file_path = os.path.join('..', 'TerragenOriginalFile', 'Base_0001.tgd')
 tree = ET.parse(file_path)
 root = tree.getroot()
 # Terrain extraction

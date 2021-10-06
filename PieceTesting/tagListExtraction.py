@@ -73,6 +73,18 @@ def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
     tag.attrib['variatioin_in_blue'] = '3'
     return tags_root
 
+def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '0'  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['hard_layer_altitude'] = '25'
+    tag.attrib['hard_layer_depth'] = '2'
+    tag.attrib['hard_layer_steepness'] = '25'
+    tag.attrib['plateau_buildup'] = '25'
+    tag.attrib['num_octaves'] = '25'
+    tag.attrib['strata_tilt_direction'] = '24'
+    tag.attrib['strata_tilt_angle'] = '25'
+    return tags_root
+
 # opening the file
 file_path = os.path.join('..', 'TerragenOriginalFile', 'Base.tgd')
 tree = ET.parse(file_path)
@@ -82,4 +94,5 @@ tag = root.find(".//*[@name='Strata']") # Search query for the XML by the name i
 
 changed = change_basic_terrain(root)
 changed = change_stone(root)
+changed = change_strata(root)
 print(changed)

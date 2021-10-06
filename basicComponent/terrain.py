@@ -92,3 +92,11 @@ def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
     tag.attrib['strata_tilt_direction'] = '24'
     tag.attrib['strata_tilt_angle'] = '25'
     return tags_root
+
+def change_twist(tags_root: ET.Element, attribute="Twist") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = '0'
+    tag.attrib['lean_factor'] = '24'
+    tag.attrib['lean_direction'] = '2 0 1'
+    tag.attrib['base_altitude'] = '3'
+    return tags_root

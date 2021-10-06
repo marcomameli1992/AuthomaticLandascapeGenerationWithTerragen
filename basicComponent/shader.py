@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 
 # TODO define the range for all the parameters
 
-def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
+def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.Element:
     '''
 
     :param tags_root:
@@ -60,4 +60,36 @@ def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> E
     tag.attrib['less_warp_at_feature_scale'] = '1'  # TODO random generate between 0 and 1
     tag.attrib['allow_vertical_warp'] = '0'  # TODO random generate between 0 and 1
 
+    return tags_root
+
+def change_surface_shader(tags_root: ET.Element, attribute="Grass") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = "0"  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['apply_colour'] = '1'  # TODO random generate between 0 and 1 (INTEGER)
+    # TODO From here become important define the range for the random generation
+    tag.attrib['diffuse_colour'] = '1 5 0'
+    tag.attrib['displacement_direction'] = '0' # or 1
+    tag.attrib['displacement_multiplier'] = '25'
+    tag.attrib['smoothing_effect'] = '4'
+    tag.attrib['smoothing_ammount'] = '5'
+    tag.attrib['coverage'] = '3'
+    tag.attrib['limit_maximum_altitude'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['maximum_altitude'] = '100'
+    tag.attrib['max_alt_fuzzy_zone'] = '85'
+    tag.attrib['limit_minimum_altitude'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['minimum_altitude'] = '100'
+    tag.attrib['min_alt_fuzzy_zone'] = '85'
+    tag.attrib['limit_maximum_slope'] = '1' # TODO random generate between 0 and 1
+    tag.attrib['maximum_slpoe_angle'] = '200' # TODO it is in degree
+    tag.attrib['max_slope_fuzzy_zone'] = '52'
+    tag.attrib['limit_minimum_slope'] = '1'  # TODO random generate between 0 and 1
+    tag.attrib['minimum_slpoe_angle'] = '200'  # TODO it is in degree
+    tag.attrib['min_slope_fuzzy_zone'] = '52'
+    tag.attrib['slope_key'] = '1'  # TODO random generate between 0 and 2 INTEGERS
+    tag.attrib['use_y_for_slope'] = '0' # TODO random generate between 0 and 1
+    tag.attrib['intersection_underlying'] = '1' # TODO random generate between 0 and 1
+    tag.attrib['intersect_mode'] = '1' # TODO random generate between 0 and 2 INTEGERS
+    tag.attrib['intersection_zone'] = '10' # Range in meters
+    tag.attrib['intersection_shift'] = '154'
+    tag.attrib['min_intersection_shift'] = '100'
     return tags_root

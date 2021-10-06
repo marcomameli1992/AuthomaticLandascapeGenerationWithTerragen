@@ -103,6 +103,31 @@ def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Elem
     tag.attrib['obey_smoothing_filter'] = '1' # TODO only value 1 or 0 are ok
     return tags_root
 
+def change_fractal_alpine(tags_root: ET.Element, attribute="AlpineTerrain") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['enable'] = "0"  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['seed'] = '525'  # TODO random generate the SEED
+    # TODO From here become important define the range for the random generation
+    # SCALE changes
+    tag.attrib['feature_scale'] = '1250'
+    tag.attrib['lead-in_scale'] = '120'
+    tag.attrib['smallest_scale'] = '25'
+    # SCALE-NOISE changes
+    tag.attrib['noise_octaves'] = '4'
+    # DISPLACEMENT changes
+    tag.attrib['apply_displacement'] = '1'
+    tag.attrib['displacement_amplitude'] = '23456'
+    tag.attrib['displacement_offset'] = '1000'
+    tag.attrib['displacement_roughness'] = '8'
+    # NOISE changes
+    tag.attrib['scale_step'] = '65'
+    tag.attrib['stretch_factor'] = '25'
+    tag.attrib['late_deposition'] = '35'  # TODO random generation of a FLOAT value with the idea that 0 is the maximum value
+    tag.attrib['early_deposition'] = '1'  # TODO random generate between 0 and 3 (INTEGER)
+    tag.attrib['early_deposition_rate'] = '0.65'
+    tag.attrib['warp_ammount'] = '0.25'
+    return tags_root
+
 # opening the file
 file_path = os.path.join('..', 'TerragenOriginalFile', 'Base.tgd')
 tree = ET.parse(file_path)
@@ -115,4 +140,5 @@ changed = change_stone(root)
 changed = change_strata(root)
 changed = change_twist(root)
 changed = change_fractal_warp(root)
+changed = change_fractal_alpine(root)
 print(changed)

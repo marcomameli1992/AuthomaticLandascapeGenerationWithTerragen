@@ -8,6 +8,9 @@
     "strenght_maximum": 10.0
   },
   "environmental_light": {
-
+    "global_strength_on_surfaces_minimum": 1.0,
+    "global_strength_on_surfaces_maximum": 3.0,
+    "global_strength_in_atmosphere_minimum": 1.0,
+    "global_strength_in_atmosphere_maximum": 3.0
   }
 }

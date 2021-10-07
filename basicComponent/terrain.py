@@ -1,6 +1,10 @@
 import xml.etree.ElementTree as ET
+import random
+import os
+import json
+import numpy as np
 
-# TODO define the range for all the parameters
+range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json')
 
 def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
     '''
@@ -9,57 +13,59 @@ def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> E
     :param attribute:
     :return:
     '''
+    # Opening the range file
+    with open(range_value_path, 'r') as range_file:
+        ranges = json.load(range_file)
+    fractal_terrain_ranges = ranges['fractal_terrain']
+
     tag = tags_root.find(f".//*[@name='{attribute}']")
-    tag.attrib['enable'] = "0"  # TODO random generate between 0 and 1 (INTEGER)
-    tag.attrib['seed'] = '525'  # TODO random generate the SEED
-    # TODO From here become important define the range for the random generation
+    tag.attrib['enable'] = '1' # at least one fractal power shader has to be active for the terrain generation
+    tag.attrib['seed'] = str(int(random.random()))
     # SCALE changes
-    tag.attrib['feature_scale'] = '1250'
-    tag.attrib['lead-in_scale'] = '120'
-    tag.attrib['smallest_scale'] = '25'
+    tag.attrib['feature_scale'] = str(random.uniform(fractal_terrain_ranges['feature_scale_minimum'], fractal_terrain_ranges['feature_scale_maximum']))
+    tag.attrib['lead-in_scale'] = str(random.uniform(fractal_terrain_ranges['lead-in_scale_minimum'], fractal_terrain_ranges['lead-in_scale_maximum']))
+    tag.attrib['smallest_scale'] = str(random.uniform(fractal_terrain_ranges['smallest_scale_minimum'], fractal_terrain_ranges['smallest_scale_maximum']))
     # SCALE-NOISE changes
-    tag.attrib['noise_octaves'] = '4'
-    tag.attrib['obey_smoothing_filter'] = '1'  # TODO random generate between 0 and 1 (INTEGER)
+    tag.attrib['noise_octaves'] = str(random.randint(fractal_terrain_ranges['noise_octaves_minimum'], fractal_terrain_ranges['noise_octaves_macimum']))
+    tag.attrib['obey_smoothing_filter'] = str(random.randint(0, 1))
     tag.attrib[
-        'noise_stretch_XYZ'] = '3 0 2'  # TODO create a function for the generation of space separated string that generate 3 random FLOAT values
-    # COLOR changes
-    tag.attrib['apply_high_colour'] = '1'  # TODO random generate between 0 and 1
-    # tag.attrib['high_colour'] = '0 0 0' # TODO create a function for the generation of space separated string that generate 3 random FLOAT values
-    tag.attrib['apply_low_colour'] = '1'  # TODO random generate between 0 and 1
-    # tag.attrib['low_colour'] = '0 0 0' # TODO create a function for the generation of space separated string that generate 3 random FLOAT values
-    tag.attrib['colour_contrast'] = '0'
-    tag.attrib['colour_roughness'] = '2.5'
-    tag.attrib['clamp_high_colour'] = '1'
-    tag.attrib['clamp_low_colour'] = '0'
+        'noise_stretch_XYZ'] = ' '.join(map(str, list(np.random.randint(low=0, high=1e+5, size=3))))
+    # COLOR changes # NOT USED
+    # tag.attrib['apply_high_colour'] = '1'
+    # # tag.attrib['high_colour'] = '0 0 0'
+    # tag.attrib['apply_low_colour'] = '1'
+    # # tag.attrib['low_colour'] = '0 0 0'
+    # tag.attrib['colour_contrast'] = '0'
+    # tag.attrib['colour_roughness'] = '2.5'
+    # tag.attrib['clamp_high_colour'] = '1'
+    # tag.attrib['clamp_low_colour'] = '0'
     # DISPLACEMENT changes
-    tag.attrib['displacement_direction'] = '1'  # TODO random generate between 0 and 1
-    tag.attrib['displacement_amplitude'] = '23456'
-    tag.attrib['displacement_offset'] = '1000'
-    tag.attrib['displacement_roughness'] = '8'
-    tag.attrib['displacement_spike_limit'] = '10'
+    tag.attrib['displacement_direction'] = '1'
+    tag.attrib['displacement_amplitude'] = str(random.uniform(fractal_terrain_ranges['displacement_altitude_minimum'], fractal_terrain_ranges['displacement_altitude_maximum']))
+    tag.attrib['displacement_offset'] = str(random.uniform(fractal_terrain_ranges['didplacement_offset_minimum'], fractal_terrain_ranges['displacement_offset_maximum']))
+    tag.attrib['displacement_roughness'] = str(random.uniform(fractal_terrain_ranges['displacement_roughness_minimum'], fractal_terrain_ranges['displacement_roughness_maximum']))
+    tag.attrib['displacement_spike_limit'] = str(random.uniform(fractal_terrain_ranges['displacement_spike_limit_minimum'], fractal_terrain_ranges['displacement_spike_limit_maximum']))
     tag.attrib['continue_spike_limit'] = '1'
     tag.attrib['adjust_coastline'] = '1'
-    tag.attrib['coastline_altitude'] = '90'
-    tag.attrib['coastline_smoothing'] = '50'
+    tag.attrib['coastline_altitude'] = str(random.uniform(fractal_terrain_ranges['coastline_altitude_minimum'], fractal_terrain_ranges['coastline_altitute_maximum']))
+    tag.attrib['coastline_smoothing'] = str(random.uniform(fractal_terrain_ranges['coastline_smoothing_minimum'], fractal_terrain_ranges['coastline_smoothing_maximum']))
     # NOISE changes
-    tag.attrib['noise_flavour'] = '0'  # TODO random generate between 0 and 6 (INTEGER)
-    tag.attrib['ridge_smoothing'] = '65'
-    tag.attrib['gully_smoothing'] = '25'
-    tag.attrib[
-        'noise_variation'] = '35'  # TODO random generation of a FLOAT value with the idea that 0 is the maximum value
-    tag.attrib['variation_method'] = '1'  # TODO random generate between 0 and 3 (INTEGER)
-    tag.attrib['buoyancy_from_variation'] = '0.65'
-    tag.attrib['clumping_of_variation'] = '0.25'
-    tag.attrib['better_colour_continuity'] = '1'
-    tag.attrib['better_displacement_continuity'] = '0'
+    tag.attrib['noise_flavour'] = str(random.randint(0, 5))
+    tag.attrib['ridge_smoothing'] = str(random.uniform(fractal_terrain_ranges['ridge_smoothing_minimum'], fractal_terrain_ranges['ridge_smoothing_maximum']))
+    tag.attrib['gully_smoothing'] = str(random.uniform(fractal_terrain_ranges['gully_smoothing_minimum'], fractal_terrain_ranges['gully_smoothing_maximum']))
+    tag.attrib['noise_variation'] = str(random.uniform(fractal_terrain_ranges['noise_variation_minimum'], fractal_terrain_ranges['noise_variation_maximum']))
+    tag.attrib['variation_method'] = str(random.randint(0, 3))
+    #tag.attrib['buoyancy_from_variation'] = '0.65'
+    #tag.attrib['clumping_of_variation'] = '0.25'
+    tag.attrib['better_colour_continuity'] = str(random.randint(0, 1))
+    tag.attrib['better_displacement_continuity'] = str(random.randint(0, 1))
     # DISTORTION changes
-    tag.attrib['distort_by_normal'] = '1'
-    tag.attrib['distortion_by_normal'] = '2'
-    tag.attrib['lead-in_warp_effect'] = '0'
-    tag.attrib['lead-in_warp_ammount'] = '32'
-    tag.attrib['less_warp_at_feature_scale'] = '1'  # TODO random generate between 0 and 1
-    tag.attrib['allow_vertical_warp'] = '0'  # TODO random generate between 0 and 1
-
+    # tag.attrib['distort_by_normal'] = '1'
+    # tag.attrib['distortion_by_normal'] = '2'
+    # tag.attrib['lead-in_warp_effect'] = '0'
+    # tag.attrib['lead-in_warp_ammount'] = '32'
+    # tag.attrib['less_warp_at_feature_scale'] = '1'
+    # tag.attrib['allow_vertical_warp'] = '0'
     return tags_root
 
 def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:

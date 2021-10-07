@@ -69,52 +69,68 @@ def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> E
     return tags_root
 
 def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
+    # Opening the range file
+    with open(range_value_path, 'r') as range_file:
+        ranges = json.load(range_file)
+    stone_ranges = ranges['stone']
     tag = tags_root.find(f".//*[@name='{attribute}']")
-    tag.attrib['enable'] = '0'  # TODO random generate between 0 and 1 (INTEGER)
-    tag.attrib['stone_scale'] = '25' # TODO random  value also FLOAT
-    tag.attrib['stone_density'] = '0.75' # TODO random generation FLOATING from 0 to 1
-    tag.attrib['vary_density'] = '1' # TODO value can be used are 0 or 1
-    tag.attrib['density_seed'] = '3'
-    tag.attrib['density_variation_scale'] = '3'
-    tag.attrib['stone_tallness'] = '3'
-    tag.attrib['pancake_effect'] = '3'
-    tag.attrib['only_displace_upwards'] = '1' # TODO activation is 1 , 0 is deactivated
-    tag.attrib['apply_colour'] = '3'
-    tag.attrib['diffuse_colour'] = '3'
-    tag.attrib['colour_variatioin'] = '1'
-    tag.attrib['variatioin_in_red'] = '3'
-    tag.attrib['variatioin_in_green'] = '3'
-    tag.attrib['variatioin_in_blue'] = '3'
+    tag.attrib['enable'] = str(random.randint(0, 1))
+    tag.attrib['stone_scale'] = str(random.uniform(stone_ranges['stone_scale_minimum'], stone_ranges['stone_scale_maximum']))
+    tag.attrib['stone_density'] = str(random.uniform(stone_ranges['stone_density_minimum'], stone_ranges['stone_density_maximum']))
+    tag.attrib['vary_density'] = str(random.randint(0, 1))
+    tag.attrib['density_seed'] = str(int(random.random()))
+    tag.attrib['density_variation_scale'] = str(random.uniform(stone_ranges['density_variation_scale_minimum'], stone_ranges['density_variation_scale_maximum']))
+    tag.attrib['stone_tallness'] = str(random.uniform(stone_ranges['stone_tallness_minimum'], stone_ranges['stone_tallness_maximum']))
+    tag.attrib['pancake_effect'] = str(random.uniform(stone_ranges['pancake_effect_minimum'], stone_ranges['pancake_effect_maximum']))
+    tag.attrib['only_displace_upwards'] = str(random.randint(0, 1))
+    # tag.attrib['apply_colour'] = '3'
+    # tag.attrib['diffuse_colour'] = '3'
+    # tag.attrib['colour_variatioin'] = '1'
+    # tag.attrib['variatioin_in_red'] = '3'
+    # tag.attrib['variatioin_in_green'] = '3'
+    # tag.attrib['variatioin_in_blue'] = '3'
     return tags_root
 
 def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
+    with open(range_value_path, 'r') as range_file:
+        ranges = json.load(range_file)
+    strata_ranges = ranges['strata']
     tag = tags_root.find(f".//*[@name='{attribute}']")
-    tag.attrib['enable'] = '0'  # TODO random generate between 0 and 1 (INTEGER)
-    tag.attrib['hard_layer_altitude'] = '25'
-    tag.attrib['hard_layer_depth'] = '2'
-    tag.attrib['hard_layer_steepness'] = '25'
-    tag.attrib['plateau_buildup'] = '25'
-    tag.attrib['num_octaves'] = '25'
-    tag.attrib['strata_tilt_direction'] = '24'
-    tag.attrib['strata_tilt_angle'] = '25'
+    tag.attrib['enable'] = str(random.randint(0, 1))
+    tag.attrib['hard_layer_altitude'] = str(random.uniform(strata_ranges['hard_layer_altitude_minimum'], strata_ranges['hard_layer_altitude_maximum']))
+    tag.attrib['hard_layer_depth'] = str(random.uniform(strata_ranges['hard_layer_depth_minimum'], strata_ranges['hard_layer_depth_maximum']))
+    tag.attrib['hard_layer_steepness'] = str(random.uniform(strata_ranges['hard_layer_steepness_minimum'], strata_ranges['hard_layer_steepness_maximum']))
+    tag.attrib['plateau_buildup'] = str(random.uniform(strata_ranges['plateau_buildup_minimum'], strata_ranges['plateau_buildup_maximum']))
+    #tag.attrib['num_octaves'] = '25'
+    tag.attrib['strata_tilt_direction'] = str(random.uniform(strata_ranges['strata_tilt_direction_minimum'], strata_ranges['strata_tilt_direction_maximum']))
+    tag.attrib['strata_tilt_angle'] = str(random.uniform(strata_ranges['strata_tilt_angle_minimum'], strata_ranges['strata_tilt_angle_maximum']))
     return tags_root
 
 def change_twist(tags_root: ET.Element, attribute="Twist") -> ET.Element:
+    with open(range_value_path, 'r') as range_file:
+        ranges = json.load(range_file)
+    twist_ranges = ranges['twist']
     tag = tags_root.find(f".//*[@name='{attribute}']")
-    tag.attrib['enable'] = '0'
-    tag.attrib['lean_factor'] = '24'
-    tag.attrib['lean_direction'] = '2 0 1'
-    tag.attrib['base_altitude'] = '3'
+    tag.attrib['enable'] = str(random.randint(0, 1))
+    tag.attrib['lean_factor'] = str(random.uniform(twist_ranges['lean_factor_minimum'], twist_ranges['lean_factor_maximum']))
+    if random.randint(0, 5000) > 2500:
+        tag.attrib['lean_direction'] = ' '.join(map(str, list(np.random.randint(low=0, high=1e+5, size=3))))
+    else:
+        tag.attrib['lean_direction'] = '0 0 0'
+    tag.attrib['base_altitude'] = str(random.uniform(twist_ranges['base_altitude_minum'], twist_ranges['base_altitude_maximum']))
     return tags_root
 
 def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Element:
+    with open(range_value_path, 'r') as range_file:
+        ranges = json.load(range_file)
+    warp_ranges = ranges['warp']
     tag = tags_root.find(f".//*[@name='{attribute}']")
-    tag.attrib['enable'] = '0'  # TODO random generate between 0 and 1 (INTEGER)
-    tag.attrib['scale'] = '25'
-    tag.attrib['warp_ammount'] = '2'
-    tag.attrib['variation'] = '25'
-    tag.attrib['roughness'] = '25'
-    tag.attrib['obey_smoothing_filter'] = '1' # TODO only value 1 or 0 are ok
+    tag.attrib['enable'] = str(random.randint(0, 1))
+    tag.attrib['scale'] = str(random.uniform(warp_ranges['scale_minimum'], warp_ranges['scale_maximum']))
+    tag.attrib['warp_ammount'] = str(random.uniform(warp_ranges['warp_ammount_minimum'], warp_ranges['warp_ammount_maximum']))
+    tag.attrib['variation'] = str(random.uniform(warp_ranges['variation_minimum'], warp_ranges['variation_maximum']))
+    tag.attrib['roughness'] = str(random.uniform(warp_ranges['roughness_minimum'], warp_ranges['roughness_maximum']))
+    tag.attrib['obey_smoothing_filter'] = str(random.randint(0, 1))
     return tags_root
 
 def change_fractal_alpine(tags_root: ET.Element, attribute="AlpineTerrain") -> ET.Element:

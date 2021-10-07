@@ -32,7 +32,10 @@ def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
     return tags_root
 
 def change_environmental(tags_root: ET.Element, attribute="Enviro light") -> ET.Element:
+    with open(range_value_path, 'r') as range_file:
+        ranges = json.load(range_file)
+    environmental_ranges = ranges['environmental_light']
     tag = tags_root.find(f".//*[@name='{attribute}']")
-    tag.attrib['global_strength_on_surfaces'] = '1'
-    tag.attrib['global_strength_in_atmosphere'] = '1'
+    tag.attrib['global_strength_on_surfaces'] = str(random.uniform(environmental_ranges['global_strength_on_surfaces_minimum'], environmental_ranges['global_strength_on_surfaces_minimum']))
+    tag.attrib['global_strength_in_atmosphere'] = str(random.uniform(environmental_ranges['global_strength_in_atmosphere_minimum'], environmental_ranges['global_strength_in_atmosphere_maximum']))
     return tags_root

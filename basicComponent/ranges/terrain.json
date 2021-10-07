@@ -9,8 +9,14 @@
   "smallest_scale_maximum": 1000.0,
   "noise_octaves_minimum": 0,
   "noise_octaves_macimum": 16,
-  "displacement_altitude_minimum": 750,
-  "displacement_altitude_maximum": 3500,
+  "displacement_altitude_direction": [
+    "along_vertical",
+    "along_normal"
+  ],
+  "displacement_altitude_minimum": 750.0,
+  "displacement_altitude_maximum": 3500.0,
+  "didplacement_offset_minimum": 500.0,
+  "displacement_offset_maximum": 1000.0,
   "displacement_roughness_minimum": 0.25,
   "displacement_roughness_maximum": 0.75,
   "displacement_spike_limit_minimum": 0.25,

@@ -4,7 +4,7 @@ import os
 import json
 import numpy as np
 
-range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'water.json')
+range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'water.json') # TODO changes the path
 
 def change_fractal_terrain(tags_root: ET.Element, attribute='Lake') -> ET.Element:
     # Opening the range file

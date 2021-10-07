@@ -274,6 +274,12 @@ def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
     tag.attrib['angular_diameter'] = '1' # the size of the disk
     return tags_root
 
+def change_environmental(tags_root: ET.Element, attribute="Enviro light") -> ET.Element:
+    tag = tags_root.find(f".//*[@name='{attribute}']")
+    tag.attrib['global_strength_on_surfaces'] = '1'
+    tag.attrib['global_strength_in_atmosphere'] = '1'
+    return tags_root
+
 # opening the file
 file_path = os.path.join('..', 'TerragenOriginalFile', 'Base_0001.tgd')
 tree = ET.parse(file_path)
@@ -292,4 +298,5 @@ changed = change_surface_shader(root)
 changed = change_twist(root)
 changed = change_distribution_shader(root)
 changed = change_sunllight(root)
+changed = change_environmental(root)
 print(changed)

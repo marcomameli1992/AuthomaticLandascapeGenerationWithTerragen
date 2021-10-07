@@ -1,0 +1,6 @@
+{
+  "lake": {
+    "water_level_minimum": -1,
+    "water_level_maximum": 1
+  }
+}

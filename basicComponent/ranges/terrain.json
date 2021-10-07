@@ -1,0 +1,44 @@
+{
+"fractal_terrain": {
+  "enable": true,
+  "feature_scale_minimum": 750,
+  "feature_scale_maximum": 10000,
+  "lead-in_scale_minimum": 0.0,
+  "lead-in_scale_maximum": 5000.0,
+  "smallest_scale_minimum": 0.0,
+  "smallest_scale_maximum": 1000.0,
+  "noise_octaves_minimum": 0,
+  "noise_octaves_macimum": 16,
+  "displacement_altitude_minimum": 750,
+  "displacement_altitude_maximum": 3500,
+  "displacement_roughness_minimum": 0.25,
+  "displacement_roughness_maximum": 0.75,
+  "displacement_spike_limit_minimum": 0.25,
+  "displacement_spike_limit_maximum": 1.0,
+  "coastline_altitude_minimum": 1500,
+  "coastline_altitute_maximum": 7500,
+  "coastline_smoothing_minimum": 5,
+  "coastline_smoothing_maximum": 100,
+  "noise_flavour":
+  [
+    "perlin",
+    "perlin_ridges",
+    "perlin_billows",
+    "voronoi_billows",
+    "voronoi_ridges"
+  ],
+  "ridge_smoothing_minimum": 0.0,
+  "ridge_smoothing_maximum": 1.0,
+  "gully_smoothing_minimum": 0.0,
+  "gully_smoothing_maximum": 1.0,
+  "noise_variation_minimum": 0.0,
+  "noise_variation_maximum": 4.0,
+  "variation_method": [
+    "clamped_fractal",
+    "unclamped_fractal",
+    "multiscale_modulator"
+  ],
+  "better_colour_contiuity": true,
+  "better_displacement_continuity": true
+}
+}

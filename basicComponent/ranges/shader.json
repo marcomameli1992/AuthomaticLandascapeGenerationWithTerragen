@@ -22,7 +22,7 @@
     "colour_roughness_minimum": 0.0,
     "colour_roughness_maximum": 10.0
   },
-  "grass": {
+  "surface_colours": {
     "diffuse_colour_R_1": 67,
     "diffuse_colour_G_1": 147,
     "diffuse_colour_B_1": 30,

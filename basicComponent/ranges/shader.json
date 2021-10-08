@@ -69,7 +69,7 @@
     "colour_R_1": 255,
     "colour_G_1": 255,
     "colour_B_1": 255,
-    "limit_minimum_altitude_minimum": 1500.0,
+    "minimum_altitude_minimum": 1500.0,
     "min_alt_fuzzy_zone_minimum": 200.0,
     "min_alt_fuzzy_Zone_maximum": 350.0,
     "maximum_slope_angle_minimum": 25.0,

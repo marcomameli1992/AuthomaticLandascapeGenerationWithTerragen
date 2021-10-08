@@ -49,5 +49,52 @@
     "intersection_shift_maximum": 0.0,
     "min_intersection_shift_minimum": -2.0,
     "min_intersection_shift_maximum": 0.0
+  },
+  "twist_share": {
+    "lean_factor_minimum": 0.0,
+    "lean_factor_maximum": 1.0,
+    "base_altitude_minimum": 0.0,
+    "base_altitude_maximum": 0.75
+  },
+  "distribution_colour": {
+    "colour_R_1": 255,
+    "colour_G_1": 255,
+    "colour_B_1": 255,
+    "limit_minimum_altitude_minimum": 1500.0,
+    "min_alt_fuzzy_zone_minimum": 200.0,
+    "min_alt_fuzzy_Zone_maximum": 350.0,
+    "maximum_slope_angle_minimum": 25.0,
+    "maximum_slope_angle_maximum": 50.0,
+    "max_slope_fuzzy_zone_minimum": 5.0,
+    "max_slope_fuzzy_zone_maximum": 15.0
+  },
+  "cloud_shadow": {
+    "feature_scale_minimum": 45.0,
+    "feature_scale_maximum": 2500.0,
+    "contrast_minimum": 0.15,
+    "contrast_maximum": 0.25,
+    "coverage_adjust_minimum": 0.15,
+    "coverage_adjust_maximum": 0.25,
+    "roughness_minimum": 2.0,
+    "roughness_maximum": 10.0,
+    "noise_flavour":
+    [
+      "perlin",
+      "perlin_ridges",
+      "perlin_billows",
+      "voronoi_billows",
+      "voronoi_ridges"
+    ],
+    "ridge_smoothing_minimum": 0.0,
+    "ridge_smoothing_maximum": 1.0,
+    "gully_smoothing_minimum": 0.0,
+    "gully_smoothing_maximum": 1.0,
+    "noise_variation_minimum": 0.0,
+    "noise_variation_maximum": 4.0,
+    "variation_method": [
+      "clamped_fractal",
+      "unclamped_fractal",
+      "multiscale_modulator"
+    ]
   }
 }

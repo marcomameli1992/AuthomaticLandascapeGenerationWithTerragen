@@ -26,9 +26,9 @@ def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.
     # tag.attrib['smallest_scale'] = '25'
     # SCALE-NOISE changes
     # tag.attrib['noise_octaves'] = '4'
-    # tag.attrib['obey_smoothing_filter'] = '1'  # TODO random generate between 0 and 1 (INTEGER)
+    # tag.attrib['obey_smoothing_filter'] = '1'
     # tag.attrib[
-    #     'noise_stretch_XYZ'] = '3 0 2'  # TODO create a function for the generation of space separated string that generate 3 random FLOAT values
+    #     'noise_stretch_XYZ'] = '3 0 2'
     # COLOR changes
     tag.attrib['apply_high_colour'] = '1'
     high_colour1 = str(fractal_colour_ranges['high_colour_R_1']) + " " + str(fractal_colour_ranges['high_colour_G_1']) + " " + str(fractal_colour_ranges['high_colour_B_1'])

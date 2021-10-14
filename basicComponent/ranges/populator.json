@@ -1,5 +1,38 @@
 {
   "trees": {
-
+    "area_length_a_minimum": 10000.0,
+    "area_length_a_maximum": 100000.0,
+    "area_length_b_minimum": 10000.0,
+    "area_length_b_maximum": 100000.0,
+    "object_spacing_xz_minimum": 1.0,
+    "object_spacing_xz_maximum": 10.0,
+    "randomness_xz_minimum": 1.0,
+    "randomness_xz_maximum": 5.0,
+    "minimum_scale_minimum": 1.0,
+    "minimum_scale_maximum": 2.5,
+    "maximum_scale_minimum": 5.0,
+    "maximum_scale_maximum": 10.0,
+    "diffuse_colour_multiplier_minimum": 0.25,
+    "diffuse_colour_multiplier_maximum": 2.0,
+    "luminosity_multiplier_minimum": 0.1,
+    "luminosity_multiplier_maximum": 2.0
+  },
+  "grass": {
+    "area_length_a_minimum": 10000.0,
+    "area_length_a_maximum": 100000.0,
+    "area_length_b_minimum": 10000.0,
+    "area_length_b_maximum": 100000.0,
+    "object_spacing_xz_minimum": 1.0,
+    "object_spacing_xz_maximum": 10.0,
+    "randomness_xz_minimum": 1.0,
+    "randomness_xz_maximum": 5.0,
+    "minimum_scale_minimum": 1.0,
+    "minimum_scale_maximum": 1.5,
+    "maximum_scale_minimum": 4.0,
+    "maximum_scale_maximum": 5.0,
+    "diffuse_colour_multiplier_minimum": 0.25,
+    "diffuse_colour_multiplier_maximum": 2.0,
+    "luminosity_multiplier_minimum": 0.1,
+    "luminosity_multiplier_maximum": 2.0
   }
 }

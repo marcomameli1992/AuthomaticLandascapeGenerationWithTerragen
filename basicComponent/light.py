@@ -4,7 +4,10 @@ import os
 import json
 import numpy as np
 
-range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'light.json') # TODO changes the path
+global range_value_path
+def set_light_value_path(path):
+    range_value_path = path
+#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'light.json') # TODO changes the path
 
 def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
     with open(range_value_path, 'r') as range_file:

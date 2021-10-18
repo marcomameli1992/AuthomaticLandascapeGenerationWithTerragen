@@ -4,7 +4,10 @@ import os
 import json
 import numpy as np
 
-range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'shader.json') # TODO changes the path
+#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'shader.json') # TODO changes the path
+global range_value_path
+def set_shader_value_path(path):
+    range_value_path = path
 
 def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.Element:
     '''
@@ -16,7 +19,7 @@ def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.
     # Opening the range file
     with open(range_value_path, 'r') as range_file:
         ranges = json.load(range_file)
-    fractal_colour_ranges = ranges['base_colours']
+    fractal_colour_ranges = ranges['fractal_colours']
     tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['enable'] = "1"  # One shader has to be activated
     tag.attrib['seed'] = str(int(random.random()))
@@ -90,7 +93,7 @@ def change_surface_shader(tags_root: ET.Element, attribute="Grass") -> ET.Elemen
     tag.attrib['min_intersection_shift'] = str(random.uniform(surface_colour_ranges['min_intersection_shift_minimum'], surface_colour_ranges['min_intersection_shift_minimum']))
     return tags_root
 
-def change_twist(tags_root: ET.Element, attribute="TwistShear") -> ET.Element:
+def change_twist_shader(tags_root: ET.Element, attribute="TwistShear") -> ET.Element:
     with open(range_value_path, 'r') as range_file:
         ranges = json.load(range_file)
     twist_ranges = ranges['twist_share']

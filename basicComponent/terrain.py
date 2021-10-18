@@ -4,7 +4,10 @@ import os
 import json
 import numpy as np
 
-range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json') # TODO changes the path
+#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json') # TODO changes the path
+global range_value_path
+def set_terrain_value_path(path):
+    range_value_path = path
 
 def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
     '''
@@ -106,7 +109,7 @@ def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
     tag.attrib['strata_tilt_angle'] = str(random.uniform(strata_ranges['strata_tilt_angle_minimum'], strata_ranges['strata_tilt_angle_maximum']))
     return tags_root
 
-def change_twist(tags_root: ET.Element, attribute="Twist") -> ET.Element:
+def change_twist_terrain(tags_root: ET.Element, attribute="Twist") -> ET.Element:
     with open(range_value_path, 'r') as range_file:
         ranges = json.load(range_file)
     twist_ranges = ranges['twist']

@@ -4,7 +4,11 @@ import os
 import json
 import numpy as np
 
-range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json') # TODO changes the path
+#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json') # TODO changes the path
+
+global range_value_path
+def set_populator_value_path(path):
+    range_value_path = path
 
 def change_trees_population(tags_root: ET.Element, attribute="TreesOBJ") -> ET.Element:
     with open(range_value_path, 'r') as range_file:

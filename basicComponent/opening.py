@@ -4,4 +4,4 @@ def tgd_opening(path)-> ET.Element:
     tree = ET.parse(path)
     root = tree.getroot()
 
-    return root
+    return tree, root

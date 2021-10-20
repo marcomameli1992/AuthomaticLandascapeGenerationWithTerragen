@@ -1,13 +1,8 @@
 import xml.etree.ElementTree as ET
 import random
-import os
 import json
 import numpy as np
-
-#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'shader.json') # TODO changes the path
-global range_value_path
-def set_shader_value_path(path):
-    range_value_path = path
+import basicComponent.values as common_values
 
 def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.Element:
     '''
@@ -16,8 +11,10 @@ def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.
     :param attribute:
     :return:
     '''
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
     # Opening the range file
-    with open(range_value_path, 'r') as range_file:
+    with open(common_values.ranges_shader_path, 'r') as range_file:
         ranges = json.load(range_file)
     fractal_colour_ranges = ranges['fractal_colours']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -53,7 +50,9 @@ def change_fractal_shader(tags_root: ET.Element, attribute='BaseColours') -> ET.
     return tags_root
 
 def change_surface_shader(tags_root: ET.Element, attribute="Grass") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_shader_path, 'r') as range_file:
         ranges = json.load(range_file)
     surface_colour_ranges = ranges['surface_colours']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -94,7 +93,9 @@ def change_surface_shader(tags_root: ET.Element, attribute="Grass") -> ET.Elemen
     return tags_root
 
 def change_twist_shader(tags_root: ET.Element, attribute="TwistShear") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_shader_path, 'r') as range_file:
         ranges = json.load(range_file)
     twist_ranges = ranges['twist_share']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -105,7 +106,9 @@ def change_twist_shader(tags_root: ET.Element, attribute="TwistShear") -> ET.Ele
     return tags_root
 
 def change_distribution_shader(tags_root: ET.Element, attribute="DistributionColour") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_shader_path, 'r') as range_file:
         ranges = json.load(range_file)
     distribution_ranges = ranges['distribution_colour']
     tag = tags_root.find(f".//*[@name='{attribute}']")

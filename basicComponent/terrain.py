@@ -1,13 +1,8 @@
 import xml.etree.ElementTree as ET
 import random
-import os
 import json
 import numpy as np
-
-#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json') # TODO changes the path
-global range_value_path
-def set_terrain_value_path(path):
-    range_value_path = path
+import basicComponent.values as common_values
 
 def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
     '''
@@ -16,8 +11,10 @@ def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> E
     :param attribute:
     :return:
     '''
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
     # Opening the range file
-    with open(range_value_path, 'r') as range_file:
+    with open(common_values.ranges_terrain_path, 'r') as range_file:
         ranges = json.load(range_file)
     fractal_terrain_ranges = ranges['fractal_terrain']
 
@@ -72,8 +69,10 @@ def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> E
     return tags_root
 
 def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
     # Opening the range file
-    with open(range_value_path, 'r') as range_file:
+    with open(common_values.ranges_terrain_path, 'r') as range_file:
         ranges = json.load(range_file)
     stone_ranges = ranges['stone']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -95,7 +94,9 @@ def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
     return tags_root
 
 def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_terrain_path, 'r') as range_file:
         ranges = json.load(range_file)
     strata_ranges = ranges['strata']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -110,7 +111,9 @@ def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
     return tags_root
 
 def change_twist_terrain(tags_root: ET.Element, attribute="Twist") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_terrain_path, 'r') as range_file:
         ranges = json.load(range_file)
     twist_ranges = ranges['twist']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -124,7 +127,9 @@ def change_twist_terrain(tags_root: ET.Element, attribute="Twist") -> ET.Element
     return tags_root
 
 def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_terrain_path, 'r') as range_file:
         ranges = json.load(range_file)
     warp_ranges = ranges['warp']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -136,7 +141,10 @@ def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Elem
     tag.attrib['obey_smoothing_filter'] = str(random.randint(0, 1))
     return tags_root
 
+# NOT USED
 def change_fractal_alpine(tags_root: ET.Element, attribute="AlpineTerrain") -> ET.Element:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
     tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['enable'] = "0"  # TODO random generate between 0 and 1 (INTEGER)
     tag.attrib['seed'] = '525'  # TODO random generate the SEED

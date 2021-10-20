@@ -3,15 +3,12 @@ import random
 import os
 import json
 import numpy as np
-
-#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'terrain.json') # TODO changes the path
-
-global range_value_path
-def set_populator_value_path(path):
-    range_value_path = path
+import basicComponent.values as common_values
 
 def change_trees_population(tags_root: ET.Element, attribute="TreesOBJ") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_populator_path, 'r') as range_file:
         ranges = json.load(range_file)
     populator_ranges = ranges['trees']
 
@@ -35,7 +32,9 @@ def change_trees_population(tags_root: ET.Element, attribute="TreesOBJ") -> ET.E
     return tags_root
 
 def change_grass_population(tags_root: ET.Element, attribute="GrassOBJ") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_populator_path, 'r') as range_file:
         ranges = json.load(range_file)
     populator_ranges = ranges['grass']
 

@@ -1,18 +1,13 @@
 import xml.etree.ElementTree as ET
 import random
-import os
 import json
-import numpy as np
-
-#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'water.json') # TODO changes the path
-global range_value_path
-def set_water_value_path(path):
-    range_value_path = path
-
+import basicComponent.values as common_values
 
 def change_fractal_water(tags_root: ET.Element, attribute='Lake') -> ET.Element:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
     # Opening the range file
-    with open(range_value_path, 'r') as range_file:
+    with open(common_values.ranges_water_path, 'r') as range_file:
         ranges = json.load(range_file)
     lake_ranges = ranges['lake']
     tag = tags_root.find(f".//*[@name='{attribute}']")

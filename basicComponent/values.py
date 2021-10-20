@@ -1,21 +1,12 @@
 #%% import section
 import os
 
-#%% random globals value
-global use_seed
-global seed
 use_seed: bool
 seed: int
 
 #%% base ranges folder path
 ranges_folder_path: str
 
-#%% individual ranges file name
-global ranges_populator_path
-global ranges_terrain_path
-global ranges_shader_path
-global ranges_light_path
-global ranges_water_path
 ranges_populator_path: str
 ranges_terrain_path: str
 ranges_shader_path: str

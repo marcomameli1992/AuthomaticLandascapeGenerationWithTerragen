@@ -1,16 +1,12 @@
 import xml.etree.ElementTree as ET
 import random
-import os
 import json
-import numpy as np
-
-global range_value_path
-def set_light_value_path(path):
-    range_value_path = path
-#range_value_path = os.path.join('..', 'basicComponent', 'ranges', 'light.json') # TODO changes the path
+import basicComponent.values as common_values
 
 def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_light_path, 'r') as range_file:
         ranges = json.load(range_file)
     sunlight_ranges = ranges['sunlight']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -35,7 +31,9 @@ def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
     return tags_root
 
 def change_environmental(tags_root: ET.Element, attribute="Enviro light") -> ET.Element:
-    with open(range_value_path, 'r') as range_file:
+    if common_values.use_seed:
+        random.seed(common_values.seed, version=2)
+    with open(common_values.ranges_light_path, 'r') as range_file:
         ranges = json.load(range_file)
     environmental_ranges = ranges['environmental_light']
     tag = tags_root.find(f".//*[@name='{attribute}']")

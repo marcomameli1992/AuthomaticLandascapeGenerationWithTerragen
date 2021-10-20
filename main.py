@@ -16,6 +16,7 @@ import json
 from multiprocessing import cpu_count, Process
 import datetime
 import argparse
+import logging
 
 input_args = argparse.ArgumentParser()
 input_args.add_argument('--config_file', type=str, required=True, help="The json configuration file")
@@ -23,6 +24,10 @@ input_args.add_argument('--config_file', type=str, required=True, help="The json
 args = input_args.parse_args()
 
 def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str):
+    import logging
+    import os
+    LOGGER = logging.getLogger('Process PID: ' + str(os.getpid()))
+    LOGGER.info(' Generation start')
     #%%  Nodes list
     terrain_list: list = []
     water_list: list = []
@@ -71,6 +76,15 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str)
         if 'Lake' in element.attrib['name'] or 'lake' in element.attrib['name']:
             water_list.append(element.attrib['name'])
 
+    #%% Logging teh generation
+    LOGGER.info(' Lists filled:')
+    LOGGER.info(' \tTerrain list has {} values'.format(len(terrain_list)))
+    LOGGER.info(' \tShader list has {} values'.format(len(shader_list)))
+    LOGGER.info(' \tPopulation list has {} values'.format(len(populator_list)))
+    LOGGER.info(' \tLight list has {} values'.format(len(light_list)))
+    LOGGER.info(' \tWater list has {} values'.format(len(water_list)))
+
+    #%% File generation
     for n in range(number_of_file):
         for element_name in terrain_list:
             if 'Fractal' in element_name or 'fractal' in element_name:
@@ -109,10 +123,11 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str)
                 etree_root = change_trees_population(etree_root, element_name)
             if 'Grass' in element_name or 'grass' in element_name:
                 etree_root = change_grass_population(etree_root, element_name)
-
+        LOGGER.info(' Changes finished. Saving the file')
         file_name = 'Generation_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '.tgd'
         with open(os.path.join(save_path, file_name), 'wb') as tgd_file:
             etree.write(tgd_file)
+        LOGGER.info(' File Saved with name {} '.format(file_name))
 
 
 #%% read the configurations
@@ -120,13 +135,21 @@ config_file_path = args.config_file
 with open(config_file_path, 'r') as config_file:
     config = json.load(config_file)
 
+#%% define the logger
+logging.basicConfig(filename=config['logging_file_path'],level=logging.INFO)
+LOGGER = logging.getLogger("main")
+
 if config['use_seed']:
     set_use_seed(config['use_seed'])
     set_seed(config['seed'])
+    LOGGER.info(' seed {} applied to the execution'.format(config['seed']))
+else:
+    LOGGER.info(' fixed seed deactivated')
 
 #%% opening the basic file
 basic_file_path = config['base_file_path']
 etree, etree_root = tgd_opening(basic_file_path)
+LOGGER.info(' opened the {} file'.format(config['base_file_path'].split('/')[-1]))
 
 #%% setting ranges path
 set_ranges_folder_path(config['ranges_folder_path'])
@@ -135,6 +158,7 @@ set_terrain_value_path(config['terrain_ranges_name'])
 set_shader_value_path(config['shader_ranges_name'])
 set_populator_value_path(config['popultor_ranges_name'])
 set_water_value_path(config['water_ranges_name'])
+LOGGER.info(' set the ranges files path for each node')
 
 #%% prepraring multiprocessing execution
 n_cpu = cpu_count()
@@ -143,12 +167,17 @@ proc_list : list = []
 n_file_per_proc = int(config['n_files'] / n_cpu)
 
 if int(config['n_files']) == 1:
-    file_generatioin(etree, 1, config['save_path'])
+    LOGGER.info(' Required only un processor for the generation of one file')
+    file_generatioin(etree, config['n_files'], config['save_path'])
 else:
+    LOGGER.info(' Required the multiprocessor generation')
+    LOGGER.info(' The number of processor available is {}'.format(n_cpu))
+    LOGGER.info(' Required {} files to be generated, each process generate {} files'.format(config['n_files'], n_file_per_proc))
     for p in range(n_cpu):
+        LOGGER.info(' Generated process')
         proc = Process(target=file_generatioin, args=(etree, n_file_per_proc, config['save_path']))
         proc_list.append(proc)
         proc.start()
-
+    LOGGER.info(' All process generated. Waiting the termination')
     for p in proc_list:
         p.join()

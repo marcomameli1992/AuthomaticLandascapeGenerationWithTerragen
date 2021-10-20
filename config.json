@@ -1,0 +1,14 @@
+{
+  "seed": 256,
+  "use_seed": true,
+  "save_path": "./generatedFile",
+  "n_files": 1,
+  "base_file_path": "./basicComponent/basicFile/Base.tgd",
+
+  "ranges_folder_path": "./basicComponent/ranges",
+  "light_ranges_name": "light.json",
+  "terrain_ranges_name": "terrain.json",
+  "shader_ranges_name": "shader.json",
+  "popultor_ranges_name": "populator.json",
+  "water_ranges_name": "water.json"
+}

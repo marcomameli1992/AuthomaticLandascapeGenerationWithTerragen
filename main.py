@@ -22,13 +22,15 @@ input_args.add_argument('--config_file', type=str, required=True, help="The json
 
 args = input_args.parse_args()
 
-def file_generatioin(etree: ET.ElementTree, etree_root:ET.Element, number_of_file: int, save_path: str):
+def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str):
     #%%  Nodes list
     terrain_list: list = []
     water_list: list = []
     shader_list: list = []
     light_list: list = []
     populator_list: list = []
+    #%% get the etree_root from the etree element
+    etree_root = etree.getroot()
     #%% Nodes list filling
     for element in etree_root.find('power_fractal_shader_v3'):
         if 'Terrain' in element.attrib['name'] or 'terrain' in element.attrib['name']:
@@ -141,10 +143,10 @@ proc_list : list = []
 n_file_per_proc = int(config['n_files'] / n_cpu)
 
 if int(config['n_files']) == 1:
-    file_generatioin(etree, etree_root, 1, config['save_path'])
+    file_generatioin(etree, 1, config['save_path'])
 else:
     for p in range(n_cpu):
-        proc = Process(target=file_generatioin, args=(etree, etree_root, n_file_per_proc, config['save_path']))
+        proc = Process(target=file_generatioin, args=(etree, n_file_per_proc, config['save_path']))
         proc_list.append(proc)
         proc.start()
 

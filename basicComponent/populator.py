@@ -1,14 +1,13 @@
 import xml.etree.ElementTree as ET
 import random
-import os
 import json
 import numpy as np
-import basicComponent.values as common_values
+import logging
 
-def change_trees_population(tags_root: ET.Element, attribute="TreesOBJ") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_populator_path, 'r') as range_file:
+def change_trees_population(tags_root: ET.Element, global_values: dict, attribute="TreesOBJ") -> ET.Element:
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    with open(global_values['ranges_populator_path'], 'r') as range_file:
         ranges = json.load(range_file)
     populator_ranges = ranges['trees']
 
@@ -31,10 +30,10 @@ def change_trees_population(tags_root: ET.Element, attribute="TreesOBJ") -> ET.E
                                                              populator_ranges['luminosity_multiplier_maximum']))
     return tags_root
 
-def change_grass_population(tags_root: ET.Element, attribute="GrassOBJ") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_populator_path, 'r') as range_file:
+def change_grass_population(tags_root: ET.Element, global_values: dict, attribute="GrassOBJ") -> ET.Element:
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    with open(global_values['ranges_populator_path'], 'r') as range_file:
         ranges = json.load(range_file)
     populator_ranges = ranges['grass']
 

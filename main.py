@@ -1,4 +1,7 @@
 #%% Import section of customized function
+from basicComponent.values import set_use_seed, set_seed, set_ranges_folder_path, \
+    set_light_value_path, set_water_value_path, set_shader_value_path, set_populator_value_path, \
+    set_terrain_value_path
 from basicComponent.terrain import *
 from basicComponent.water import *
 from basicComponent.shader import *
@@ -12,6 +15,12 @@ import os
 import json
 from multiprocessing import cpu_count, Process
 import datetime
+import argparse
+
+input_args = argparse.ArgumentParser()
+input_args.add_argument('--config_file', type=str, required=True, help="The json configuration file")
+
+args = input_args.parse_args()
 
 def file_generatioin(etree: ET.ElementTree, etree_root:ET.Element, number_of_file: int, save_path: str):
     #%%  Nodes list
@@ -53,6 +62,8 @@ def file_generatioin(etree: ET.ElementTree, etree_root:ET.Element, number_of_fil
         if 'Tree' in element.attrib['name'] or 'tree' in element.attrib['name']:
             populator_list.append(element.attrib['name'])
         if 'Grass' in element.attrib['name'] or 'grass' in element.attrib['name']:
+            populator_list.append(element.attrib['name'])
+        if 'Pop' in element.attrib['name'] or 'pop' in element.attrib['name']:
             populator_list.append(element.attrib['name'])
     for element in etree_root.find('lake'):
         if 'Lake' in element.attrib['name'] or 'lake' in element.attrib['name']:
@@ -97,26 +108,31 @@ def file_generatioin(etree: ET.ElementTree, etree_root:ET.Element, number_of_fil
             if 'Grass' in element_name or 'grass' in element_name:
                 etree_root = change_grass_population(etree_root, element_name)
 
-        file_name = 'Generation' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '.tgd'
+        file_name = 'Generation_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '.tgd'
         with open(os.path.join(save_path, file_name), 'wb') as tgd_file:
             etree.write(tgd_file)
 
 
 #%% read the configurations
-config_file_path = os.path.join('.', 'config.json')
+config_file_path = args.config_file
 with open(config_file_path, 'r') as config_file:
     config = json.load(config_file)
 
+if config['use_seed']:
+    set_use_seed(config['use_seed'])
+    set_seed(config['seed'])
+
 #%% opening the basic file
-basic_file_path = os.path.join('.', 'BasicFile', 'BasicStrucrture.tgd')
+basic_file_path = config['base_file_path']
 etree, etree_root = tgd_opening(basic_file_path)
 
 #%% setting ranges path
-set_light_value_path(config['light_ranges_path'])
-set_terrain_value_path(config['terrain_ranges_path'])
-set_shader_value_path(config['shader_ranges_path'])
-set_populator_value_path(config['popultor_ranges_path'])
-set_water_value_path(config['water_ranges_path'])
+set_ranges_folder_path(config['ranges_folder_path'])
+set_light_value_path(config['light_ranges_name'])
+set_terrain_value_path(config['terrain_ranges_name'])
+set_shader_value_path(config['shader_ranges_name'])
+set_populator_value_path(config['popultor_ranges_name'])
+set_water_value_path(config['water_ranges_name'])
 
 #%% prepraring multiprocessing execution
 n_cpu = cpu_count()

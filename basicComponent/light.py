@@ -1,12 +1,18 @@
 import xml.etree.ElementTree as ET
 import random
 import json
-import basicComponent.values as common_values
+import basicComponent.global_value as common_values
+import logging
 
-def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_light_path, 'r') as range_file:
+#%% define logging
+LOGGER = logging.getLogger("LIGHT")
+
+def change_sunlight(tags_root: ET.Element, global_values: dict, attribute="Sun") -> ET.Element:
+    LOGGER.info(' change_sunlight function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Opening the range file
+    with open(global_values['ranges_light_path'], 'r') as range_file:
         ranges = json.load(range_file)
     sunlight_ranges = ranges['sunlight']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -28,15 +34,22 @@ def change_sunllight(tags_root: ET.Element, attribute="Sun") -> ET.Element:
     tag.attrib['specular_highlights'] = '0' # or 0 to activate or not
     tag.attrib['visible_disc'] = '1' # or 0 to activate or not
     tag.attrib['angular_diameter'] = '1' # the size of the disk
+    LOGGER.info(' change_sunlight heading value: ' + tag.attrib['heading'])
+    LOGGER.info(' change_sunlight elevation value: ' + tag.attrib['elevation'])
+    LOGGER.info(' change_sunlight strength value: ' + tag.attrib['strength'])
     return tags_root
 
-def change_environmental(tags_root: ET.Element, attribute="Enviro light") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_light_path, 'r') as range_file:
+def change_environmental(tags_root: ET.Element,  global_values: dict, attribute="Enviro light") -> ET.Element:
+    LOGGER.info(' change_environmental function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Opening the range file
+    with open(global_values['ranges_light_path'], 'r') as range_file:
         ranges = json.load(range_file)
     environmental_ranges = ranges['environmental_light']
     tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['global_strength_on_surfaces'] = str(random.uniform(environmental_ranges['global_strength_on_surfaces_minimum'], environmental_ranges['global_strength_on_surfaces_minimum']))
     tag.attrib['global_strength_in_atmosphere'] = str(random.uniform(environmental_ranges['global_strength_in_atmosphere_minimum'], environmental_ranges['global_strength_in_atmosphere_maximum']))
+    LOGGER.info(' change_environmental global_strength_on_surfaces value: ' + tag.attrib['global_strength_on_surfaces'])
+    LOGGER.info(' change_environmental global_strength_in_atmosphere value: ' + tag.attrib['global_strength_in_atmosphere'])
     return tags_root

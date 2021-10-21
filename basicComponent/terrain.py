@@ -2,19 +2,23 @@ import xml.etree.ElementTree as ET
 import random
 import json
 import numpy as np
-import basicComponent.values as common_values
+import logging
 
-def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> ET.Element:
+#%% define logging
+LOGGER = logging.getLogger("TERRAIN")
+
+def change_fractal_terrain(tags_root: ET.Element, global_values: dict, attribute='BasicTerrain') -> ET.Element:
     '''
 
     :param tags_root:
     :param attribute:
     :return:
     '''
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
+    LOGGER.info(' change_fractal_terrain function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
     # Opening the range file
-    with open(common_values.ranges_terrain_path, 'r') as range_file:
+    with open(global_values['ranges_terrain_path'], 'r') as range_file:
         ranges = json.load(range_file)
     fractal_terrain_ranges = ranges['fractal_terrain']
 
@@ -66,13 +70,26 @@ def change_fractal_terrain(tags_root: ET.Element, attribute='BasicTerrain') -> E
     # tag.attrib['lead-in_warp_ammount'] = '32'
     # tag.attrib['less_warp_at_feature_scale'] = '1'
     # tag.attrib['allow_vertical_warp'] = '0'
+    LOGGER.info(' change_fractal_terrain displacement_amplitude value: ' + tag.attrib['displacement_amplitude'])
+    LOGGER.info(' change_fractal_terrain displacement_offset value: ' + tag.attrib['displacement_offset'])
+    LOGGER.info(' change_fractal_terrain displacement_roughness value: ' + tag.attrib['displacement_roughness'])
+    LOGGER.info(' change_fractal_terrain displacement_spike_limit value: ' + tag.attrib['displacement_spike_limit'])
+    LOGGER.info(' change_fractal_terrain coastline_altitude value: ' + tag.attrib['coastline_altitude'])
+    LOGGER.info(' change_fractal_terrain noise_flavour value: ' + tag.attrib['noise_flavour'])
+    LOGGER.info(' change_fractal_terrain ridge_smoothing value: ' + tag.attrib['ridge_smoothing'])
+    LOGGER.info(' change_fractal_terrain gully_smoothing value: ' + tag.attrib['gully_smoothing'])
+    LOGGER.info(' change_fractal_terrain noise_variation value: ' + tag.attrib['noise_variation'])
+    LOGGER.info(' change_fractal_terrain variation_method value: ' + tag.attrib['variation_method'])
+    LOGGER.info(' change_fractal_terrain better_colour_continuity value: ' + tag.attrib['better_colour_continuity'])
+    LOGGER.info(' change_fractal_terrain better_displacement_continuity value: ' + tag.attrib['better_displacement_continuity'])
     return tags_root
 
-def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
+def change_stone(tags_root: ET.Element, global_values: dict, attribute = 'FakeStone') -> ET.Element:
+    LOGGER.info(' change_stone function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
     # Opening the range file
-    with open(common_values.ranges_terrain_path, 'r') as range_file:
+    with open(global_values['ranges_terrain_path'], 'r') as range_file:
         ranges = json.load(range_file)
     stone_ranges = ranges['stone']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -91,12 +108,22 @@ def change_stone(tags_root: ET.Element, attribute = 'FakeStone') -> ET.Element:
     # tag.attrib['variatioin_in_red'] = '3'
     # tag.attrib['variatioin_in_green'] = '3'
     # tag.attrib['variatioin_in_blue'] = '3'
+    LOGGER.info(' change_stone stone_scale value: ' + tag.attrib['stone_scale'])
+    LOGGER.info(' change_stone stone_scale value: ' + tag.attrib['stone_scale'])
+    LOGGER.info(' change_stone stone_density value: ' + tag.attrib['stone_density'])
+    LOGGER.info(' change_stone vary_density value: ' + tag.attrib['vary_density'])
+    LOGGER.info(' change_stone density_variation_scale value: ' + tag.attrib['density_variation_scale'])
+    LOGGER.info(' change_stone stone_tallness value: ' + tag.attrib['stone_tallness'])
+    LOGGER.info(' change_stone pancake_effect value: ' + tag.attrib['pancake_effect'])
+    LOGGER.info(' change_stone only_displace_upwards value: ' + tag.attrib['only_displace_upwards'])
     return tags_root
 
-def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_terrain_path, 'r') as range_file:
+def change_strata(tags_root: ET.Element, global_values: dict, attribute="Strata") -> ET.Element:
+    LOGGER.info(' change_strata function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Opening the range file
+    with open(global_values['ranges_terrain_path'], 'r') as range_file:
         ranges = json.load(range_file)
     strata_ranges = ranges['strata']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -108,12 +135,21 @@ def change_strata(tags_root: ET.Element, attribute="Strata") -> ET.Element:
     #tag.attrib['num_octaves'] = '25'
     tag.attrib['strata_tilt_direction'] = str(random.uniform(strata_ranges['strata_tilt_direction_minimum'], strata_ranges['strata_tilt_direction_maximum']))
     tag.attrib['strata_tilt_angle'] = str(random.uniform(strata_ranges['strata_tilt_angle_minimum'], strata_ranges['strata_tilt_angle_maximum']))
+
+    LOGGER.info(' change_strata hard_layer_altitude value: ' + tag.attrib['hard_layer_altitude'])
+    LOGGER.info(' change_strata hard_layer_depth value: ' + tag.attrib['hard_layer_depth'])
+    LOGGER.info(' change_strata hard_layer_steepness value: ' + tag.attrib['hard_layer_steepness'])
+    LOGGER.info(' change_strata plateau_buildup value: ' + tag.attrib['plateau_buildup'])
+    LOGGER.info(' change_strata strata_tilt_direction value: ' + tag.attrib['strata_tilt_direction'])
+    LOGGER.info(' change_strata strata_tilt_angle value: ' + tag.attrib['strata_tilt_angle'])
     return tags_root
 
-def change_twist_terrain(tags_root: ET.Element, attribute="Twist") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_terrain_path, 'r') as range_file:
+def change_twist_terrain(tags_root: ET.Element, global_values: dict, attribute="Twist") -> ET.Element:
+    LOGGER.info(' change_twist_terrain function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Opening the range file
+    with open(global_values['ranges_terrain_path'], 'r') as range_file:
         ranges = json.load(range_file)
     twist_ranges = ranges['twist']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -124,12 +160,17 @@ def change_twist_terrain(tags_root: ET.Element, attribute="Twist") -> ET.Element
     else:
         tag.attrib['lean_direction'] = '0 0 0'
     tag.attrib['base_altitude'] = str(random.uniform(twist_ranges['base_altitude_minum'], twist_ranges['base_altitude_maximum']))
+    LOGGER.info(' change_twist_terrain lean_factor value: ' + tag.attrib['lean_factor'])
+    LOGGER.info(' change_twist_terrain lean_direction value: ' + tag.attrib['lean_direction'])
+    LOGGER.info(' change_twist_terrain base_altitude value: ' + tag.attrib['base_altitude'])
     return tags_root
 
-def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
-    with open(common_values.ranges_terrain_path, 'r') as range_file:
+def change_fractal_warp(tags_root: ET.Element, global_values: dict, attribute="BasicWarp") -> ET.Element:
+    LOGGER.info(' change_fractal_warp function called')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Opening the range file
+    with open(global_values['ranges_terrain_path'], 'r') as range_file:
         ranges = json.load(range_file)
     warp_ranges = ranges['warp']
     tag = tags_root.find(f".//*[@name='{attribute}']")
@@ -139,12 +180,19 @@ def change_fractal_warp(tags_root: ET.Element, attribute="BasicWarp") -> ET.Elem
     tag.attrib['variation'] = str(random.uniform(warp_ranges['variation_minimum'], warp_ranges['variation_maximum']))
     tag.attrib['roughness'] = str(random.uniform(warp_ranges['roughness_minimum'], warp_ranges['roughness_maximum']))
     tag.attrib['obey_smoothing_filter'] = str(random.randint(0, 1))
+    LOGGER.info(' change_fractal_warp scale value: ' + tag.attrib['scale'])
+    LOGGER.info(' change_fractal_warp warp_ammount value: ' + tag.attrib['warp_ammount'])
+    LOGGER.info(' change_fractal_warp variation value: ' + tag.attrib['variation'])
+    LOGGER.info(' change_fractal_warp roughness value: ' + tag.attrib['roughness'])
     return tags_root
 
 # NOT USED
-def change_fractal_alpine(tags_root: ET.Element, attribute="AlpineTerrain") -> ET.Element:
-    if common_values.use_seed:
-        random.seed(common_values.seed, version=2)
+def change_fractal_alpine(tags_root: ET.Element, global_values: dict, attribute="AlpineTerrain") -> ET.Element:
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Opening the range file
+    with open(global_values['ranges_terrain_path'], 'r') as range_file:
+        ranges = json.load(range_file)
     tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['enable'] = "0"  # TODO random generate between 0 and 1 (INTEGER)
     tag.attrib['seed'] = '525'  # TODO random generate the SEED

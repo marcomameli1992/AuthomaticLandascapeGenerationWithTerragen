@@ -4,7 +4,11 @@ import json
 import numpy as np
 import logging
 
+#%% define logging
+LOGGER = logging.getLogger("POPULATOR")
+
 def change_trees_population(tags_root: ET.Element, global_values: dict, attribute="TreesOBJ") -> ET.Element:
+    LOGGER.info(' change_treese_populator function called')
     if global_values['use_seed']:
         random.seed(global_values['seed'], version=2)
     with open(global_values['ranges_populator_path'], 'r') as range_file:
@@ -28,9 +32,16 @@ def change_trees_population(tags_root: ET.Element, global_values: dict, attribut
                                                                  populator_ranges['diffuse_colour_multiplier_maximum']))
     tag.attrib['luminosity_multiplier'] = str(random.uniform(populator_ranges['luminosity_multiplier_minimum'],
                                                              populator_ranges['luminosity_multiplier_maximum']))
+    LOGGER.info(' change_treese_populator area_length_a value: ' + tag.attrib['area_length_a'])
+    LOGGER.info(' change_treese_populator area_length_b value: ' + tag.attrib['area_length_b'])
+    LOGGER.info(' change_treese_populator object_spacing_xz_minimum value: ' + tag.attrib['object_spacing_xz_minimum'])
+    LOGGER.info(' change_treese_populator minimum_scale value: ' + tag.attrib['minimum_scale'])
+    LOGGER.info(' change_treese_populator diffuse_colour_multiplier value: ' + tag.attrib['diffuse_colour_multiplier'])
+    LOGGER.info(' change_treese_populator luminosity_multiplier value: ' + tag.attrib['luminosity_multiplier'])
     return tags_root
 
 def change_grass_population(tags_root: ET.Element, global_values: dict, attribute="GrassOBJ") -> ET.Element:
+    LOGGER.info(' change_grass_population function called')
     if global_values['use_seed']:
         random.seed(global_values['seed'], version=2)
     with open(global_values['ranges_populator_path'], 'r') as range_file:
@@ -54,4 +65,10 @@ def change_grass_population(tags_root: ET.Element, global_values: dict, attribut
                                                      populator_ranges['diffuse_colour_multiplier_maximum']))
     tag.attrib['luminosity_multiplier'] = str(random.uniform(populator_ranges['luminosity_multiplier_minimum'],
                                                                  populator_ranges['luminosity_multiplier_maximum']))
+    LOGGER.info(' change_grass_population area_length_a value: ' + tag.attrib['area_length_a'])
+    LOGGER.info(' change_grass_population area_length_b value: ' + tag.attrib['area_length_b'])
+    LOGGER.info(' change_grass_population object_spacing_xz_minimum value: ' + tag.attrib['object_spacing_xz_minimum'])
+    LOGGER.info(' change_grass_population minimum_scale value: ' + tag.attrib['minimum_scale'])
+    LOGGER.info(' change_grass_population diffuse_colour_multiplier value: ' + tag.attrib['diffuse_colour_multiplier'])
+    LOGGER.info(' change_grass_population luminosity_multiplier value: ' + tag.attrib['luminosity_multiplier'])
     return tags_root

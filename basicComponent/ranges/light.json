@@ -2,10 +2,10 @@
   "sunlight": {
     "heading_minimum": 0.0,
     "heading_maximum": 300.0,
-    "elevation_minimum": -15.0,
+    "elevation_minimum": -5.0,
     "elevation_maximum": 25.0,
-    "strenght_minimum": 5.0,
-    "strenght_maximum": 10.0
+    "strenght_minimum": 2.5,
+    "strenght_maximum": 5.0
   },
   "environmental_light": {
     "global_strength_on_surfaces_minimum": 1.0,

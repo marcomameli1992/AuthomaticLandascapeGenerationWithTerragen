@@ -1,6 +1,7 @@
 
 
 #%% import of the basic component
+import random
 import xml.etree.ElementTree as ET
 import os
 import json
@@ -36,42 +37,42 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
     #%% get the etree_root from the etree element
     etree_root = etree.getroot()
     #%% Nodes list filling
-    for element in etree_root.find('power_fractal_shader_v3'):
+    for element in etree_root.findall('power_fractal_shader_v3'):
         if 'Terrain' in element.attrib['name'] or 'terrain' in element.attrib['name']:
             terrain_list.append(element.attrib['name'])
         if 'Colour' in element.attrib['name'] or 'colour' in element.attrib['name']:
             shader_list.append(element.attrib['name'])
-    for element in etree_root.find('fractal_warp_shader'):
+    for element in etree_root.findall('fractal_warp_shader'):
         if 'Terrain' in element.attrib['name'] or 'terrain' in element.attrib['name']:
             terrain_list.append(element.attrib['name'])
-    for element in etree_root.find('distribution_shader_v4'):
+    for element in etree_root.findall('distribution_shader_v4'):
         if 'Colour' in element.attrib['name'] or 'colour' in element.attrib['name']:
             shader_list.append(element.attrib['name'])
-    for element in etree_root.find('twist_and_shear_shader'):
+    for element in etree_root.findall('twist_and_shear_shader'):
         if 'Terrain' in element.attrib['name'] or 'terrain' in element.attrib['name']:
             terrain_list.append(element.attrib['name'])
         if 'Colour' in element.attrib['name'] or 'colour' in element.attrib['name']:
             shader_list.append(element.attrib['name'])
-    for element in etree_root.find('strata_and_outcrops_shader_v2'):
+    for element in etree_root.findall('strata_and_outcrops_shader_v2'):
         if 'Terrain' in element.attrib['name'] or 'Terrain' in element.attrib['name']:
             terrain_list.append(element.attrib['name'])
-    for element in etree_root.find('fake_stones_shader'):
+    for element in etree_root.findall('fake_stones_shader'):
         if 'Terrain' in element.attrib['name'] or 'Terrain' in element.attrib['name']:
             terrain_list.append(element.attrib['name'])
-    for element in etree_root.find('enviro_light'):
+    for element in etree_root.findall('enviro_light'):
         if 'Light' in element.attrib['name'] or 'light' in element.attrib['name']:
             light_list.append(element.attrib['name'])
-    for element in etree_root.find('sunlight'):
+    for element in etree_root.findall('sunlight'):
         if 'Sun' in element.attrib['name'] or 'sun' in element.attrib['name']:
             light_list.append(element.attrib['name'])
-    for element in etree_root.find('populator_v4'):
+    for element in etree_root.findall('populator_v4'):
         if 'Tree' in element.attrib['name'] or 'tree' in element.attrib['name']:
             populator_list.append(element.attrib['name'])
         if 'Grass' in element.attrib['name'] or 'grass' in element.attrib['name']:
             populator_list.append(element.attrib['name'])
         if 'Pop' in element.attrib['name'] or 'pop' in element.attrib['name']:
             populator_list.append(element.attrib['name'])
-    for element in etree_root.find('lake'):
+    for element in etree_root.findall('lake'):
         if 'Lake' in element.attrib['name'] or 'lake' in element.attrib['name']:
             water_list.append(element.attrib['name'])
     #%% Logging teh generation
@@ -85,35 +86,35 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
     for n in range(number_of_file):
         for element_name in terrain_list:
             if 'Fractal' in element_name or 'fractal' in element_name:
-                etree_root = TERRAIN.change_fractal_terrain(etree_root, element_name)
+                etree_root = TERRAIN.change_fractal_terrain(etree_root, global_values, element_name)
             if 'Stone' in element_name or 'stone' in element_name:
-                etree_root = TERRAIN.change_stone(etree_root, element_name)
+                etree_root = TERRAIN.change_stone(etree_root, global_values, element_name)
             if 'Strata' in element_name or 'strata' in element_name:
-                etree_root = TERRAIN.change_strata(etree_root, element_name)
+                etree_root = TERRAIN.change_strata(etree_root, global_values, element_name)
             if 'Twist' in element_name or 'twist' in element_name:
-                etree_root = TERRAIN.change_twist_terrain(etree_root, element_name)
+                etree_root = TERRAIN.change_twist_terrain(etree_root, global_values, element_name)
             if 'Warp' in element_name or 'warp' in element_name:
-                etree_root = TERRAIN.change_fractal_warp(etree_root, element_name)
+                etree_root = TERRAIN.change_fractal_warp(etree_root, global_values, element_name)
 
         for element_name in shader_list:
             if 'Surface' in element_name or 'surface' in element_name:
-                etree_root = SHADER.change_surface_shader(etree_root, element_name)
+                etree_root = SHADER.change_surface_shader(etree_root, global_values, element_name)
             if 'Fractal' in element_name or 'fractal' in element_name:
-                etree_root = SHADER.change_fractal_shader(etree_root, element_name)
+                etree_root = SHADER.change_fractal_shader(etree_root, global_values, element_name)
             if 'Distribution' in element_name or 'distribution' in element_name:
-                etree_root = SHADER.change_distribution_shader(etree_root, element_name)
+                etree_root = SHADER.change_distribution_shader(etree_root, global_values, element_name)
             if 'Twist' in element_name or 'twist' in element_name:
-                etree_root = SHADER.change_twist_shader(etree_root, element_name)
+                etree_root = SHADER.change_twist_shader(etree_root, global_values, element_name)
 
         for element_name in light_list:
             if 'Sun' in element_name or 'sun' in element_name:
-                etree_root = LIGHT.change_sunllight(etree_root, element_name)
+                etree_root = LIGHT.change_sunlight(etree_root, global_values, element_name)
             if 'Light' in element_name or 'light' in element_name:
-                etree_root = LIGHT.change_environmental(etree_root, element_name)
+                etree_root = LIGHT.change_environmental(etree_root, global_values, element_name)
 
         for element_name in water_list:
             if 'Lake' in element_name or 'lake' in element_name:
-                etree_root = WATER.change_fractal_water(etree_root, element_name)
+                etree_root = WATER.change_fractal_water(etree_root, global_values, element_name)
 
         for element_name in populator_list:
             if 'Tree' in element_name or 'tree' in element_name:
@@ -140,12 +141,16 @@ def main():
     logging.basicConfig(filename=config['logging_file_path'],level=logging.INFO)
     LOGGER = logging.getLogger("MAIN")
 
+
     if config['use_seed']:
         G.use_seed = config['use_seed']
         G.seed = config['seed']
         LOGGER.info(' seed {} applied to the execution'.format(config['seed']))
     else:
+        G.use_seed = config['use_seed']
+        G.seed = None
         LOGGER.info(' fixed seed deactivated')
+        LOGGER.info(' random seed from sistem: ' + str(random.getstate()))
 
     #%% opening the basic file
     basic_file_path = config['base_file_path']
@@ -184,3 +189,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+    #TODO Insert the render function after the generation and fix the list empty problem

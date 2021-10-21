@@ -16,7 +16,6 @@ input_args.add_argument('--config_file', type=str, required=True, help="The json
 args = input_args.parse_args()
 
 def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str, global_values: dict):
-    #TODO Pass the usefull values to functions
     #%% Import section of customized function
     import basicComponent.terrain as TERRAIN
     import basicComponent.water as WATER
@@ -83,10 +82,11 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
     LOGGER.info(' \tLight list has {} values'.format(len(light_list)))
     LOGGER.info(' \tWater list has {} values'.format(len(water_list)))
     #%% File generation
-    for n in range(number_of_file):
+    for n in list(range(0, number_of_file)):
         for element_name in terrain_list:
             if 'Fractal' in element_name or 'fractal' in element_name:
                 etree_root = TERRAIN.change_fractal_terrain(etree_root, global_values, element_name)
+                #TODO check the possibility to abilitate only one terrain or two a time
             if 'Stone' in element_name or 'stone' in element_name:
                 etree_root = TERRAIN.change_stone(etree_root, global_values, element_name)
             if 'Strata' in element_name or 'strata' in element_name:
@@ -122,11 +122,14 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
             if 'Grass' in element_name or 'grass' in element_name:
                 etree_root = POPULATOR.change_grass_population(tags_root=etree_root, attribute=element_name, global_values=global_values)
         LOGGER.info(' Changes finished. Saving the file')
-        file_name = 'Generation_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '.tgd'
+        file_name = 'Generation_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '_' + str(os.getpid()) + f'_{n}_' + '.tgd'
         with open(os.path.join(save_path, file_name), 'wb') as tgd_file:
             etree.write(tgd_file)
         LOGGER.info(' File Saved with name {} '.format(file_name))
 
+def render(folder_path:str):
+    import glob
+    #TODO inserire qui i comandi di render per ogni file usando la cartella
 
 def main():
     #%% import personalized function
@@ -172,7 +175,7 @@ def main():
 
     n_file_per_proc = int(config['n_files'] / n_cpu)
 
-    if int(config['n_files']) == 1:
+    if not config['use_multiprocess']:
         LOGGER.info(' Required only un processor for the generation of one file')
         file_generatioin(etree, config['n_files'], config['save_path'], global_values=G.globals_to_dict())
     else:

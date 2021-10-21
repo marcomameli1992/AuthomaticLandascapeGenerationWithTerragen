@@ -1,8 +1,9 @@
 {
-  "seed": 256,
-  "use_seed": true,
+  "seed": 5654565156,
+  "use_seed": false,
   "save_path": "./generatedFile",
-  "n_files": 1,
+  "use_multiprocess": true,
+  "n_files": 250,
   "base_file_path": "./basicComponent/basicFile/Base.tgd",
 
   "ranges_folder_path": "./basicComponent/ranges",
@@ -11,5 +12,7 @@
   "shader_ranges_name": "shader.json",
   "popultor_ranges_name": "populator.json",
   "water_ranges_name": "water.json",
-  "logging_file_path": "./logging/log.log"
+  "logging_file_path": "./logging/log.log",
+
+  "activate_render": true
 }

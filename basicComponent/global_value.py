@@ -10,3 +10,16 @@ ranges_terrain_path: str
 ranges_shader_path: str
 ranges_light_path: str
 ranges_water_path: str
+
+def globals_to_dict() -> dict:
+    dictionary : dict = {
+        'use_seed': use_seed,
+        'seed': seed,
+        'ranges_populator_path': ranges_populator_path,
+        'ranges_terrain_path': ranges_terrain_path,
+        'ranges_shader_path': ranges_shader_path,
+        'ranges_light_path': ranges_light_path,
+        'ranges_water_path': ranges_water_path
+    }
+
+    return dictionary

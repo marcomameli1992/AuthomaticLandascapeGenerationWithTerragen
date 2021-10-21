@@ -2,8 +2,8 @@
   "sunlight": {
     "heading_minimum": 0.0,
     "heading_maximum": 300.0,
-    "elevation_minimum": 5.0,
-    "elevation_maximum": 90.0,
+    "elevation_minimum": -15.0,
+    "elevation_maximum": 25.0,
     "strenght_minimum": 5.0,
     "strenght_maximum": 10.0
   },

@@ -127,9 +127,56 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
             etree.write(tgd_file)
         LOGGER.info(' File Saved with name {} '.format(file_name))
 
-def render(folder_path:str):
+def render(folder_path:str, output_path:str, n_file:int):
+    #%% import specific package for the function
+    import logging
+    import os
     import glob
-    #TODO inserire qui i comandi di render per ogni file usando la cartella
+    import basicComponent.opening as O
+    import basicComponent.render as R
+    #%% Setting logging for the function
+    LOGGER = logging.getLogger('RENDERING FUNCTION')
+    LOGGER.info(' rendering function called')
+    #%% creation of the file list
+    files = glob.glob(folder_path + '/*.tgd')
+    LOGGER.info(f' founded {len(files)} TGD files to be rendered')
+    #%% check if the Terragen cli are configured or not
+    if os.getenv('TERRAGEN_PATH'):
+        LOGGER.info(' the Terragen command line tool environmental variable exist')
+    else:
+        LOGGER.info(' the Terragen command line tool environmental variable does not exist. Please create it or check the installation of the software ')
+    #%% working on file
+    for index, path in enumerate(files):
+        #%% opening the file
+        LOGGER.info(' opening the tgd file for render node configuration')
+        etree, eroot = O.tgd_opening(path)
+        render_node_list = R.get_render_node(eroot)
+        for render_node_name in render_node_list:
+            LOGGER.info(f' configuring the output path for rendered image, extras and mesh based on the {render_node_name}')
+            #%% Rendering folder creation
+            render_path = os.path.join(output_path, path.split(os.sep)[-1].split('.')[0], render_node_name)
+            render_extra_path = os.path.join(render_path, 'extras')
+            render_mesh_path = os.path.join(render_path, 'mesh')
+            os.makedirs(render_path, exist_ok=True)
+            os.makedirs(render_extra_path, exist_ok=True)
+            os.makedirs(render_mesh_path, exist_ok=True)
+            #%% configure the rendering
+            LOGGER.info(f' configuring the {render_node_name}')
+            eroot = R.change_render_paths(eroot, render_node_name, output_image_path=render_path, extra_output_image_path=render_extra_path)
+            eroot = R.change_micro_render_path(eroot, output_mesh_path=render_mesh_path, render_node_name= render_node_name, attribute='MeshExporter')
+            with open(path, 'wb') as tgd_file:
+                etree.write(tgd_file)
+            LOGGER.info(f' update the file with the new paths for the {render_node_name}')
+            #%% start the rendering with cmd window
+            command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
+            os.system(f'start cmd /c "{command}"')
+
+        if index == (n_file - 1):
+            break
+
+
+
+
 
 def main():
     #%% import personalized function

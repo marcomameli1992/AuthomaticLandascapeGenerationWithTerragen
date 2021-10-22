@@ -2,7 +2,6 @@ import xml.etree.ElementTree as ET
 import random
 import json
 import numpy as np
-import basicComponent.global_value as common_values
 
 import logging
 

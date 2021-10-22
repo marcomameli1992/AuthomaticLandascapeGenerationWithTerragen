@@ -19,7 +19,7 @@ def change_render_paths(tags_root: ET.Element, attribute:str, output_image_path:
     tag = tags_root.find(f".//*[@name='{attribute}']")
     LOGGER.info(f' change the file name and path for the render node {attribute}')
     output_image_filename = os.path.join(output_image_path, attribute + '_${TGDNAME}.%04d.tiff')
-    extra_output_image_file_name = os.path.join(extra_output_image_path, attribute + '_${TGDNAME}-IMAGETYPE.%04d.exr')
+    extra_output_image_file_name = os.path.join(extra_output_image_path, attribute + '_$IMAGETYPE.%04d.exr')
     tag.attrib['output_image_filename'] = output_image_filename
     tag.attrib['extra_output_image_filename'] = extra_output_image_file_name
     return tags_root

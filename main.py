@@ -127,7 +127,7 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
             etree.write(tgd_file)
         LOGGER.info(' File Saved with name {} '.format(file_name))
 
-def render(folder_path:str, output_path:str, n_file:int):
+def render(folder_path:str, output_path:str, n_file:int = None):
     #%% import specific package for the function
     import logging
     import os
@@ -168,15 +168,15 @@ def render(folder_path:str, output_path:str, n_file:int):
                 etree.write(tgd_file)
             LOGGER.info(f' update the file with the new paths for the {render_node_name}')
             #%% start the rendering with cmd window
+            output_image_filename = os.path.join(render_path, render_node_name + '_${TGDNAME}.%04d.tiff')
+            extra_output_image_file_name = os.path.join(render_extra_path,
+                                                        render_node_name + '_$IMAGETYPE.%04d.exr')
+            #command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name} -o {output_image_filename} -ox {extra_output_image_file_name}'
             command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
             os.system(f'start cmd /c "{command}"')
 
-        if index == (n_file - 1):
+        if n_file is not None and index == (n_file - 1):
             break
-
-
-
-
 
 def main():
     #%% import personalized function
@@ -222,7 +222,7 @@ def main():
 
     n_file_per_proc = int(config['n_files'] / n_cpu)
 
-    if not config['use_multiprocess']:
+    if not config['use_multiprocess'] or config['n_files'] == 1:
         LOGGER.info(' Required only un processor for the generation of one file')
         file_generatioin(etree, config['n_files'], config['save_path'], global_values=G.globals_to_dict())
     else:
@@ -236,6 +236,8 @@ def main():
         LOGGER.info(' All process generated. Waiting the termination')
         for p in proc_list:
             p.join()
+    if config['activate_render']:
+        render(config['save_path'], output_path=config['render_path'], n_file=1)
 
 if __name__ == '__main__':
     main()

@@ -191,7 +191,6 @@ def main():
     logging.basicConfig(filename=config['logging_file_path'],level=logging.INFO)
     LOGGER = logging.getLogger("MAIN")
 
-
     if config['use_seed']:
         G.use_seed = config['use_seed']
         G.seed = config['seed']

@@ -1,9 +1,9 @@
 {
   "seed": 5654565156,
   "use_seed": false,
-  "save_path": "./generatedFile",
+  "save_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\generatedFile",
   "use_multiprocess": true,
-  "n_files": 250,
+  "n_files": 1,
   "base_file_path": "./basicComponent/basicFile/Base.tgd",
 
   "ranges_folder_path": "./basicComponent/ranges",
@@ -14,5 +14,6 @@
   "water_ranges_name": "water.json",
   "logging_file_path": "./logging/log.log",
 
-  "activate_render": true
+  "activate_render": true,
+  "render_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\render"
 }

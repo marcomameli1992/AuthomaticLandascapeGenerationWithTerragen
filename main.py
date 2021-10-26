@@ -175,7 +175,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
             os.system(f'start cmd /c "{command}"')
 
-        if n_file is not None and index == (n_file - 1):
+        if n_file != 0 and index == (n_file - 1):
             break
 
 def main():
@@ -236,7 +236,7 @@ def main():
         for p in proc_list:
             p.join()
     if config['activate_render']:
-        render(config['save_path'], output_path=config['render_path'], n_file=1)
+        render(config['save_path'], output_path=config['render_path'], n_file=config['n_render_file'])
 
 if __name__ == '__main__':
     main()

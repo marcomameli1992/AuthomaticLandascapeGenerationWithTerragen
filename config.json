@@ -16,5 +16,6 @@
   "logging_file_path": "./logging/log.log",
 
   "activate_render": true,
-  "render_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\render"
+  "render_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\render",
+  "n_render_file": 0
 }

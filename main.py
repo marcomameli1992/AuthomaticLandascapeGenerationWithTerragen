@@ -240,5 +240,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-    #TODO Insert the render function after the generation and fix the list empty problem

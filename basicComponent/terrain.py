@@ -46,7 +46,8 @@ def change_fractal_terrain(tags_root: ET.Element, global_values: dict, attribute
     # DISPLACEMENT changes
     tag.attrib['displacement_direction'] = '1'
     tag.attrib['displacement_amplitude'] = str(random.uniform(fractal_terrain_ranges['displacement_altitude_minimum'], fractal_terrain_ranges['displacement_altitude_maximum']))
-    tag.attrib['displacement_offset'] = str(random.uniform(fractal_terrain_ranges['didplacement_offset_minimum'], fractal_terrain_ranges['displacement_offset_maximum']))
+    # A solution on the terrain generation problem
+    tag.attrib['displacement_offset'] = "0"#str(random.uniform(fractal_terrain_ranges['didplacement_offset_minimum'], fractal_terrain_ranges['displacement_offset_maximum']))
     tag.attrib['displacement_roughness'] = str(random.uniform(fractal_terrain_ranges['displacement_roughness_minimum'], fractal_terrain_ranges['displacement_roughness_maximum']))
     tag.attrib['displacement_spike_limit'] = str(random.uniform(fractal_terrain_ranges['displacement_spike_limit_minimum'], fractal_terrain_ranges['displacement_spike_limit_maximum']))
     tag.attrib['continue_spike_limit'] = '1'

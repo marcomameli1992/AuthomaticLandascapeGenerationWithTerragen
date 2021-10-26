@@ -14,6 +14,6 @@
   "water_ranges_name": "water.json",
   "logging_file_path": "./logging/log.log",
 
-  "activate_render": true,
+  "activate_render": false,
   "render_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\render"
 }

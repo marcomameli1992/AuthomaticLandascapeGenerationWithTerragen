@@ -26,14 +26,13 @@ def change_fractal_terrain(tags_root: ET.Element, global_values: dict, attribute
     tag.attrib['enable'] = '1' # at least one fractal power shader has to be active for the terrain generation
     tag.attrib['seed'] = str(int(random.random()))
     # SCALE changes
-    tag.attrib['feature_scale'] = str(random.uniform(fractal_terrain_ranges['feature_scale_minimum'], fractal_terrain_ranges['feature_scale_maximum']))
-    tag.attrib['lead-in_scale'] = str(random.uniform(fractal_terrain_ranges['lead-in_scale_minimum'], fractal_terrain_ranges['lead-in_scale_maximum']))
-    tag.attrib['smallest_scale'] = str(random.uniform(fractal_terrain_ranges['smallest_scale_minimum'], fractal_terrain_ranges['smallest_scale_maximum']))
+    #tag.attrib['feature_scale'] = str(random.uniform(fractal_terrain_ranges['feature_scale_minimum'], fractal_terrain_ranges['feature_scale_maximum']))
+    #tag.attrib['lead-in_scale'] = str(random.uniform(fractal_terrain_ranges['lead-in_scale_minimum'], fractal_terrain_ranges['lead-in_scale_maximum']))
+    #tag.attrib['smallest_scale'] = str(random.uniform(fractal_terrain_ranges['smallest_scale_minimum'], fractal_terrain_ranges['smallest_scale_maximum']))
     # SCALE-NOISE changes
-    tag.attrib['noise_octaves'] = str(random.randint(fractal_terrain_ranges['noise_octaves_minimum'], fractal_terrain_ranges['noise_octaves_macimum']))
+    #tag.attrib['noise_octaves'] = str(random.randint(fractal_terrain_ranges['noise_octaves_minimum'], fractal_terrain_ranges['noise_octaves_macimum']))
     tag.attrib['obey_smoothing_filter'] = str(random.randint(0, 1))
-    tag.attrib[
-        'noise_stretch_XYZ'] = ' '.join(map(str, list(np.random.randint(low=0, high=1e+5, size=3))))
+    #tag.attrib['noise_stretch_XYZ'] = ' '.join(map(str, list(np.random.randint(low=0, high=1e+5, size=3))))
     # COLOR changes # NOT USED
     # tag.attrib['apply_high_colour'] = '1'
     # # tag.attrib['high_colour'] = '0 0 0'

@@ -131,6 +131,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
     #%% import specific package for the function
     import logging
     import os
+    import subprocess
     import glob
     import basicComponent.opening as O
     import basicComponent.render as R
@@ -173,8 +174,8 @@ def render(folder_path:str, output_path:str, n_file:int = None):
                                                         render_node_name + '_$IMAGETYPE.%04d.exr')
             #command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name} -o {output_image_filename} -ox {extra_output_image_file_name}'
             command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
-            os.system(f'start cmd /c "{command}"')
-            os.wait()
+            os.system(f'start /wait cmd /c "{command}"')
+            #os.wait()
 
         if n_file != 0 and index == (n_file - 1):
             break

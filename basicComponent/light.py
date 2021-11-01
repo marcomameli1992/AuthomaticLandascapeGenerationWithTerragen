@@ -53,3 +53,18 @@ def change_environmental(tags_root: ET.Element,  global_values: dict, attribute=
     LOGGER.info(' change_environmental global_strength_on_surfaces value: ' + tag.attrib['global_strength_on_surfaces'])
     LOGGER.info(' change_environmental global_strength_in_atmosphere value: ' + tag.attrib['global_strength_in_atmosphere'])
     return tags_root
+
+def choose_sunlight(tags_root:ET.Element, global_values: dict, attributes: list) -> ET.Element:
+    LOGGER.info(' choose between ready to use different sunlight configuration')
+    if global_values['use_seed']:
+        random.seed(global_values['seed'], version=2)
+    # Random selections of the sinlight for the activation
+    choosed_sunlight = random.choice(attributes)
+    for attribute in attributes:
+        tag = tags_root.find(f".//*[@name='{attribute}']")
+        if attribute == choosed_sunlight:
+            tag.attrib['enable'] = "1"
+        else:
+            tag.attrib['enable'] = "0"
+
+    return tags_root

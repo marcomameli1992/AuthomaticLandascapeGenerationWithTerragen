@@ -36,15 +36,17 @@ def change_fractal_shader(tags_root: ET.Element, global_values: dict, attribute=
     #     'noise_stretch_XYZ'] = '3 0 2'
     # COLOR changes
     tag.attrib['apply_high_colour'] = '1'
-    high_colour1 = str(fractal_colour_ranges['high_colour_R_1']) + " " + str(fractal_colour_ranges['high_colour_G_1']) + " " + str(fractal_colour_ranges['high_colour_B_1'])
-    high_colour2 = str(fractal_colour_ranges['high_colour_R_2']) + " " + str(fractal_colour_ranges['high_colour_G_2']) + " " + str(fractal_colour_ranges['high_colour_B_2'])
-    high_colour3 = str(fractal_colour_ranges['high_colour_R_3']) + " " + str(fractal_colour_ranges['high_colour_G_3']) + " " + str(fractal_colour_ranges['high_colour_B_3'])
+    # the color have to be normalized
+    normalization_factor = global_values['colour_normalization_factor']
+    high_colour1 = str(fractal_colour_ranges['high_colour_R_1'] / normalization_factor) + " " + str(fractal_colour_ranges['high_colour_G_1'] / normalization_factor) + " " + str(fractal_colour_ranges['high_colour_B_1'] / normalization_factor)
+    high_colour2 = str(fractal_colour_ranges['high_colour_R_2'] / normalization_factor) + " " + str(fractal_colour_ranges['high_colour_G_2'] / normalization_factor) + " " + str(fractal_colour_ranges['high_colour_B_2'] / normalization_factor)
+    high_colour3 = str(fractal_colour_ranges['high_colour_R_3'] / normalization_factor) + " " + str(fractal_colour_ranges['high_colour_G_3'] / normalization_factor) + " " + str(fractal_colour_ranges['high_colour_B_3'] / normalization_factor)
     high_colours = [high_colour1, high_colour2, high_colour3]
     tag.attrib['high_colour'] = random.choice(high_colours)
-    low_colour1 = str(fractal_colour_ranges['low_colour_R_1']) + " " + str(
-        fractal_colour_ranges['low_colour_G_1']) + " " + str(fractal_colour_ranges['low_colour_B_1'])
-    low_colour2 = str(fractal_colour_ranges['low_colour_R_2']) + " " + str(
-        fractal_colour_ranges['low_colour_G_2']) + " " + str(fractal_colour_ranges['low_colour_B_2'])
+    low_colour1 = str(fractal_colour_ranges['low_colour_R_1'] / normalization_factor) + " " + str(
+        fractal_colour_ranges['low_colour_G_1'] / normalization_factor) + " " + str(fractal_colour_ranges['low_colour_B_1'] / normalization_factor)
+    low_colour2 = str(fractal_colour_ranges['low_colour_R_2'] / normalization_factor) + " " + str(
+        fractal_colour_ranges['low_colour_G_2'] / normalization_factor) + " " + str(fractal_colour_ranges['low_colour_B_2'] / normalization_factor)
     low_colours = [low_colour1, low_colour2]
     tag.attrib['apply_low_colour'] = '1'
     tag.attrib['low_colour'] = random.choice(high_colours)
@@ -69,12 +71,14 @@ def change_surface_shader(tags_root: ET.Element, global_values: dict, attribute=
     tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['enable'] = str(random.randint(0, 1))
     tag.attrib['apply_colour'] = '1'
-    surface_colour1 = str(surface_colour_ranges['diffuse_colour_R_1']) + " " + str(
-        surface_colour_ranges['diffuse_colour_G_1']) + " " + str(surface_colour_ranges['diffuse_colour_B_1'])
-    surface_colour2 = str(surface_colour_ranges['diffuse_colour_R_2']) + " " + str(
-        surface_colour_ranges['diffuse_colour_G_2']) + " " + str(surface_colour_ranges['diffuse_colour_B_2'])
-    surface_colour3 = str(surface_colour_ranges['diffuse_colour_R_3']) + " " + str(
-        surface_colour_ranges['diffuse_colour_G_2']) + " " + str(surface_colour_ranges['diffuse_colour_B_3'])
+    # the color have to be normalized
+    normalization_factor = global_values['colour_normalization_factor']
+    surface_colour1 = str(surface_colour_ranges['diffuse_colour_R_1'] / normalization_factor) + " " + str(
+        surface_colour_ranges['diffuse_colour_G_1'] / normalization_factor) + " " + str(surface_colour_ranges['diffuse_colour_B_1'] / normalization_factor)
+    surface_colour2 = str(surface_colour_ranges['diffuse_colour_R_2'] / normalization_factor) + " " + str(
+        surface_colour_ranges['diffuse_colour_G_2'] / normalization_factor) + " " + str(surface_colour_ranges['diffuse_colour_B_2'] / normalization_factor)
+    surface_colour3 = str(surface_colour_ranges['diffuse_colour_R_3'] / normalization_factor) + " " + str(
+        surface_colour_ranges['diffuse_colour_G_2'] / normalization_factor) + " " + str(surface_colour_ranges['diffuse_colour_B_3'] / normalization_factor)
     high_colours = [surface_colour1, surface_colour2, surface_colour3]
     tag.attrib['diffuse_colour'] = random.choice(high_colours)
     tag.attrib['displacement_direction'] = str(random.randint(0, 1))

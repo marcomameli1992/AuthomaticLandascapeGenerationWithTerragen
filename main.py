@@ -94,8 +94,8 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
                 #TODO check the possibility to abilitate only one terrain or two a time
             if 'Stone' in element_name or 'stone' in element_name:
                 etree_root = TERRAIN.change_stone(etree_root, global_values, element_name)
-            if 'Strata' in element_name or 'strata' in element_name:
-                etree_root = TERRAIN.change_strata(etree_root, global_values, element_name)
+            # if 'Strata' in element_name or 'strata' in element_name:
+            #     etree_root = TERRAIN.change_strata(etree_root, global_values, element_name)
             if 'Twist' in element_name or 'twist' in element_name:
                 etree_root = TERRAIN.change_twist_terrain(etree_root, global_values, element_name)
             if 'Warp' in element_name or 'warp' in element_name:

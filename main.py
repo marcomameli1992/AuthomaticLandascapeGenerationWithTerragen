@@ -58,11 +58,16 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
     for element in etree_root.findall('fake_stones_shader'):
         if 'Terrain' in element.attrib['name'] or 'Terrain' in element.attrib['name']:
             terrain_list.append(element.attrib['name'])
+    #%% Not needed the changes to environmental for this reason it was deactivated
+    '''
     for element in etree_root.findall('enviro_light'):
         if 'Light' in element.attrib['name'] or 'light' in element.attrib['name']:
             light_list.append(element.attrib['name'])
+    '''
     for element in etree_root.findall('sunlight'):
         if 'Sun' in element.attrib['name'] or 'sun' in element.attrib['name']:
+            light_list.append(element.attrib['name'])
+        if 'Mid' in element.attrib['name'] or 'mid' in element.attrib['name']:
             light_list.append(element.attrib['name'])
     for element in etree_root.findall('populator_v4'):
         if 'Tree' in element.attrib['name'] or 'tree' in element.attrib['name']:
@@ -105,12 +110,16 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
                 etree_root = SHADER.change_distribution_shader(etree_root, global_values, element_name)
             if 'Twist' in element_name or 'twist' in element_name:
                 etree_root = SHADER.change_twist_shader(etree_root, global_values, element_name)
-
+        #%% Change light randomly
+        '''
         for element_name in light_list:
             if 'Sun' in element_name or 'sun' in element_name:
                 etree_root = LIGHT.change_sunlight(etree_root, global_values, element_name)
             if 'Light' in element_name or 'light' in element_name:
                 etree_root = LIGHT.change_environmental(etree_root, global_values, element_name)
+        '''
+        #%% Choose from predefined light
+        etree_root = LIGHT.choose_sunlight(etree_root, global_values, light_list)
 
         for element_name in water_list:
             if 'Lake' in element_name or 'lake' in element_name:
@@ -220,8 +229,11 @@ def main():
     #%% prepraring multiprocessing execution
     n_cpu = cpu_count()
     proc_list : list = []
-
-    n_file_per_proc = int(config['n_files'] / n_cpu)
+    if config['n_files'] > int(n_cpu):
+        n_file_per_proc = int(config['n_files'] / n_cpu)
+    else:
+        n_cpu = config['n_files']
+        n_file_per_proc = 1
 
     if not config['use_multiprocess'] or config['n_files'] == 1:
         LOGGER.info(' Required only un processor for the generation of one file')

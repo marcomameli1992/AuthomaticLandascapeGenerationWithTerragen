@@ -113,7 +113,7 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
         #%% Change light randomly
         '''
         for element_name in light_list:
-            if 'Sun' in element_name or 'sun' in element_name:
+            if 'Sun' in element_name or 'sun' in element_name and 'set' not in element_name and 'rise' not in element_name:
                 etree_root = LIGHT.change_sunlight(etree_root, global_values, element_name)
             if 'Light' in element_name or 'light' in element_name:
                 etree_root = LIGHT.change_environmental(etree_root, global_values, element_name)
@@ -126,7 +126,7 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
                 etree_root = WATER.change_fractal_water(etree_root, global_values, element_name)
 
         for element_name in populator_list:
-            if 'Tree' in element_name or 'tree' in element_name:
+            if 'Tree' in element_name or 'tree' in element_name or 'Pine' in element_name or 'pine' in element_name:
                 etree_root = POPULATOR.change_trees_population(tags_root=etree_root, attribute=element_name, global_values=global_values)
             if 'Grass' in element_name or 'grass' in element_name:
                 etree_root = POPULATOR.change_grass_population(tags_root=etree_root, attribute=element_name, global_values=global_values)
@@ -154,7 +154,11 @@ def render(folder_path:str, output_path:str, n_file:int = None):
     if os.getenv('TERRAGEN_PATH'):
         LOGGER.info(' the Terragen command line tool environmental variable exist')
     else:
-        LOGGER.info(' the Terragen command line tool environmental variable does not exist. Please create it or check the installation of the software ')
+        if os.path.exists('C:\Program Files\Planetside Software\Terragen 4'):
+            os.environ['TERRAGEN_PATH'] = 'C:\Program Files\Planetside Software\Terragen 4'
+            LOGGER.info(' Terragen 4 founded and the environmental variable was created')
+        else:
+            LOGGER.info(' the Terragen command line tool environmental variable does not exist. Please create it or check the installation of the software ')
     #%% working on file
     for index, path in enumerate(files):
         #%% opening the file

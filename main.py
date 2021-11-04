@@ -1,5 +1,3 @@
-
-
 #%% import of the basic component
 import random
 import xml.etree.ElementTree as ET

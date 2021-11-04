@@ -82,8 +82,8 @@
   "warp": {
     "scale_minimum": 0.0,
     "scale_maximum": 9000.0,
-    "warp_ammount_minimum": 0.0,
-    "warp_ammount_maximum": 2.0,
+    "warp_amount_minimum": 0.0,
+    "warp_amount_maximum": 2.0,
     "variation_minimum": 0.0,
     "variation_maximum": 2.0,
     "roughness_minimum": 0.0,

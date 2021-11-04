@@ -67,7 +67,7 @@ def change_fractal_terrain(tags_root: ET.Element, global_values: dict, attribute
     # tag.attrib['distort_by_normal'] = '1'
     # tag.attrib['distortion_by_normal'] = '2'
     # tag.attrib['lead-in_warp_effect'] = '0'
-    # tag.attrib['lead-in_warp_ammount'] = '32'
+    # tag.attrib['lead-in_warp_amount'] = '32'
     # tag.attrib['less_warp_at_feature_scale'] = '1'
     # tag.attrib['allow_vertical_warp'] = '0'
     LOGGER.info(' change_fractal_terrain displacement_amplitude value: ' + tag.attrib['displacement_amplitude'])
@@ -176,12 +176,12 @@ def change_fractal_warp(tags_root: ET.Element, global_values: dict, attribute="B
     tag = tags_root.find(f".//*[@name='{attribute}']")
     tag.attrib['enable'] = str(random.randint(0, 1))
     tag.attrib['scale'] = str(random.uniform(warp_ranges['scale_minimum'], warp_ranges['scale_maximum']))
-    tag.attrib['warp_ammount'] = str(random.uniform(warp_ranges['warp_ammount_minimum'], warp_ranges['warp_ammount_maximum']))
+    tag.attrib['warp_amount'] = str(random.uniform(warp_ranges['warp_amount_minimum'], warp_ranges['warp_amount_maximum']))
     tag.attrib['variation'] = str(random.uniform(warp_ranges['variation_minimum'], warp_ranges['variation_maximum']))
     tag.attrib['roughness'] = str(random.uniform(warp_ranges['roughness_minimum'], warp_ranges['roughness_maximum']))
     tag.attrib['obey_smoothing_filter'] = str(random.randint(0, 1))
     LOGGER.info(' change_fractal_warp scale value: ' + tag.attrib['scale'])
-    LOGGER.info(' change_fractal_warp warp_ammount value: ' + tag.attrib['warp_ammount'])
+    LOGGER.info(' change_fractal_warp warp_amount value: ' + tag.attrib['warp_amount'])
     LOGGER.info(' change_fractal_warp variation value: ' + tag.attrib['variation'])
     LOGGER.info(' change_fractal_warp roughness value: ' + tag.attrib['roughness'])
     return tags_root
@@ -214,5 +214,5 @@ def change_fractal_alpine(tags_root: ET.Element, global_values: dict, attribute=
     tag.attrib['late_deposition'] = '35'  # TODO random generation of a FLOAT value with the idea that 0 is the maximum value
     tag.attrib['early_deposition'] = '1'  # TODO random generate between 0 and 3 (INTEGER)
     tag.attrib['early_deposition_rate'] = '0.65'
-    tag.attrib['warp_ammount'] = '0.25'
+    tag.attrib['warp_amount'] = '0.25'
     return tags_root

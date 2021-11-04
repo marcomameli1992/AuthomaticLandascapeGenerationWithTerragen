@@ -2,7 +2,7 @@
   "activate_generation": true,
   "seed": 5654565156,
   "use_seed": false,
-  "save_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\generatedFile",
+  "save_path": "./generatedFile",
   "use_multiprocess": false,
   "n_files": 3,
   "base_file_path": "./basicComponent/basicFile/Base.tgd",
@@ -16,6 +16,6 @@
   "logging_file_path": "./logging/log.log",
 
   "activate_render": true,
-  "render_path": "F:\\Progetti\\ComputerGraphics\\LandscapeGeneration-Vienna\\Dataset\\GeneratedByMe\\Terragen\\Scripting\\AuthomaticLandascapeGenerationWithTerragen\\render",
+  "render_path": "./render",
   "n_render_file": 1
 }

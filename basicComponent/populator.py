@@ -21,9 +21,9 @@ def change_trees_population(tags_root: ET.Element, global_values: dict, attribut
                                                      populator_ranges['area_length_a_maximum']))
     tag.attrib['area_length_b'] = str(random.uniform(populator_ranges['area_length_b_minimum'],
                                                      populator_ranges['area_length_b_maximum']))
-    tag.attrib['object_spacing_xz_minimum'] = ' '.join(map(str, list(np.random.uniform(
+    tag.attrib['object_spacing_xz'] = ' '.join(map(str, list(np.random.uniform(
         low=populator_ranges['object_spacing_xz_minimum'],
-        high=populator_ranges['randomness_xz_maximum'], size=3))))
+        high=populator_ranges['object_spacing_xz_maximum'], size=3))))
     tag.attrib['minimum_scale'] = str(random.uniform(populator_ranges['minimum_scale_minimum'],
                                                      populator_ranges['minimum_scale_maximum']))
     tag.attrib['maximum_scale'] = str(random.uniform(populator_ranges['maximum_scale_minimum'],
@@ -34,7 +34,7 @@ def change_trees_population(tags_root: ET.Element, global_values: dict, attribut
                                                              populator_ranges['luminosity_multiplier_maximum']))
     LOGGER.info(' change_treese_populator area_length_a value: ' + tag.attrib['area_length_a'])
     LOGGER.info(' change_treese_populator area_length_b value: ' + tag.attrib['area_length_b'])
-    LOGGER.info(' change_treese_populator object_spacing_xz_minimum value: ' + tag.attrib['object_spacing_xz_minimum'])
+    LOGGER.info(' change_treese_populator object_spacing_xz value: ' + tag.attrib['object_spacing_xz'])
     LOGGER.info(' change_treese_populator minimum_scale value: ' + tag.attrib['minimum_scale'])
     LOGGER.info(' change_treese_populator diffuse_colour_multiplier value: ' + tag.attrib['diffuse_colour_multiplier'])
     LOGGER.info(' change_treese_populator luminosity_multiplier value: ' + tag.attrib['luminosity_multiplier'])
@@ -54,9 +54,9 @@ def change_grass_population(tags_root: ET.Element, global_values: dict, attribut
                                                      populator_ranges['area_length_a_maximum']))
     tag.attrib['area_length_b'] = str(random.uniform(populator_ranges['area_length_b_minimum'],
                                                      populator_ranges['area_length_b_maximum']))
-    tag.attrib['object_spacing_xz_minimum'] = ' '.join(map(str, list(np.random.uniform(
+    tag.attrib['object_spacing_xz'] = ' '.join(map(str, list(np.random.uniform(
         low=populator_ranges['object_spacing_xz_minimum'],
-        high=populator_ranges['randomness_xz_maximum'], size=3))))
+        high=populator_ranges['object_spacing_xz_maximum'], size=3))))
     tag.attrib['minimum_scale'] = str(random.uniform(populator_ranges['minimum_scale_minimum'],
                                                      populator_ranges['minimum_scale_maximum']))
     tag.attrib['maximum_scale'] = str(random.uniform(populator_ranges['maximum_scale_minimum'],
@@ -67,7 +67,7 @@ def change_grass_population(tags_root: ET.Element, global_values: dict, attribut
                                                                  populator_ranges['luminosity_multiplier_maximum']))
     LOGGER.info(' change_grass_population area_length_a value: ' + tag.attrib['area_length_a'])
     LOGGER.info(' change_grass_population area_length_b value: ' + tag.attrib['area_length_b'])
-    LOGGER.info(' change_grass_population object_spacing_xz_minimum value: ' + tag.attrib['object_spacing_xz_minimum'])
+    LOGGER.info(' change_grass_population object_spacing_xz value: ' + tag.attrib['object_spacing_xz'])
     LOGGER.info(' change_grass_population minimum_scale value: ' + tag.attrib['minimum_scale'])
     LOGGER.info(' change_grass_population diffuse_colour_multiplier value: ' + tag.attrib['diffuse_colour_multiplier'])
     LOGGER.info(' change_grass_population luminosity_multiplier value: ' + tag.attrib['luminosity_multiplier'])

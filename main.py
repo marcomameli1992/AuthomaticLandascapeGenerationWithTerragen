@@ -7,6 +7,9 @@ from multiprocessing import cpu_count, Process
 import datetime
 import argparse
 import logging
+from sys import platform
+
+isLinux = platform.startswith("linux")
 
 input_args = argparse.ArgumentParser()
 input_args.add_argument('--config_file', type=str, required=True, help="The json configuration file")
@@ -184,8 +187,13 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             extra_output_image_file_name = os.path.join(render_extra_path,
                                                         render_node_name + '_$IMAGETYPE.%04d.exr')
             #command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name} -o {output_image_filename} -ox {extra_output_image_file_name}'
-            command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
-            os.system(f'start /wait cmd /c "{command}"')
+            if isLinux:
+                tgp = os.environ['TERRAGEN_PATH']
+                command = f'"{tgp}/terragen" -p {path} -hide -exit -r -rendernode {render_node_name}'
+                os.system(command)
+            else:
+                command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
+                os.system(f'start /wait cmd /c "{command}"')
             #os.wait()
 
         if n_file != 0 and index == (n_file - 1):

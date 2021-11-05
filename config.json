@@ -1,11 +1,11 @@
 {
   "activate_generation": true,
-  "seed": 5654565156,
+  "seed": 202111041925,
   "use_seed": false,
   "save_path": "./generatedFile",
   "use_multiprocess": false,
-  "n_files": 3,
-  "base_file_path": "./basicComponent/basicFile/Base.tgd",
+  "n_files": 5,
+  "base_file_path": "./basicComponent/basicFile/Base_simple.tgd",
 
   "ranges_folder_path": "./basicComponent/ranges",
   "light_ranges_name": "light.json",

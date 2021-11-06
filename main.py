@@ -7,6 +7,9 @@ from multiprocessing import cpu_count, Process
 import datetime
 import argparse
 import logging
+from sys import platform
+
+isLinux = platform.startswith("linux")
 
 input_args = argparse.ArgumentParser()
 input_args.add_argument('--config_file', type=str, required=True, help="The json configuration file")

@@ -142,6 +142,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
     import glob
     import basicComponent.opening as O
     import basicComponent.render as R
+    import basicComponent.populator_object as PO
     #%% Setting logging for the function
     LOGGER = logging.getLogger('RENDERING FUNCTION')
     LOGGER.info(' rendering function called')
@@ -162,6 +163,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
         #%% opening the file
         LOGGER.info(' opening the tgd file for render node configuration')
         etree, eroot = O.tgd_opening(path)
+        eroot = PO.change_populator_path(eroot)
         render_node_list = R.get_render_node(eroot)
         for render_node_name in render_node_list:
             LOGGER.info(f' configuring the output path for rendered image, extras and mesh based on the {render_node_name}')

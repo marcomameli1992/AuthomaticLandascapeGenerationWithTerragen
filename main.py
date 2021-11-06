@@ -185,7 +185,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             render_extra_path = os.path.join(render_path, 'extras')
             render_mesh_path = os.path.join(render_path, 'mesh')
             LOGGER.info(
-                f' render path: {render_path}\n \t render_extra_path: {render_extra_path} \n\t render_mesh_apth: {render_mesh_path}')
+                f' render_path: {render_path}\n \t render_extra_path: {render_extra_path} \n\t render_mesh_apth: {render_mesh_path}')
             os.makedirs(render_path, exist_ok=True)
             os.makedirs(render_extra_path, exist_ok=True)
             os.makedirs(render_mesh_path, exist_ok=True)
@@ -209,7 +209,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             elif 'linux' in platform.system().lower():
                 tgp = os.getenv('TERRAGEN_PATH')
                 command = f'{tgp} -p {path} -hide -exit -r -rendernode {render_node_name}'
-                subprocess.run(command)
+                os.system(command)
 
 
         if n_file != 0 and index == (n_file - 1):

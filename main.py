@@ -12,7 +12,7 @@ from sys import platform
 isLinux = platform.startswith("linux")
 
 input_args = argparse.ArgumentParser()
-input_args.add_argument('--config_file', type=str, required=True, help="The json configuration file")
+input_args.add_argument('--config_file', '-cf', type=str, required=True, help="The json configuration file")
 
 args = input_args.parse_args()
 
@@ -205,7 +205,8 @@ def render(folder_path:str, output_path:str, n_file:int = None):
                 command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(f'start /wait cmd /c "{command}"')
             elif 'linux' in platform.system().lower():
-                command = f'$TERRAGEN_PATH -p {path} -hide -exit -r -rendernode {render_node_name}'
+                tgp = os.getenv('TERRAGEN_PATH')
+                command = f'{tgp} -p {path} -hide -exit -r -rendernode {render_node_name}'
                 subprocess.run(command)
 
 

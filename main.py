@@ -133,6 +133,7 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
                 etree_root = POPULATOR.change_grass_population(tags_root=etree_root, attribute=element_name, global_values=global_values)
         LOGGER.info(' Changes finished. Saving the file')
         file_name = 'Generation_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '_' + str(os.getpid()) + f'_{n}_' + '.tgd'
+        os.makedirs(save_path, exist_ok=True)
         with open(os.path.join(save_path, file_name), 'wb') as tgd_file:
             etree.write(tgd_file)
         LOGGER.info(' File Saved with name {} '.format(file_name))
@@ -225,6 +226,7 @@ def main():
         config = json.load(config_file)
 
     #%% define the logger
+    os.makedirs(config['logging_file_path'], exist_ok=True)
     logging.basicConfig(filename=config['logging_file_path'],level=logging.INFO)
     LOGGER = logging.getLogger("MAIN")
 

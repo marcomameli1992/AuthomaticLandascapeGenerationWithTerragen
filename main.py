@@ -138,6 +138,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
     #%% import specific package for the function
     import logging
     import os
+    import platform
     import subprocess
     import glob
     import basicComponent.opening as O
@@ -150,14 +151,23 @@ def render(folder_path:str, output_path:str, n_file:int = None):
     files = glob.glob(folder_path + '/*.tgd')
     LOGGER.info(f' founded {len(files)} TGD files to be rendered')
     #%% check if the Terragen cli are configured or not
-    if os.getenv('TERRAGEN_PATH'):
-        LOGGER.info(' the Terragen command line tool environmental variable exist')
-    else:
-        if os.path.exists('C:\Program Files\Planetside Software\Terragen 4'):
-            os.environ['TERRAGEN_PATH'] = 'C:\Program Files\Planetside Software\Terragen 4'
-            LOGGER.info(' Terragen 4 founded and the environmental variable was created')
+    if 'windows' in platform.system().lower():
+        if os.getenv('TERRAGEN_PATH'):
+            LOGGER.info(' the Terragen command line tool environmental variable exist')
         else:
-            LOGGER.info(' the Terragen command line tool environmental variable does not exist. Please create it or check the installation of the software ')
+            if os.path.exists('C:\Program Files\Planetside Software\Terragen 4'):
+                os.environ['TERRAGEN_PATH'] = 'C:\Program Files\Planetside Software\Terragen 4'
+                LOGGER.info(' Terragen 4 founded and the environmental variable was created')
+            else:
+                LOGGER.info(
+                    ' the Terragen command line tool environmental variable does not exist. Please create it or check the installation of the software ')
+    elif 'linux' in platform.system().lower():
+        if os.getenv('TERRAGEN_PATH'):
+            LOGGER.info(' the Terragen command line tool environmental variable exist')
+        else:
+            LOGGER.info(' Terragen not found, please install it')
+            print(f'\033[93mPlease export the path for terragen software\033[1m')
+
     #%% working on file
     for index, path in enumerate(files):
         #%% opening the file
@@ -181,14 +191,20 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             with open(path, 'wb') as tgd_file:
                 etree.write(tgd_file)
             LOGGER.info(f' update the file with the new paths for the {render_node_name}')
-            #%% start the rendering with cmd window
-            output_image_filename = os.path.join(render_path, render_node_name + '_${TGDNAME}.%04d.tiff')
-            extra_output_image_file_name = os.path.join(render_extra_path,
-                                                        render_node_name + '_$IMAGETYPE.%04d.exr')
-            #command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name} -o {output_image_filename} -ox {extra_output_image_file_name}'
-            command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
-            os.system(f'start /wait cmd /c "{command}"')
-            #os.wait()
+            LOGGER.info(f' start rendering at: {datetime.datetime.now().strftime("%m/%d/%Y-%H:%M:%S")}')
+            if 'windows' in platform.system().lower():
+                #%% start the rendering with cmd window
+                output_image_filename = os.path.join(render_path, render_node_name + '_${TGDNAME}.%04d.tiff')
+                extra_output_image_file_name = os.path.join(render_extra_path,
+                                                            render_node_name + '_$IMAGETYPE.%04d.exr')
+
+                #command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name} -o {output_image_filename} -ox {extra_output_image_file_name}'
+                command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
+                os.system(f'start /wait cmd /c "{command}"')
+            elif 'linux' in platform.system().lower():
+                command = f'$TERRAGEN_PATH -p {path} -hide -exit -r -rendernode {render_node_name}'
+                subprocess.run(command)
+
 
         if n_file != 0 and index == (n_file - 1):
             break

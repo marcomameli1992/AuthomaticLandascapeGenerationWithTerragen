@@ -226,7 +226,7 @@ def main():
         config = json.load(config_file)
 
     #%% define the logger
-    os.makedirs(config['logging_file_path'], exist_ok=True)
+    os.makedirs('./logging', exist_ok=True)
     logging.basicConfig(filename=config['logging_file_path'],level=logging.INFO)
     LOGGER = logging.getLogger("MAIN")
 

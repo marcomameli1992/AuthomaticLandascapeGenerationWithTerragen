@@ -9,7 +9,7 @@ def change_populator_path(tags_root: ET.Element, populator_tag='populator_v4', p
     LOGGER.info(' called populator object paths')
     for element in tags_root.findall(populator_tag):
         for reader in element.findall(populator_reader):
-            print(reader.attrib['filename'])
+            print('Old path', reader.attrib['filename'])
             reader.attrib['filename'] = reader.attrib['filename'].replace('\\', os.sep)
 
     return tags_root

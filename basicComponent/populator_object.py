@@ -12,6 +12,6 @@ def change_populator_path(tags_root: ET.Element, populator_tag='populator_v4', p
             print('Old path', reader.attrib['filename'])
             new_path = reader.attrib['filename'].replace('\\', os.sep)
             print('New path', new_path)
-            reader.attrib['filename'] = reader.attrib['filename'].replace('\\', os.sep)
+            reader.attrib['filename'] = new_path#reader.attrib['filename'].replace('\\', os.sep)
 
     return tags_root

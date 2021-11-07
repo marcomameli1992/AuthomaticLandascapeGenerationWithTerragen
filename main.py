@@ -192,8 +192,8 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             os.makedirs(render_mesh_path, exist_ok=True)
             #%% configure the rendering
             LOGGER.info(f' configuring the {render_node_name}')
-            eroot = R.change_render_paths(eroot, render_node_name, output_image_path=render_path, extra_output_image_path=render_extra_path)
-            eroot = R.change_micro_render_path(eroot, output_mesh_path=render_mesh_path, render_node_name= render_node_name, attribute='MeshExporter')
+            eroot = R.change_render_paths(eroot, render_node_name, output_image_path=os.path.abspath(render_path), extra_output_image_path=os.path.abspath(render_extra_path))
+            eroot = R.change_micro_render_path(eroot, output_mesh_path=os.path.abspath(render_mesh_path), render_node_name=render_node_name, attribute='MeshExporter')
             with open(path, 'wb') as tgd_file:
                 etree.write(tgd_file)
             LOGGER.info(f' update the file with the new paths for the {render_node_name}')
@@ -208,7 +208,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
                 command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(f'start /wait cmd /c "{command}"')
             elif 'linux' in platform.system().lower():
-                tgp = os.getenv('TERRAGEN_PATH')
+                tgp = './terragen' #os.getenv('TERRAGEN_PATH')
                 command = f'{tgp} -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(command)
 

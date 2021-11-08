@@ -1,0 +1,1054 @@
+INFO:MAIN: fixed seed deactivated
+INFO:MAIN: random seed from sistem: (3, (2147483648, 1033711257, 113012369, 3175309701, 1541012135, 3101541701, 1897098099, 658126425, 954746022, 3465769987, 3428030451, 3174276602, 3684923608, 964383671, 2267276823, 3374439285, 2686711729, 2211767900, 657171389, 2967549789, 3922786468, 788542245, 1504799013, 2419642524, 3846123122, 2179418980, 184890230, 2334693607, 1678505437, 4181982413, 1713876684, 3167950038, 1895776145, 3870117411, 4178807150, 3146560607, 1410126368, 2322071178, 3278813581, 993863917, 933376487, 3194836338, 3392864608, 3053727118, 1857490742, 2737064126, 1146616152, 1631092761, 964023667, 1180173416, 3111644361, 3719723232, 202474689, 3460685075, 2329644414, 1931101353, 407123325, 2725306019, 691174986, 292688783, 3376965033, 2640303039, 557404243, 1747839842, 1782711004, 2706259202, 2810889286, 2968319407, 2249651703, 1257708866, 2475008927, 76294305, 3908598138, 3755755008, 674570693, 2398249029, 1023837872, 1494043961, 1728982896, 2669786820, 2451555263, 317153251, 4163351006, 1098947068, 955837782, 1847487771, 447037342, 3648132960, 724049592, 259203846, 2146798146, 368008484, 1903093472, 2330852787, 3791945995, 3246790967, 3217087451, 1825088923, 1050755217, 2132987918, 273631757, 4266446817, 3302576604, 1552245254, 2474635777, 3242204880, 3451000016, 3191966948, 881893564, 4195586086, 205819485, 2017360, 1776129637, 622425789, 1633605805, 194003572, 831342047, 855090903, 1746326884, 1024050599, 3196469327, 1628406362, 978877835, 2094542942, 2852717813, 1280436991, 2450175894, 900963854, 3564634093, 864163497, 580321864, 932403191, 2488983118, 1926215145, 1061185205, 542296219, 3545359968, 2992416215, 2860824398, 2962969527, 175979975, 2363489545, 3454627786, 2944884387, 2972988494, 4086757285, 2205495653, 300539078, 4250306490, 1317789771, 2335554690, 2918466174, 3469543830, 948894080, 271293706, 4146154497, 1234667690, 559758204, 755320880, 645895450, 250230250, 2233182090, 2649678214, 3468450759, 3307007063, 4110971167, 1854618942, 2536279229, 1290486218, 333116297, 1846931288, 2100429208, 3838188833, 4114834040, 2017777505, 2098932664, 528047072, 4038658863, 2918427373, 3769335810, 4150649449, 854566886, 694927141, 2212108285, 1714766606, 642274103, 3362523801, 207212699, 944082151, 801725537, 393369623, 2298069721, 4103266168, 2874865713, 2886704736, 874618990, 2640334787, 236197052, 3788490504, 4074711549, 378849754, 4039102334, 2826340673, 1860011526, 2293238281, 756259265, 410333457, 2539002875, 1513948749, 3490031394, 3328733374, 4209124696, 678318313, 2448205513, 828693372, 1080070000, 578699718, 39529658, 3622715059, 2772844146, 3737635211, 130243301, 18448907, 1715749129, 2829287349, 485785099, 416246601, 3021251960, 161358157, 494924585, 4113113597, 363580719, 3747320896, 1889940164, 3104376831, 1494705884, 848431089, 526842461, 638004148, 1672519063, 2371275118, 203934549, 2710674768, 4161761990, 2961383458, 1345698184, 3266761738, 90853052, 57753614, 3405722863, 148830602, 53712225, 3861940838, 4048710366, 2655870205, 154942164, 1029896669, 875616423, 2530339096, 43169964, 1749427215, 1865178535, 3060134187, 2867659755, 4249505794, 348663675, 741281143, 3320856065, 130622858, 2430973398, 2761014719, 2257603409, 3946074049, 2203888053, 216104839, 3066673296, 1224405504, 4124363109, 1928543530, 2031675318, 280125716, 1593303761, 2928476602, 3083469671, 2644595844, 2465135948, 3754320269, 3391725342, 1040973136, 178892532, 2715120358, 3550835593, 972472991, 2406858404, 3407808761, 3787156182, 3764475601, 2237154111, 573954425, 628972395, 2200941552, 4191971489, 2498236179, 1596342956, 3770664658, 1926804808, 2431387566, 2235909873, 598339394, 2701599994, 1560007213, 4059575977, 3273044861, 1992114030, 1116154188, 4068316892, 3294219395, 672878631, 1760162349, 1119475379, 1537305223, 407391934, 353329133, 3245728746, 1329521501, 47218083, 3854451410, 3694636814, 2727112102, 823909940, 2691015470, 1617243601, 2382391386, 3605723570, 475465521, 1195118506, 1384861971, 3599081112, 945716518, 2139842925, 250989432, 552284243, 2983931868, 164535159, 3077329265, 537515274, 3607119744, 314966036, 729140611, 774479468, 1691216990, 2233323159, 400510164, 2205830704, 3502855147, 3344108488, 1767949288, 194863390, 3614302336, 755320104, 2560821288, 769139809, 388806947, 998750446, 3977330435, 3260263645, 3611098885, 1030813562, 1279886749, 3468934412, 2953628942, 3815838876, 1765006434, 2136444966, 1225116457, 3750116169, 4107463033, 2381240824, 3471206051, 3922062206, 1455261617, 3890091790, 296687681, 4277908536, 2828024289, 621944358, 2620999371, 2040648339, 2141557687, 379449461, 3713370619, 1039125035, 2025459572, 3950824648, 2442554798, 2733365620, 3844033702, 58584105, 3571852701, 2218279177, 2014249326, 1485018308, 2178957389, 3480001923, 981166663, 2078340837, 1416042052, 2115824568, 4029571370, 2727152723, 1497381469, 3273152447, 3550680381, 2884780341, 430397923, 730383429, 2583318314, 546427809, 3367460397, 2039151712, 3189110519, 3770250998, 87196864, 10021109, 1180564025, 2676005811, 3709045131, 726589317, 2325230577, 38910149, 2586887952, 1172885774, 1010986542, 261928305, 543334383, 3366558959, 722389856, 3686504513, 1454050168, 1812997726, 3454544216, 1073449699, 3556071849, 2693987166, 3642140823, 757622730, 3516099445, 1239204724, 1068640009, 359655938, 1293370595, 1923125477, 2593484040, 3155582260, 3671151519, 2371155585, 3642780591, 2480969250, 2978567381, 1607349228, 445301962, 3099144042, 228199139, 2173932912, 233625643, 2796882772, 2977849589, 3206778275, 4018984359, 2014350221, 2018976299, 2854885266, 3618188152, 2222048539, 1372887557, 2713491753, 1419385717, 2303658145, 1298190363, 2652238305, 486557602, 3564530259, 2025538597, 3927997239, 793440370, 1401468205, 2484605490, 868735179, 2712837150, 140056718, 1847828840, 2935686561, 2357779186, 1654139462, 1758332279, 2976854481, 560887426, 373150109, 4233957374, 1363745848, 3494837974, 2199591042, 37246885, 2453900924, 493013317, 2722425894, 2982201715, 4222726558, 912543014, 1632176392, 2513425667, 4163488624, 2690178453, 2203907900, 2461989142, 3494319527, 637800212, 599869230, 3181740385, 354548527, 2966944249, 121094066, 1787053498, 3309602880, 1673577611, 3977549355, 4048341599, 4042456307, 532677729, 3391287211, 4103312695, 3570855902, 1729785049, 249396437, 1120724267, 1851280958, 2125208282, 1718653343, 171640138, 3212698371, 1275823382, 493748169, 4220675316, 1087002710, 2742703587, 3042190002, 4080821492, 3882282107, 1367645488, 3673406551, 2293910246, 4280030340, 2447219263, 1911492783, 2625663306, 1303303603, 1690977320, 580457048, 1297232722, 1155330314, 1864685265, 2529873029, 2122133363, 3876426410, 3796931911, 4163753615, 494454495, 2383971095, 1658938021, 2348305275, 3885075402, 808456135, 4214311111, 355300347, 1423339228, 706211578, 358408999, 1402714163, 969483348, 2473591701, 1262364521, 2879227692, 381898718, 219306926, 2370278253, 2135618752, 3978257324, 2097102202, 1108176611, 3859911651, 1953477409, 745400597, 816705131, 2056943320, 892225664, 3673537531, 3859133128, 90257403, 1650646429, 1751741152, 790922647, 725136651, 3708092321, 1613339835, 2631179697, 3146046340, 424445399, 4121775692, 497133013, 3597625244, 1550717033, 4161078568, 1672049435, 1357855865, 251929289, 844292418, 1119827915, 673093055, 2554963390, 3879088162, 2212605906, 359215037, 1594492088, 264581041, 624), None)
+INFO:MAIN: opened the Base_simple.tgd file
+INFO:MAIN: set the ranges files path for each node
+INFO:MAIN: Required only un processor for the generation of one file
+INFO:Process PID: 1964: Generation start
+INFO:Process PID: 1964: Lists filled:
+INFO:Process PID: 1964: 	Terrain list has 7 values
+INFO:Process PID: 1964: 	Shader list has 2 values
+INFO:Process PID: 1964: 	Population list has 4 values
+INFO:Process PID: 1964: 	Light list has 4 values
+INFO:Process PID: 1964: 	Water list has 1 values
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 3106.1746155995197
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6572989713235728
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.8492346572883881
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4777.353935299247
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.2574982588864839
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.46938679866453625
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.0396027453555696
+INFO:TERRAIN: change_fractal_terrain variation_method value: 0
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1572.275676597305
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6432555513101532
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.3378683074772043
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 2698.639020306241
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 0
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.7786984664047236
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.9366846846469526
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 1.418260784647456
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1887.1581901868035
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.3806799678265634
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.5926142325939485
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4918.974869757119
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.17860256681092812
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.5796778836558707
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.5361623410234637
+INFO:TERRAIN: change_fractal_terrain variation_method value: 3
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 2794.8488482396133
+INFO:TERRAIN: change_fractal_warp warp_amount value: 1.3864274349454597
+INFO:TERRAIN: change_fractal_warp variation value: 0.8107680853586283
+INFO:TERRAIN: change_fractal_warp roughness value: 1.193903247505613
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.4262366989339077
+INFO:TERRAIN: change_twist_terrain lean_direction value: 29785 67772 91449
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.0006689530466231774
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.07136919088956728
+INFO:TERRAIN: change_stone stone_scale value: 0.07136919088956728
+INFO:TERRAIN: change_stone stone_density value: 0.8089479751608681
+INFO:TERRAIN: change_stone vary_density value: 0
+INFO:TERRAIN: change_stone density_variation_scale value: 0.7534762271916655
+INFO:TERRAIN: change_stone stone_tallness value: 0.5770133120595909
+INFO:TERRAIN: change_stone pancake_effect value: 1.5736067631852004
+INFO:TERRAIN: change_stone only_displace_upwards value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.7072461899673413
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.25689041802033863
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: 0
+INFO:WATER: change_fractal_water centre value: 1 0 1
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 61696.65191185445
+INFO:POPULATOR: change_grass_population area_length_b value: 80896.66225811307
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 3.7344824473208433 4.219523102736528 5.511907803539738
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.2328273925369801
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.6168310866718136
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.964354883493484
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 200105.45775479707
+INFO:POPULATOR: change_grass_population area_length_b value: 94476.88023245844
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 9.65887251031607 7.6044910277931494 9.765618517561514
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.2869558883720305
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.9596445880069729
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.689644444179312
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 89836.7413491212
+INFO:POPULATOR: change_treese_populator area_length_b value: 117867.00457448706
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 6.516304197810836 8.27101398379273 1.679812543492115
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.3964069664714096
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.6730329273665149
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.5308563012182292
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 240821.67418397684
+INFO:POPULATOR: change_treese_populator area_length_b value: 49225.710815988445
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 2.6361470486640357 4.442241241489956 3.2861354344223352
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.0718649217468625
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.9024287378891587
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.27053636131357445
+INFO:Process PID: 1964: Changes finished. Saving the file
+INFO:Process PID: 1964: File Saved with name Generation_20211107150217_1964_0_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1888.3768708288505
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.4806522338840668
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.37856502058000696
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 6613.109088576647
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.13629026689436496
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.35811627019862646
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.4374149495548343
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 3244.356096628061
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.4840144862678519
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.4767076157022343
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5633.60195400602
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.9493334232053294
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.24679788003222503
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.275428088806893
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1288.6869303945487
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.4248133463018744
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.7290140624023672
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4332.46257809851
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 2
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.5707763935050993
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.6411734728198231
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.371675018957609
+INFO:TERRAIN: change_fractal_terrain variation_method value: 0
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 1073.1360656920556
+INFO:TERRAIN: change_fractal_warp warp_amount value: 0.49333381631153816
+INFO:TERRAIN: change_fractal_warp variation value: 0.13399302675032754
+INFO:TERRAIN: change_fractal_warp roughness value: 1.309751461907052
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.7855373227010205
+INFO:TERRAIN: change_twist_terrain lean_direction value: 3048 31150 77847
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.38299664816605217
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.9507025467196969
+INFO:TERRAIN: change_stone stone_scale value: 0.9507025467196969
+INFO:TERRAIN: change_stone stone_density value: 0.6350081439682762
+INFO:TERRAIN: change_stone vary_density value: 1
+INFO:TERRAIN: change_stone density_variation_scale value: 0.28062602297489564
+INFO:TERRAIN: change_stone stone_tallness value: 0.3268003149795975
+INFO:TERRAIN: change_stone pancake_effect value: 1.4465619753284327
+INFO:TERRAIN: change_stone only_displace_upwards value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader low_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.28191926958245306
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.7089770877766273
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: -1
+INFO:WATER: change_fractal_water centre value: 1 -1 0
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 101631.12297770215
+INFO:POPULATOR: change_grass_population area_length_b value: 86364.07287808051
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 3.5178476645955525 6.099751735450359 9.813868580205927
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.0109389566691251
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.6767046622943077
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.517605483414069
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 118455.70505949165
+INFO:POPULATOR: change_grass_population area_length_b value: 155922.30202362745
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 4.0059809534925055 3.099107804935068 9.001865649812668
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.137042889152591
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.8261271868420461
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.5959390327334326
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 96313.1121646535
+INFO:POPULATOR: change_treese_populator area_length_b value: 159184.73087503243
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 3.1767516879964335 7.497394146895236 4.6177320117857175
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.7127020896991207
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.43510580331661475
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.407095699714107
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 120054.01261845761
+INFO:POPULATOR: change_treese_populator area_length_b value: 133742.1826446852
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 3.310987184947282 2.2642254834703857 2.4320488431317777
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.9842659081921585
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.7400527626209734
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.773930683036407
+INFO:Process PID: 1964: Changes finished. Saving the file
+INFO:Process PID: 1964: File Saved with name Generation_20211107150217_1964_1_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1179.6389899242258
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.3710649659191501
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.704456548839294
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 7245.1275175410065
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 1
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.5118485279959712
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.49268201874950623
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.9957536951203907
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1209.5155634582832
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.2596047119167972
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.3272930019748127
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 1626.410406006608
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 3
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.3258095860369111
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.38566581460984284
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.7456318685388035
+INFO:TERRAIN: change_fractal_terrain variation_method value: 3
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 862.5518302732099
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6112513145606164
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.7139641287318794
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 3970.9719784114054
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 1
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.14786349135971677
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.034133693497854334
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.8087158362557325
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 4668.23195097084
+INFO:TERRAIN: change_fractal_warp warp_amount value: 1.010523328003575
+INFO:TERRAIN: change_fractal_warp variation value: 0.3240344832272639
+INFO:TERRAIN: change_fractal_warp roughness value: 0.40319210034919184
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.049287578602381754
+INFO:TERRAIN: change_twist_terrain lean_direction value: 72411 90251 44402
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.9700647679171722
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.6855474950934822
+INFO:TERRAIN: change_stone stone_scale value: 0.6855474950934822
+INFO:TERRAIN: change_stone stone_density value: 0.638246822356602
+INFO:TERRAIN: change_stone vary_density value: 0
+INFO:TERRAIN: change_stone density_variation_scale value: 0.487387116911679
+INFO:TERRAIN: change_stone stone_tallness value: 0.1570413398729522
+INFO:TERRAIN: change_stone pancake_effect value: 1.5979117813267687
+INFO:TERRAIN: change_stone only_displace_upwards value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.023145698375033774
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.4643975434887718
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: 1
+INFO:WATER: change_fractal_water centre value: 1 1 0
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 167792.33918479612
+INFO:POPULATOR: change_grass_population area_length_b value: 82227.19248309653
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 5.214709107668833 1.1860741863004933 5.326966466002647
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.4190067999136704
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.8721648822358699
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.1397833365354146
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 169666.6354189689
+INFO:POPULATOR: change_grass_population area_length_b value: 130508.58443528126
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 7.199307248954753 4.71814217809192 5.655482801178243
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.078790703652038
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.091622768543146
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.2588721209318221
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 56213.65873059072
+INFO:POPULATOR: change_treese_populator area_length_b value: 129655.7004139901
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 7.835983286297624 7.158354137111763 1.7075731047849623
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.4883378544365784
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.9130359633820015
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.0305045896152438
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 53112.170274762255
+INFO:POPULATOR: change_treese_populator area_length_b value: 89554.38896805189
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 7.3055326530178375 2.569460443087164 8.736785166125458
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.0737580179044226
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.3967889313483599
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.482651584515989
+INFO:Process PID: 1964: Changes finished. Saving the file
+INFO:Process PID: 1964: File Saved with name Generation_20211107150217_1964_2_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1537.1529255449798
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.312677933402829
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.9773285263118261
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4592.66932204809
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 5
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.6117245470569559
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.8076417399418221
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.9474890149792903
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 2374.2856385010873
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.3916971781817332
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.418751742392406
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4698.17996875569
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 3
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.6148241653920641
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.9449011791871181
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.464013235175104
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 2110.429728020953
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.31980642687755323
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.5506394746746242
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 3516.166811876071
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 0
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.5758220313753623
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.7128678488482943
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.4865436876753533
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 7560.312282151972
+INFO:TERRAIN: change_fractal_warp warp_amount value: 0.9154945169313955
+INFO:TERRAIN: change_fractal_warp variation value: 1.9955444618513751
+INFO:TERRAIN: change_fractal_warp roughness value: 0.4388386404625917
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.11922557656311694
+INFO:TERRAIN: change_twist_terrain lean_direction value: 0 0 0
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.8902775841952589
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.6178635178064856
+INFO:TERRAIN: change_stone stone_scale value: 0.6178635178064856
+INFO:TERRAIN: change_stone stone_density value: 0.8100979693609807
+INFO:TERRAIN: change_stone vary_density value: 1
+INFO:TERRAIN: change_stone density_variation_scale value: 0.3674480072443642
+INFO:TERRAIN: change_stone stone_tallness value: 0.07151968938349107
+INFO:TERRAIN: change_stone pancake_effect value: 0.22728531328320556
+INFO:TERRAIN: change_stone only_displace_upwards value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.012227405892998755
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.2671401906022839
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: -1
+INFO:WATER: change_fractal_water centre value: 1 -1 0
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 94173.0780208022
+INFO:POPULATOR: change_grass_population area_length_b value: 87503.46628855269
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 7.004735410424136 9.60017508012132 1.117839171537532
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.4690635196960704
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.588867188079819
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.9901413786885521
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 180746.61538712776
+INFO:POPULATOR: change_grass_population area_length_b value: 196552.80394776544
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 5.197386375165085 7.016503675772945 1.7052960186663624
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.312791449700246
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.42916508931885355
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.9302788968164533
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 201231.74489379826
+INFO:POPULATOR: change_treese_populator area_length_b value: 103542.26597141118
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 5.445853501918126 8.89946972768779 9.201766057991492
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.276221481867495
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.7416621111179889
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.7053136609284956
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 38340.25743693781
+INFO:POPULATOR: change_treese_populator area_length_b value: 184277.41741790785
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 4.164676397505045 8.368108101779988 8.645202391395165
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.3232709156061588
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.735653599055216
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.31326652877896155
+INFO:Process PID: 1964: Changes finished. Saving the file
+INFO:Process PID: 1964: File Saved with name Generation_20211107150217_1964_3_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 3037.970141829465
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.5848062332852584
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.7638418970741079
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5746.664077989343
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 0
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.5434601246245724
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.43697779313969287
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.0875266990335284
+INFO:TERRAIN: change_fractal_terrain variation_method value: 3
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 3435.546406232909
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6211644064413235
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.5184594412484866
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 7237.646156908967
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 1
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.341833255180111
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.3558101005803743
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.9148656953380936
+INFO:TERRAIN: change_fractal_terrain variation_method value: 3
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 2230.788544922058
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.3719236687250852
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.5761208610067403
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 3490.4634017471335
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.8871886687770066
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.9230898785097158
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.1677439436277739
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 3145.458766555947
+INFO:TERRAIN: change_fractal_warp warp_amount value: 0.15011626138480128
+INFO:TERRAIN: change_fractal_warp variation value: 1.8844932596736186
+INFO:TERRAIN: change_fractal_warp roughness value: 1.5002203043723308
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.3040775795706706
+INFO:TERRAIN: change_twist_terrain lean_direction value: 0 0 0
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.2990914478924356
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.8090221368389172
+INFO:TERRAIN: change_stone stone_scale value: 0.8090221368389172
+INFO:TERRAIN: change_stone stone_density value: 0.9667217690666838
+INFO:TERRAIN: change_stone vary_density value: 0
+INFO:TERRAIN: change_stone density_variation_scale value: 0.4161718658898548
+INFO:TERRAIN: change_stone stone_tallness value: 0.001234878534108197
+INFO:TERRAIN: change_stone pancake_effect value: 0.8506538759501705
+INFO:TERRAIN: change_stone only_displace_upwards value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader low_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.009153103754204195
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.25377511863119484
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: -1
+INFO:WATER: change_fractal_water centre value: 1 -1 1
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 153477.25265394634
+INFO:POPULATOR: change_grass_population area_length_b value: 157071.09278106617
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 1.864695897514319 7.93176375988125 4.4531256933793415
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.129802646845227
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.620741752709659
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.935857069731846
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 64946.486624794925
+INFO:POPULATOR: change_grass_population area_length_b value: 165158.07760239698
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 9.33830365792049 3.278954791889674 4.5382370158483285
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.2589075844584634
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.1506122691935898
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.0467113953996356
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 246150.51511620145
+INFO:POPULATOR: change_treese_populator area_length_b value: 67359.92567530139
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 4.215313036888782 2.477225793854723 2.115727391441621
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.2490830922744
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.1130921783247434
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.3808983715725748
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 70018.01908883959
+INFO:POPULATOR: change_treese_populator area_length_b value: 205597.62270795973
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 1.4088189888074378 9.444253434799778 5.812230182413696
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.0453765169984957
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.8011135591501989
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.7093372170992034
+INFO:Process PID: 1964: Changes finished. Saving the file
+INFO:Process PID: 1964: File Saved with name Generation_20211107150217_1964_4_.tgd 
+INFO:RENDERING FUNCTION: rendering function called
+INFO:RENDERING FUNCTION: founded 10 TGD files to be rendered
+INFO:RENDERING FUNCTION: Terragen 4 founded and the environmental variable was created
+INFO:RENDERING FUNCTION: opening the tgd file for render node configuration
+INFO:POPULATOR_CHANGES: called populator object paths
+INFO:MAIN: fixed seed deactivated
+INFO:MAIN: random seed from sistem: (3, (2147483648, 1147019562, 3021942811, 4272483962, 3620578874, 3872380934, 2035106759, 3643690561, 1703757350, 2307460672, 3109535811, 2981449913, 1526560207, 3414170788, 1526479657, 1921564369, 959489617, 2869111733, 2422380307, 2162159111, 1962471862, 50406507, 226779997, 3788761691, 3805291493, 2357280151, 2845960391, 2085372929, 1736378597, 2166791009, 1312013672, 46599385, 1904712571, 194492561, 3689446502, 236629773, 2940652267, 3080582537, 3969961126, 4070149933, 798835882, 1024288104, 738199099, 3704096711, 2359917027, 1286109337, 2287294840, 3207072191, 2302200150, 1747177550, 1782522808, 1094384027, 1031655174, 389843399, 61991800, 423146064, 3842056346, 1609304621, 1950258454, 3608207924, 1833886481, 2008273951, 3768714773, 1710948142, 1706753216, 1138772059, 459435763, 596749503, 2113771509, 378322517, 376041476, 1294778750, 1673132664, 3405021306, 2992792242, 4131901742, 3504970579, 1109202851, 2096678761, 2382408441, 3596182145, 817986370, 1873138037, 1297544782, 6729510, 2924723372, 2926177479, 2776976030, 1994123660, 1389827064, 3709040096, 4157260147, 1800578262, 3723817140, 2129228534, 2855222753, 353323108, 2917691799, 2422344096, 2701694024, 3791257162, 440275833, 759520508, 462312104, 239896429, 3497996122, 1063246588, 4227998198, 1304299258, 803134273, 3641616854, 929768162, 3645350997, 2234388417, 3695855042, 2804448117, 1968320055, 831130215, 249030098, 988551881, 3748583603, 315963505, 3984020232, 3681059467, 3878665190, 646092713, 1964703083, 4221528314, 2728751269, 3342591613, 2854795049, 1570584056, 616042053, 4028090475, 644315182, 2107608404, 2599074954, 1559264003, 3124239317, 4062878658, 1753726195, 369222046, 3412408785, 305985758, 3030331025, 3589374826, 654367651, 2475746007, 386038986, 3002987412, 1695548297, 1191952736, 3716463778, 1882094200, 888166457, 2244950655, 1041804997, 8691217, 445672221, 2415688631, 2174770038, 3905228660, 1453161066, 1604778224, 2989589385, 3740858757, 3188541475, 2518316836, 254143247, 3676692365, 976918766, 1061286973, 1020764505, 1006057666, 3449606121, 2043817457, 3652921128, 2123746079, 2290960395, 1749579281, 369455360, 3548125014, 1547377816, 1594890196, 3992400265, 514989763, 369976136, 994632764, 2522096047, 2705376507, 1080164570, 1342764664, 3750086491, 2620578195, 2785981063, 195541323, 2594101310, 3843746890, 1739768271, 696170636, 4246318472, 409571197, 3470151038, 1524041867, 3497190310, 620595169, 3576755995, 3334527592, 441194360, 747377256, 3159415820, 2581356023, 3223158653, 1691246448, 4246482466, 1169030522, 4139396544, 989949574, 706111234, 2740554333, 1958641129, 2211872958, 195963205, 2134907878, 2604345975, 2520742914, 3074210833, 3019271586, 946415456, 1455713754, 740323911, 2353740112, 3208152459, 3172583738, 2011577423, 3257102010, 3110103692, 2373872930, 240752592, 3508652084, 1549740752, 1077196606, 2875729811, 2263376243, 978998617, 2580282152, 366764439, 4291757238, 3261639509, 1845279496, 3573960901, 4040532048, 3158151620, 1176357201, 3353041313, 2148055189, 1662455198, 3844661433, 1504449320, 83207760, 2644746594, 585521399, 550760440, 131431390, 3829748880, 1935822102, 2970050226, 505915725, 3538826580, 1620514782, 2335776974, 678770891, 2924103321, 3295253611, 255048836, 2022061059, 489133423, 4068383219, 4071705196, 1088506945, 2533361660, 1796675494, 164178664, 3382538490, 1987931543, 2703846606, 1688973872, 1550001835, 975318137, 3701952162, 2273730739, 4056074966, 4203585589, 4054060472, 486581850, 1374513968, 2927720297, 2825088293, 2172034482, 2020862935, 476609776, 2298648195, 2607694543, 632896253, 808309319, 1455609594, 2452281435, 2824491456, 2487409880, 2327367384, 1531223914, 1459272075, 447067928, 3720532424, 862192829, 159550055, 3015025583, 2584610765, 609627910, 894833894, 2780973693, 1826405449, 1907907959, 899146026, 1564733250, 4238258395, 905803127, 2077041863, 1139141510, 4124933576, 2452878379, 2881294514, 4060775822, 3074571324, 597550472, 1677354128, 4185112971, 1341039865, 1604170371, 4182665359, 3342544336, 2217497732, 1492188297, 2719041720, 2766695700, 3245371975, 2775833521, 748617682, 2623798234, 2035185883, 396975542, 2426523896, 2689939212, 1450369553, 2518664979, 4291398939, 1441900438, 973123705, 1665235113, 4034369714, 1351945437, 1865573010, 4005287783, 4268114699, 3007922589, 3332384332, 1119571821, 2642078063, 727346577, 2571871604, 405138537, 1060744919, 771456273, 1897841810, 3068679642, 792663520, 997868287, 1625224791, 1702432939, 853849559, 1950352901, 264727992, 350144741, 2421465734, 3380345871, 1230423794, 3619511706, 3954694360, 3124977144, 1466552049, 1336454463, 3224529925, 2754508936, 1147474834, 3597243499, 2714073910, 515950775, 742982445, 3722346878, 2616230221, 3106380589, 1710950023, 503900123, 665400484, 3221380076, 3059225631, 169967630, 1350745125, 1734287679, 2787531879, 678356212, 138031834, 2492112113, 4198857806, 1886018527, 2044453038, 163158681, 2335999792, 2521868253, 2871827619, 4254837274, 3905987958, 1525714070, 3320685105, 2334184840, 505529953, 3572885270, 11599674, 2780625019, 2290730841, 544322998, 2075442048, 215689320, 1708071845, 1990058665, 970323769, 2899208715, 3023707796, 328571518, 1827178698, 1465778715, 2570385941, 721580409, 1446976630, 663064363, 1798631791, 1813124533, 384788142, 2861088751, 2280873238, 541066843, 2252025596, 20511869, 1316263672, 1101123994, 347530028, 189086600, 3973972417, 3045818431, 408591672, 171117251, 19276417, 1109143195, 862350199, 1156919747, 89259873, 101046980, 2314942844, 2354276091, 2941459576, 2368836725, 375425118, 4062493703, 1794712562, 3829941071, 1989700087, 2284535006, 1446496479, 263521097, 3823542806, 1880796868, 699116690, 1752909683, 463558890, 1332398904, 3724234974, 108964340, 741877199, 2902046413, 3628613192, 2455341456, 4222173983, 1475813810, 931098819, 1569832093, 2512872228, 2229099234, 2339065866, 2989167742, 2065767614, 196455665, 2336148560, 3992278604, 494661599, 4279684786, 1430336763, 3300376262, 4091667456, 559955603, 3067554132, 3045570956, 2337601220, 406219663, 3782163141, 1184430211, 3578375855, 1064947404, 3071292511, 1797873915, 2284701500, 1808239095, 901674362, 1391342426, 4118723224, 450611468, 1775204384, 2206789429, 1742817059, 185065249, 688952677, 3068442157, 3981377375, 1310821581, 2772477285, 121439205, 2310488489, 3336040418, 808126516, 3743085027, 743574148, 2293388752, 3837759404, 649427497, 4012677294, 1027346276, 3144656111, 977021741, 2894987712, 1806416238, 3995234333, 4171168466, 1118255141, 3274605247, 1700570936, 1648062536, 2957567507, 118487772, 3298676673, 4164510701, 559240090, 1020458740, 944272287, 1500911138, 179561720, 1035304723, 485100668, 2932016198, 2664154725, 1460461323, 3722655830, 3298889317, 2635921634, 4035282939, 3063398247, 288354046, 72007633, 1416730675, 1971398695, 770592, 2008418871, 1890690010, 1427076025, 241865641, 4251878743, 708483555, 550327480, 1103762748, 2579296415, 4105802820, 418885985, 3103238236, 3690879952, 2547004098, 2637955750, 2288383417, 2703390259, 2644234849, 1756326481, 905511992, 2420599804, 1714237330, 80269791, 74377446, 1160870916, 2593451643, 2096531804, 2216364613, 692266625, 3109633028, 1529619962, 2114127522, 918102411, 1674659988, 1709092282, 2575232884, 2897305601, 4236613907, 824937170, 740073971, 317964762, 3494048690, 3794301596, 4268813864, 386480927, 624), None)
+INFO:MAIN: opened the Base_simple.tgd file
+INFO:MAIN: set the ranges files path for each node
+INFO:MAIN: Required only un processor for the generation of one file
+INFO:Process PID: 13680: Generation start
+INFO:Process PID: 13680: Lists filled:
+INFO:Process PID: 13680: 	Terrain list has 7 values
+INFO:Process PID: 13680: 	Shader list has 2 values
+INFO:Process PID: 13680: 	Population list has 4 values
+INFO:Process PID: 13680: 	Light list has 4 values
+INFO:Process PID: 13680: 	Water list has 1 values
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 979.2039570085974
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6318556068555693
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.9902571937608946
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4477.181000831111
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 3
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.6931221790003712
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.8057546603343828
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.2579214237743721
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 810.1035124120642
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.5995441608145267
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.6514821423499073
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 7334.362317285757
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 5
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.4766802626771258
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.9823516090133493
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.40118262409281824
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1156.4259238735717
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.7462623125219789
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.98557764593466
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 4571.353636154472
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 3
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.2406954360688096
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.8188174564102951
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.0014989122334015
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 5291.934279960254
+INFO:TERRAIN: change_fractal_warp warp_amount value: 1.7377443480191561
+INFO:TERRAIN: change_fractal_warp variation value: 1.5940588201146386
+INFO:TERRAIN: change_fractal_warp roughness value: 1.31740551051885
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.42268847779941887
+INFO:TERRAIN: change_twist_terrain lean_direction value: 0 0 0
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.8737418393097123
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.544765174913888
+INFO:TERRAIN: change_stone stone_scale value: 0.544765174913888
+INFO:TERRAIN: change_stone stone_density value: 0.5877314302087977
+INFO:TERRAIN: change_stone vary_density value: 1
+INFO:TERRAIN: change_stone density_variation_scale value: 0.11933571764083714
+INFO:TERRAIN: change_stone stone_tallness value: 0.33091960425275435
+INFO:TERRAIN: change_stone pancake_effect value: 1.3093041737635187
+INFO:TERRAIN: change_stone only_displace_upwards value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.9449218901890833
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.514387911184311
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: 0
+INFO:WATER: change_fractal_water centre value: 1 0 1
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 102033.16427734013
+INFO:POPULATOR: change_grass_population area_length_b value: 111094.14431502347
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 4.077793483779013 5.624279455329824 2.629969612285856
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.3812070038608137
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.6140242592665088
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.991453565801597
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 108799.47686440535
+INFO:POPULATOR: change_grass_population area_length_b value: 141017.76102245183
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 6.987604071087594 1.5624273526137873 9.503349523439406
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.1451742019495192
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.7280427173652337
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.1904744233738932
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 239617.77966253457
+INFO:POPULATOR: change_treese_populator area_length_b value: 35566.703860339716
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 5.245078109468358 9.18884144530413 2.0257696516451427
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.2913943632834703
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.7335970409827306
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.1764685171181266
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 216513.42600849425
+INFO:POPULATOR: change_treese_populator area_length_b value: 124611.91071234332
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 3.7475781912452044 4.590542847867278 4.280661078054981
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.3193932326249667
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.58968143881788
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.2249331455898247
+INFO:Process PID: 13680: Changes finished. Saving the file
+INFO:Process PID: 13680: File Saved with name Generation_20211108093647_13680_0_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 2057.0455208944913
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.5145742772836667
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.4961501429571362
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5093.783609122158
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 3
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.9835688442120829
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.4866815981961924
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.615648639810702
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 975.1869901556659
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.3889724773458408
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.28867215574863564
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 3931.749383313569
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 0
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.22221316539140012
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.14209609863078532
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.24938119313812201
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1228.632811237846
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.5645772391504986
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.8201798144930849
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5953.197691596657
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 5
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.7618897508943
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.6201212779948244
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.99101604833871
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 3169.05013460356
+INFO:TERRAIN: change_fractal_warp warp_amount value: 0.405970770247597
+INFO:TERRAIN: change_fractal_warp variation value: 1.9491166145558443
+INFO:TERRAIN: change_fractal_warp roughness value: 1.6267358971729584
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.40697012140335254
+INFO:TERRAIN: change_twist_terrain lean_direction value: 34988 80044 87844
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.8860912932349291
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.1629296266973027
+INFO:TERRAIN: change_stone stone_scale value: 0.1629296266973027
+INFO:TERRAIN: change_stone stone_density value: 0.60924207154803
+INFO:TERRAIN: change_stone vary_density value: 1
+INFO:TERRAIN: change_stone density_variation_scale value: 0.8588987435609642
+INFO:TERRAIN: change_stone stone_tallness value: 0.40620206951688476
+INFO:TERRAIN: change_stone pancake_effect value: 1.3410681307019245
+INFO:TERRAIN: change_stone only_displace_upwards value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.5206366589160505
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.7504416718243847
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: 1
+INFO:WATER: change_fractal_water centre value: 0 1 1
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 75901.59308779612
+INFO:POPULATOR: change_grass_population area_length_b value: 248033.0334337137
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 7.293377436374167 3.9536887950272 8.814749374852724
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.120912163520837
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.6968905565543493
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.980258368621588
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 203094.72345790864
+INFO:POPULATOR: change_grass_population area_length_b value: 219687.03265806418
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 2.7203511710789363 2.3828411503830083 7.782759883275593
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.3818290645896734
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.0353057629717193
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.6918171577031031
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 176272.10485379427
+INFO:POPULATOR: change_treese_populator area_length_b value: 28387.714461842323
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 8.921014543749772 5.859230111522278 9.6135762003953
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.349693855083955
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.787862684106176
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.9023207886775899
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 192202.31299609973
+INFO:POPULATOR: change_treese_populator area_length_b value: 131668.98165847978
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 2.9917255780637353 6.080283624058486 7.23572291922721
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.304724939744733
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.45151697601741775
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.7574005299554245
+INFO:Process PID: 13680: Changes finished. Saving the file
+INFO:Process PID: 13680: File Saved with name Generation_20211108093647_13680_1_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1350.2088000339031
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6223235536254998
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.7646565294961408
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 3024.2486090958337
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 0
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.9723068428396252
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.8147797011096161
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.6492531530505925
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1050.068254751387
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.4006067938627152
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.7472996802763899
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5908.599447670506
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.37927578854990684
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.3111144953944409
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.359320429621825
+INFO:TERRAIN: change_fractal_terrain variation_method value: 0
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1142.9469444711312
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6668526591004105
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.4575616314683263
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5733.671050398581
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 1
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.011171723732421146
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.5808801090570217
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.2313405142207787
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 477.70633320228563
+INFO:TERRAIN: change_fractal_warp warp_amount value: 1.0591070587043516
+INFO:TERRAIN: change_fractal_warp variation value: 0.2056341937152013
+INFO:TERRAIN: change_fractal_warp roughness value: 1.93653780404814
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.848986330436816
+INFO:TERRAIN: change_twist_terrain lean_direction value: 0 0 0
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.555998054643011
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.16034692354588498
+INFO:TERRAIN: change_stone stone_scale value: 0.16034692354588498
+INFO:TERRAIN: change_stone stone_density value: 0.9315449427701368
+INFO:TERRAIN: change_stone vary_density value: 1
+INFO:TERRAIN: change_stone density_variation_scale value: 0.6285842604263526
+INFO:TERRAIN: change_stone stone_tallness value: 0.40169106573269475
+INFO:TERRAIN: change_stone pancake_effect value: 1.9617238299105364
+INFO:TERRAIN: change_stone only_displace_upwards value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader low_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.4375788391347545
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader low_colour value: 0.4196078431372549 0.27450980392156865 0.16862745098039217
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.23789124102952253
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: -1
+INFO:WATER: change_fractal_water centre value: 1 -1 1
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 100602.6185877082
+INFO:POPULATOR: change_grass_population area_length_b value: 109013.15411217496
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 6.3031459780366825 1.753738981587027 3.2324879980418357
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.1034471754398383
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.0700635523669395
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.8705305444993612
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 235714.8660537713
+INFO:POPULATOR: change_grass_population area_length_b value: 206574.03930633777
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 5.705313732648044 6.596130859800425 4.534254127093584
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.0439626732210878
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.3410873714134245
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.8593563899059595
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 243007.0111084226
+INFO:POPULATOR: change_treese_populator area_length_b value: 241011.67459303417
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 9.35819478878019 3.011338757314173 9.923176413779695
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.0819654519546846
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.2052717426897348
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.1364091404207124
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 70851.77654295284
+INFO:POPULATOR: change_treese_populator area_length_b value: 104787.70733597409
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 3.0400170605953947 2.2950724391169905 7.6481652385335686
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.3879788506749604
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.9182316252240597
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.0422269301365583
+INFO:Process PID: 13680: Changes finished. Saving the file
+INFO:Process PID: 13680: File Saved with name Generation_20211108093647_13680_2_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1588.3489250877876
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.5315985079615555
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.5284730963539191
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 6046.5276300360465
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 2
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.18253486336112557
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.5762885825382863
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 0.5486055418020754
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 1073.5550936870256
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.6949346835820795
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.82294074752754
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5158.518309877798
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 2
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.7917881881046841
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.2413815157903354
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 1.3195894194505815
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 3366.1639184213154
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.47135579431121677
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.9872279369775457
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5970.227871271731
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 3
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.22454427039372504
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.03241041417215307
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.3041832589467477
+INFO:TERRAIN: change_fractal_terrain variation_method value: 2
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 2573.170722789594
+INFO:TERRAIN: change_fractal_warp warp_amount value: 0.6627724751697812
+INFO:TERRAIN: change_fractal_warp variation value: 1.6521328744300754
+INFO:TERRAIN: change_fractal_warp roughness value: 1.1195117689575556
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.2588855394928343
+INFO:TERRAIN: change_twist_terrain lean_direction value: 66367 91219 51676
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.3626826155395242
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.42807102259193697
+INFO:TERRAIN: change_stone stone_scale value: 0.42807102259193697
+INFO:TERRAIN: change_stone stone_density value: 0.8015193740177282
+INFO:TERRAIN: change_stone vary_density value: 1
+INFO:TERRAIN: change_stone density_variation_scale value: 0.3331017661024601
+INFO:TERRAIN: change_stone stone_tallness value: 0.6564504018957492
+INFO:TERRAIN: change_stone pancake_effect value: 0.9462240596250493
+INFO:TERRAIN: change_stone only_displace_upwards value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.1128930679624941
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.2413792337254298
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: 0
+INFO:WATER: change_fractal_water centre value: 1 0 1
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 46767.391720291795
+INFO:POPULATOR: change_grass_population area_length_b value: 144035.24676205358
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 6.488645251988892 9.584386390528548 4.444400627012544
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.2226447992833465
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.6292089359406193
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.5940936555173252
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 144870.39840563416
+INFO:POPULATOR: change_grass_population area_length_b value: 240926.73879678105
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 9.638783460285508 9.97578070216793 6.894753455350947
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.0285146786075137
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 1.5596174226914334
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.8400688459581827
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 211173.20183693434
+INFO:POPULATOR: change_treese_populator area_length_b value: 169770.86947847664
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 3.541216137885562 6.940499088184874 8.963010951438363
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.3277750794335894
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.7696427248628298
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.20347646596665617
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 13391.32720430098
+INFO:POPULATOR: change_treese_populator area_length_b value: 236881.06883304144
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 5.736019744277574 4.634364707575901 6.760042013467666
+INFO:POPULATOR: change_treese_populator minimum_scale value: 1.9472365399995821
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 0.5011224507245319
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.1450024614119172
+INFO:Process PID: 13680: Changes finished. Saving the file
+INFO:Process PID: 13680: File Saved with name Generation_20211108093647_13680_3_.tgd 
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 3058.2963988285824
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.5936907843212963
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.6639078544261596
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 2570.6121389717237
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 4
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.4237907055879502
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.7574249442660651
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 3.5197345225300594
+INFO:TERRAIN: change_fractal_terrain variation_method value: 0
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 2687.0078959689736
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.35795280838068066
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.3493431058969061
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 6920.84704704719
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 1
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.9221429765724615
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.6500336197841708
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 2.913198991574353
+INFO:TERRAIN: change_fractal_terrain variation_method value: 1
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_terrain function called
+INFO:TERRAIN: change_fractal_terrain displacement_amplitude value: 2214.8504779431264
+INFO:TERRAIN: change_fractal_terrain displacement_offset value: 0
+INFO:TERRAIN: change_fractal_terrain displacement_roughness value: 0.2892473356965952
+INFO:TERRAIN: change_fractal_terrain displacement_spike_limit value: 0.9561170506267855
+INFO:TERRAIN: change_fractal_terrain coastline_altitude value: 5268.347742583343
+INFO:TERRAIN: change_fractal_terrain noise_flavour value: 2
+INFO:TERRAIN: change_fractal_terrain ridge_smoothing value: 0.30601018802300994
+INFO:TERRAIN: change_fractal_terrain gully_smoothing value: 0.1689288108894902
+INFO:TERRAIN: change_fractal_terrain noise_variation value: 1.192215911232955
+INFO:TERRAIN: change_fractal_terrain variation_method value: 3
+INFO:TERRAIN: change_fractal_terrain better_colour_continuity value: 1
+INFO:TERRAIN: change_fractal_terrain better_displacement_continuity value: 0
+INFO:TERRAIN: change_fractal_warp function called
+INFO:TERRAIN: change_fractal_warp scale value: 6951.14148257222
+INFO:TERRAIN: change_fractal_warp warp_amount value: 0.07691450446188686
+INFO:TERRAIN: change_fractal_warp variation value: 1.805050753807982
+INFO:TERRAIN: change_fractal_warp roughness value: 1.638190710332836
+INFO:TERRAIN: change_twist_terrain function called
+INFO:TERRAIN: change_twist_terrain lean_factor value: 0.7131944435668113
+INFO:TERRAIN: change_twist_terrain lean_direction value: 0 0 0
+INFO:TERRAIN: change_twist_terrain base_altitude value: 0.9767144116455057
+INFO:TERRAIN: change_stone function called
+INFO:TERRAIN: change_stone stone_scale value: 0.19666210180985644
+INFO:TERRAIN: change_stone stone_scale value: 0.19666210180985644
+INFO:TERRAIN: change_stone stone_density value: 0.6203368828534341
+INFO:TERRAIN: change_stone vary_density value: 0
+INFO:TERRAIN: change_stone density_variation_scale value: 0.18683506475227143
+INFO:TERRAIN: change_stone stone_tallness value: 0.6093617124294219
+INFO:TERRAIN: change_stone pancake_effect value: 0.16324598812877444
+INFO:TERRAIN: change_stone only_displace_upwards value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader low_colour value: 0.6352941176470588 0.4235294117647059 0.25882352941176473
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.32878889580493575
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 0
+INFO:SHADER: change_fractal_shader function called
+INFO:SHADER: change_fractal_shader high_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader low_colour value: 0.8235294117647058 0.5372549019607843 0.32941176470588235
+INFO:SHADER: change_fractal_shader colour_contrast value: 0.2740146401037683
+INFO:SHADER: change_fractal_shader clamp_low_colour value: 1
+INFO:LIGHT: choose between ready to use different sunlight configuration
+INFO:WATER: change_fractal_water function called
+INFO:WATER: change_fractal_water water_level value: 0
+INFO:WATER: change_fractal_water centre value: 1 0 0
+INFO:WATER: change_fractal_water max_radius value: 10000
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 191693.50564368558
+INFO:POPULATOR: change_grass_population area_length_b value: 189978.5850905885
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 5.1450740734107425 1.142912211342554 7.417083244947785
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.0064144123332561
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.34752130524305097
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 0.43919272975765844
+INFO:POPULATOR: change_grass_population function called
+INFO:POPULATOR: change_grass_population area_length_a value: 97689.32100542898
+INFO:POPULATOR: change_grass_population area_length_b value: 29436.655253151515
+INFO:POPULATOR: change_grass_population object_spacing_xz value: 5.597156026602152 9.506296918705837 5.962977586821406
+INFO:POPULATOR: change_grass_population minimum_scale value: 1.3865215263107733
+INFO:POPULATOR: change_grass_population diffuse_colour_multiplier value: 0.8586613714210525
+INFO:POPULATOR: change_grass_population luminosity_multiplier value: 1.1995830655770594
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 66666.42299347969
+INFO:POPULATOR: change_treese_populator area_length_b value: 221341.3723006538
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 2.975918240455349 8.468924885458353 8.173383267447221
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.204662566823728
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.6343826987899377
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 0.36789872737965323
+INFO:POPULATOR: change_treese_populator function called
+INFO:POPULATOR: change_treese_populator area_length_a value: 218796.1019222638
+INFO:POPULATOR: change_treese_populator area_length_b value: 167573.1004631761
+INFO:POPULATOR: change_treese_populator object_spacing_xz value: 9.119928611230062 1.8552558828262846 5.255724195103792
+INFO:POPULATOR: change_treese_populator minimum_scale value: 2.015359869877453
+INFO:POPULATOR: change_treese_populator diffuse_colour_multiplier value: 1.1691943103358762
+INFO:POPULATOR: change_treese_populator luminosity_multiplier value: 1.8528812761241307
+INFO:Process PID: 13680: Changes finished. Saving the file
+INFO:Process PID: 13680: File Saved with name Generation_20211108093647_13680_4_.tgd 
+INFO:RENDERING FUNCTION: rendering function called
+INFO:RENDERING FUNCTION: founded 15 TGD files to be rendered
+INFO:RENDERING FUNCTION: Terragen 4 founded and the environmental variable was created
+INFO:RENDERING FUNCTION: opening the tgd file for render node configuration
+INFO:POPULATOR_CHANGES: called populator object paths

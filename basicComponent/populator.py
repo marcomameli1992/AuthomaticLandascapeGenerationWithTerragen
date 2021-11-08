@@ -72,3 +72,13 @@ def change_grass_population(tags_root: ET.Element, global_values: dict, attribut
     LOGGER.info(' change_grass_population diffuse_colour_multiplier value: ' + tag.attrib['diffuse_colour_multiplier'])
     LOGGER.info(' change_grass_population luminosity_multiplier value: ' + tag.attrib['luminosity_multiplier'])
     return tags_root
+
+def update_populator_position(tags_root: ET.Element, render_node:str) -> ET.Element:
+    LOGGER.info(' change_populator_position function called')
+    populator_tag_list = tags_root.findall(f"populator_v4")
+    render_camera_name = tags_root.find(f".//*[@name='{render_node}']").attrib['camera']
+    camera_tag = tags_root.find(f".//*[@name='{render_camera_name}']")
+    for populator_tag in populator_tag_list:
+        populator_tag.attrib['area_centre'] = camera_tag.attrib['position']
+
+    return tags_root

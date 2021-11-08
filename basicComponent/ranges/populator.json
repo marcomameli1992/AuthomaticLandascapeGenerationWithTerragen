@@ -1,9 +1,9 @@
 {
   "trees": {
     "area_length_a_minimum": 10000.0,
-    "area_length_a_maximum": 250000.0,
+    "area_length_a_maximum": 100000.0,
     "area_length_b_minimum": 10000.0,
-    "area_length_b_maximum": 250000.0,
+    "area_length_b_maximum": 100000.0,
     "object_spacing_xz_minimum": 1.0,
     "object_spacing_xz_maximum": 10.0,
     "randomness_xz_minimum": 1.0,
@@ -19,9 +19,9 @@
   },
   "grass": {
     "area_length_a_minimum": 10000.0,
-    "area_length_a_maximum": 250000.0,
+    "area_length_a_maximum": 100000.0,
     "area_length_b_minimum": 10000.0,
-    "area_length_b_maximum": 250000.0,
+    "area_length_b_maximum": 100000.0,
     "object_spacing_xz_minimum": 1.0,
     "object_spacing_xz_maximum": 10.0,
     "randomness_xz_minimum": 1.0,

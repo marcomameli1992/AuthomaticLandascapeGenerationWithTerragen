@@ -16,7 +16,7 @@ input_args.add_argument('--config_file', '-cf', type=str, required=True, help="T
 
 args = input_args.parse_args()
 
-def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str, global_values: dict):
+def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str, global_values: dict, enabled_changes:dict):
     #%% Import section of customized function
     import basicComponent.terrain as TERRAIN
     import basicComponent.water as WATER
@@ -90,46 +90,47 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
     #%% File generation
     for n in list(range(0, number_of_file)):
         for element_name in terrain_list:
-            if 'Fractal' in element_name or 'fractal' in element_name:
+            if 'Fractal' in element_name or 'fractal' in element_name and enabled_changes['terrain']:
                 etree_root = TERRAIN.change_fractal_terrain(etree_root, global_values, element_name)
                 #TODO check the possibility to abilitate only one terrain or two a time
-            if 'Stone' in element_name or 'stone' in element_name:
+            if 'Stone' in element_name or 'stone' in element_name and enabled_changes['terrain']:
                 etree_root = TERRAIN.change_stone(etree_root, global_values, element_name)
             # if 'Strata' in element_name or 'strata' in element_name:
             #     etree_root = TERRAIN.change_strata(etree_root, global_values, element_name)
-            if 'Twist' in element_name or 'twist' in element_name:
+            if 'Twist' in element_name or 'twist' in element_name and enabled_changes['terrain']:
                 etree_root = TERRAIN.change_twist_terrain(etree_root, global_values, element_name)
-            if 'Warp' in element_name or 'warp' in element_name:
+            if 'Warp' in element_name or 'warp' in element_name and enabled_changes['terrain']:
                 etree_root = TERRAIN.change_fractal_warp(etree_root, global_values, element_name)
 
         for element_name in shader_list:
-            if 'Surface' in element_name or 'surface' in element_name:
+            if 'Surface' in element_name or 'surface' in element_name and enabled_changes['shader']:
                 etree_root = SHADER.change_surface_shader(etree_root, global_values, element_name)
-            if 'Fractal' in element_name or 'fractal' in element_name:
+            if 'Fractal' in element_name or 'fractal' in element_name and enabled_changes['shader']:
                 etree_root = SHADER.change_fractal_shader(etree_root, global_values, element_name)
-            if 'Distribution' in element_name or 'distribution' in element_name:
+            if 'Distribution' in element_name or 'distribution' in element_name and enabled_changes['shader']:
                 etree_root = SHADER.change_distribution_shader(etree_root, global_values, element_name)
-            if 'Twist' in element_name or 'twist' in element_name:
+            if 'Twist' in element_name or 'twist' in element_name and enabled_changes['shader']:
                 etree_root = SHADER.change_twist_shader(etree_root, global_values, element_name)
         #%% Change light randomly
         '''
         for element_name in light_list:
-            if 'Sun' in element_name or 'sun' in element_name and 'set' not in element_name and 'rise' not in element_name:
+            if 'Sun' in element_name or 'sun' in element_name and 'set' not in element_name and 'rise' not in element_name and and enabled_changes['light']:
                 etree_root = LIGHT.change_sunlight(etree_root, global_values, element_name)
-            if 'Light' in element_name or 'light' in element_name:
+            if 'Light' in element_name or 'light' in element_name and and enabled_changes['light']:
                 etree_root = LIGHT.change_environmental(etree_root, global_values, element_name)
         '''
         #%% Choose from predefined light
-        etree_root = LIGHT.choose_sunlight(etree_root, global_values, light_list)
+        if enabled_changes['light']:
+            etree_root = LIGHT.choose_sunlight(etree_root, global_values, light_list)
 
         for element_name in water_list:
-            if 'Lake' in element_name or 'lake' in element_name:
+            if 'Lake' in element_name or 'lake' in element_name and enabled_changes['water']:
                 etree_root = WATER.change_fractal_water(etree_root, global_values, element_name)
 
         for element_name in populator_list:
-            if 'Tree' in element_name or 'tree' in element_name or 'Pine' in element_name or 'pine' in element_name:
+            if 'Tree' in element_name or 'tree' in element_name or 'Pine' in element_name or 'pine' in element_name and enabled_changes['populator']:
                 etree_root = POPULATOR.change_trees_population(tags_root=etree_root, attribute=element_name, global_values=global_values)
-            if 'Grass' in element_name or 'grass' in element_name:
+            if 'Grass' in element_name or 'grass' in element_name and enabled_changes['populator']:
                 etree_root = POPULATOR.change_grass_population(tags_root=etree_root, attribute=element_name, global_values=global_values)
         LOGGER.info(' Changes finished. Saving the file')
         file_name = 'Generation_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S") + '_' + str(os.getpid()) + f'_{n}_' + '.tgd'
@@ -147,7 +148,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
     import glob
     import basicComponent.opening as O
     import basicComponent.render as R
-    import basicComponent.populator_object as PO
+    import basicComponent.populator as P
     #%% Setting logging for the function
     LOGGER = logging.getLogger('RENDERING FUNCTION')
     LOGGER.info(' rendering function called')
@@ -177,10 +178,6 @@ def render(folder_path:str, output_path:str, n_file:int = None):
         #%% opening the file
         LOGGER.info(' opening the tgd file for render node configuration')
         etree, eroot = O.tgd_opening(path)
-        # eroot = PO.change_populator_path(eroot)
-        # with open(path, 'wb') as tgd_file:
-        #     etree.write(tgd_file)
-        # etree, eroot = O.tgd_opening(path)
         render_node_list = R.get_render_node(eroot)
         for render_node_name in render_node_list:
             LOGGER.info(f' configuring the output path for rendered image, extras and mesh based on the {render_node_name}')
@@ -188,8 +185,6 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             render_path = os.path.join(output_path, path.split(os.sep)[-1].split('.')[0], render_node_name)
             render_extra_path = os.path.join(render_path, 'extras')
             render_mesh_path = os.path.join(render_path, 'mesh')
-            LOGGER.info(
-                f' render_path: {render_path}\n \t render_extra_path: {render_extra_path} \n\t render_mesh_apth: {render_mesh_path}')
             os.makedirs(render_path, exist_ok=True)
             os.makedirs(render_extra_path, exist_ok=True)
             os.makedirs(render_mesh_path, exist_ok=True)
@@ -197,16 +192,13 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             LOGGER.info(f' configuring the {render_node_name}')
             eroot = R.change_render_paths(eroot, render_node_name, output_image_path=os.path.abspath(render_path), extra_output_image_path=os.path.abspath(render_extra_path))
             eroot = R.change_micro_render_path(eroot, output_mesh_path=os.path.abspath(render_mesh_path), render_node_name=render_node_name, attribute='MeshExporter')
+            eroot = P.update_populator_position(eroot, render_node_name)
             with open(path, 'wb') as tgd_file:
                 etree.write(tgd_file)
             LOGGER.info(f' update the file with the new paths for the {render_node_name}')
             LOGGER.info(f' start rendering at: {datetime.datetime.now().strftime("%m/%d/%Y-%H:%M:%S")}')
             if 'windows' in platform.system().lower():
                 #%% start the rendering with cmd window
-                output_image_filename = os.path.join(render_path, render_node_name + '_${TGDNAME}.%04d.tiff')
-                extra_output_image_file_name = os.path.join(render_extra_path,
-                                                            render_node_name + '_$IMAGETYPE.%04d.exr')
-
                 #command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name} -o {output_image_filename} -ox {extra_output_image_file_name}'
                 command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(f'start /wait cmd /c "{command}"')
@@ -255,6 +247,16 @@ def main():
     G.ranges_light_path = os.path.join(config['ranges_folder_path'], config['light_ranges_name'])
     G.ranges_water_path = os.path.join(config['ranges_folder_path'], config['water_ranges_name'])
 
+    #%% check enabled changes
+    enable_change: dict = {
+        "light": config['enable_light_change'],
+        "terrain": config['enable_terrain_change'],
+        "shader": config['enable_shader_change'],
+        "populator": config['enable_populator_change'],
+        "water": config['enable_water_change'],
+    }
+
+
     LOGGER.info(' set the ranges files path for each node')
 
     #%% prepraring multiprocessing execution
@@ -268,13 +270,13 @@ def main():
 
     if not config['use_multiprocess'] or config['n_files'] == 1:
         LOGGER.info(' Required only un processor for the generation of one file')
-        file_generatioin(etree, config['n_files'], config['save_path'], global_values=G.globals_to_dict())
+        file_generatioin(etree, config['n_files'], config['save_path'], global_values=G.globals_to_dict(), enabled_changes=enable_change)
     else:
         LOGGER.info(' Required the multiprocessor generation')
         LOGGER.info(' The number of processor available is {}'.format(n_cpu))
         LOGGER.info(' Required {} files to be generated, each process generate {} files'.format(config['n_files'], n_file_per_proc))
         for p in range(n_cpu):
-            proc = Process(target=file_generatioin, args=(etree, n_file_per_proc, config['save_path'], G.globals_to_dict()))
+            proc = Process(target=file_generatioin, args=(etree, n_file_per_proc, config['save_path'], G.globals_to_dict(), enable_change))
             proc_list.append(proc)
             proc.start()
         LOGGER.info(' All process generated. Waiting the termination')

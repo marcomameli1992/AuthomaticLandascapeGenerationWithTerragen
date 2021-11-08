@@ -177,10 +177,10 @@ def render(folder_path:str, output_path:str, n_file:int = None):
         #%% opening the file
         LOGGER.info(' opening the tgd file for render node configuration')
         etree, eroot = O.tgd_opening(path)
-        eroot = PO.change_populator_path(eroot)
-        with open(path, 'wb') as tgd_file:
-            etree.write(tgd_file)
-        etree, eroot = O.tgd_opening(path)
+        # eroot = PO.change_populator_path(eroot)
+        # with open(path, 'wb') as tgd_file:
+        #     etree.write(tgd_file)
+        # etree, eroot = O.tgd_opening(path)
         render_node_list = R.get_render_node(eroot)
         for render_node_name in render_node_list:
             LOGGER.info(f' configuring the output path for rendered image, extras and mesh based on the {render_node_name}')

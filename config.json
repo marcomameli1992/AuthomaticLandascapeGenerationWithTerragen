@@ -7,6 +7,12 @@
   "n_files": 5,
   "base_file_path": "./basicComponent/basicFile/Base_simple.tgd",
 
+  "enable_light_change": true,
+  "enable_terrain_change": true,
+  "enable_shader_change": false,
+  "enable_populator_change": true,
+  "enable_water_change": true,
+
   "ranges_folder_path": "./basicComponent/ranges",
   "light_ranges_name": "light.json",
   "terrain_ranges_name": "terrain.json",

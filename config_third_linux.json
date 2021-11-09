@@ -1,0 +1,27 @@
+{
+  "activate_generation": true,
+  "seed": 202111041925,
+  "use_seed": false,
+  "save_path": "./generatedFile/Terragen4/files/Third",
+  "use_multiprocess": false,
+  "n_files": 5,
+  "base_file_path": "./basicComponent/basicFile/Third/Base_file_third.tgd",
+
+  "enable_light_change": true,
+  "enable_terrain_change": true,
+  "enable_shader_change": false,
+  "enable_populator_change": true,
+  "enable_water_change": true,
+
+  "ranges_folder_path": "./basicComponent/ranges",
+  "light_ranges_name": "light.json",
+  "terrain_ranges_name": "terrain.json",
+  "shader_ranges_name": "shader.json",
+  "popultor_ranges_name": "populator.json",
+  "water_ranges_name": "water.json",
+  "logging_file_path": "./logging/logThird.log",
+
+  "activate_render": true,
+  "render_path": "./render/Canion",
+  "n_render_file": 2
+}

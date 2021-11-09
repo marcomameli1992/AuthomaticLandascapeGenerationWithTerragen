@@ -204,7 +204,7 @@ def render(folder_path:str, output_path:str, terragen_command_path:str, n_file:i
                 command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(f'start /wait cmd /c "{command}"')
             elif 'linux' in platform.system().lower():
-                tgp = terragen_command_path#folder_path.replace('files', 'terragen')#'./terragen' #os.getenv('TERRAGEN_PATH')
+                tgp = folder_path.replace('files', 'terragen').replace("/" + folder_path.split('/')[-1],"")#terragen_command_path##'./terragen' #os.getenv('TERRAGEN_PATH')
                 command = f'{tgp} -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(command)
 

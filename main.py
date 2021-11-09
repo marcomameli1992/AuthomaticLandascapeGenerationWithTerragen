@@ -171,7 +171,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             LOGGER.info(' the Terragen command line tool environmental variable exist')
         else:
             LOGGER.info(' Terragen not found, please install it')
-            print(f'\033[93mPlease export the path for terragen software\033[1m')
+            print(f'Please export the path for terragen software')
 
     #%% working on file
     for index, path in enumerate(files):

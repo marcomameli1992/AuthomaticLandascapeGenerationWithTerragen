@@ -50,13 +50,11 @@ Node: /Pop Pine01small.tgo/Pine01small.tgo
 	Param: Filename
 ----
 Asset: Pine01_bark_C70D0E46-793D-4EA2-8680-60FD7D190B5C.tif
-Duplicate - original asset name: Pine01_bark.tif
 
 Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Trunk
 	Param: Colour image
 ----
 Asset: Pine01_needle_9AE90FBF-1C21-46DF-9E95-90DEFA20DD82.tif
-Duplicate - original asset name: Pine01_needle.tif
 
 Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Needle
 	Param: Colour image

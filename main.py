@@ -193,6 +193,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
             eroot = R.change_render_paths(eroot, render_node_name, output_image_path=os.path.abspath(render_path), extra_output_image_path=os.path.abspath(render_extra_path))
             eroot = R.change_micro_render_path(eroot, output_mesh_path=os.path.abspath(render_mesh_path), render_node_name=render_node_name, attribute='MeshExporter')
             eroot = P.update_populator_position(eroot, render_node_name)
+            LOGGER.info(f' changed path for render to: {render_path}')
             with open(path, 'wb') as tgd_file:
                 etree.write(tgd_file)
             LOGGER.info(f' update the file with the new paths for the {render_node_name}')

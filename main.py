@@ -139,7 +139,7 @@ def file_generatioin(etree: ET.ElementTree, number_of_file: int, save_path: str,
             etree.write(tgd_file)
         LOGGER.info(' File Saved with name {} '.format(file_name))
 
-def render(folder_path:str, output_path:str, n_file:int = None):
+def render(folder_path:str, output_path:str, terragen_command_path:str, n_file:int = None):
     #%% import specific package for the function
     import logging
     import os
@@ -204,7 +204,7 @@ def render(folder_path:str, output_path:str, n_file:int = None):
                 command = f'"%TERRAGEN_PATH%/tgdcli" -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(f'start /wait cmd /c "{command}"')
             elif 'linux' in platform.system().lower():
-                tgp = folder_path.replace('files', 'terragen')#'./terragen' #os.getenv('TERRAGEN_PATH')
+                tgp = terragen_command_path#folder_path.replace('files', 'terragen')#'./terragen' #os.getenv('TERRAGEN_PATH')
                 command = f'{tgp} -p {path} -hide -exit -r -rendernode {render_node_name}'
                 os.system(command)
 
@@ -284,7 +284,7 @@ def main():
         for p in proc_list:
             p.join()
     if config['activate_render']:
-        render(config['save_path'], output_path=config['render_path'], n_file=config['n_render_file'])
+        render(config['save_path'], output_path=config['render_path'], terragen_command_path=config['terragen_command_path'], n_file=config['n_render_file'])
 
 if __name__ == '__main__':
     main()

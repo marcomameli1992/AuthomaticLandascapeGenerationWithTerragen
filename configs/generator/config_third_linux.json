@@ -22,6 +22,7 @@
   "logging_file_path": "./logging/logThird.log",
 
   "activate_render": true,
+  "terragen_command_path": "",
   "render_path": "./render/Third",
   "n_render_file": 0
 }

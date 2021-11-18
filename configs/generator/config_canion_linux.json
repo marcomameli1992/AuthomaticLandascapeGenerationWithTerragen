@@ -22,6 +22,7 @@
   "logging_file_path": "./logging/logCanion.log",
 
   "activate_render": true,
+  "terragen_command_path": "",
   "render_path": "./render/Canion",
   "n_render_file": 0
 }

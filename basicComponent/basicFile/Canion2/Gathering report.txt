@@ -1,6 +1,11 @@
 Project Gathering Report
 
 ----
+Asset: 1.chan
+
+Node: /Camera1
+	Param: Import filename
+----
 Asset: Grass01_2.tgo
 
 Node: /Pop Grass01_2.tgo/Grass01_2.tgo
@@ -27,19 +32,47 @@ Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_FP1
 Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_FP1
 	Param: Opacity image
 ----
-Asset: Pine.tgo
+Asset: 7.chan
 
-Node: /Pop Pine.tgo/Pine.tgo
-	Param: Filename
+Node: /Camera7
+	Param: Import filename
 ----
-Asset: Pine01_bark.tif
+Asset: 6.chan
 
-Node: /Pop Pine.tgo/Pine.tgo/Pine01_1Trunk
-	Param: Colour image
+Node: /Camera6
+	Param: Import filename
 ----
-Asset: Pine01_needle.tif
+Asset: 2.chan
 
-Node: /Pop Pine.tgo/Pine.tgo/Pine01_1Needle
-	Param: Colour image
-Node: /Pop Pine.tgo/Pine.tgo/Pine01_1Needle
-	Param: Opacity image
+Node: /Camera2
+	Param: Import filename
+----
+Asset: 3.chan
+
+Node: /Camera3
+	Param: Import filename
+----
+Asset: 4.chan
+
+Node: /Camera4
+	Param: Import filename
+----
+Asset: 5.chan
+
+Node: /Camera5
+	Param: Import filename
+----
+Asset: 8.chan
+
+Node: /Camera8
+	Param: Import filename
+----
+Asset: 9.chan
+
+Node: /Camera9
+	Param: Import filename
+----
+Asset: 10.chan
+
+Node: /Camera10
+	Param: Import filename

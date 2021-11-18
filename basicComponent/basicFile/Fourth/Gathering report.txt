@@ -1,0 +1,122 @@
+Project Gathering Report
+
+----
+Asset: 1.chan
+
+Node: /Camera1
+	Param: Import filename
+----
+Asset: Grass.tgo
+
+Node: /Pop Grass.tgo/Grass.tgo
+	Param: Filename
+----
+Asset: fe01le04.tif
+
+Node: /Pop Grass.tgo/Grass.tgo/Fern01_L3
+	Param: Colour image
+Node: /Pop Grass.tgo/Grass.tgo/Fern01_L3
+	Param: Opacity image
+----
+Asset: fe01le02.tif
+
+Node: /Pop Grass.tgo/Grass.tgo/Fern01_L2
+	Param: Colour image
+Node: /Pop Grass.tgo/Grass.tgo/Fern01_L2
+	Param: Opacity image
+----
+Asset: fe01le01.tif
+
+Node: /Pop Grass.tgo/Grass.tgo/Fern01_L1
+	Param: Colour image
+Node: /Pop Grass.tgo/Grass.tgo/Fern01_L1
+	Param: Opacity image
+----
+Asset: OldPine.tgo
+
+Node: /Pop OldPine.tgo/OldPine.tgo
+	Param: Filename
+----
+Asset: pinebark.tif
+
+Node: /Pop OldPine.tgo/OldPine.tgo/Branch
+	Param: Colour image
+----
+Asset: pinebark2.tif
+
+Node: /Pop OldPine.tgo/OldPine.tgo/Trunk
+	Param: Colour image
+----
+Asset: pinebark2_bump.tif
+
+Node: /Pop OldPine.tgo/OldPine.tgo/Trunk
+	Param: Displacement image
+----
+Asset: pineneedle.tif
+
+Node: /Pop OldPine.tgo/OldPine.tgo/Needle
+	Param: Colour image
+Node: /Pop OldPine.tgo/OldPine.tgo/Needle
+	Param: Opacity image
+----
+Asset: Pine01small.tgo
+
+Node: /Pop Pine01small.tgo/Pine01small.tgo
+	Param: Filename
+----
+Asset: Pine01_bark.tif
+
+Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Trunk
+	Param: Colour image
+----
+Asset: Pine01_needle.tif
+
+Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Needle
+	Param: Colour image
+Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Needle
+	Param: Opacity image
+----
+Asset: 2.chan
+
+Node: /Camera2
+	Param: Import filename
+----
+Asset: 3.chan
+
+Node: /Camera3
+	Param: Import filename
+----
+Asset: 4.chan
+
+Node: /Camera4
+	Param: Import filename
+----
+Asset: 5.chan
+
+Node: /Camera5
+	Param: Import filename
+----
+Asset: 6.chan
+
+Node: /Camera6
+	Param: Import filename
+----
+Asset: 7.chan
+
+Node: /Camera7
+	Param: Import filename
+----
+Asset: 8.chan
+
+Node: /Camera8
+	Param: Import filename
+----
+Asset: 9.chan
+
+Node: /Camera9
+	Param: Import filename
+----
+Asset: 10.chan
+
+Node: /Camera10
+	Param: Import filename

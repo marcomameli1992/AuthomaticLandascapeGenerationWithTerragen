@@ -78,7 +78,18 @@ def update_populator_position(tags_root: ET.Element, render_node:str) -> ET.Elem
     populator_tag_list = tags_root.findall(f"populator_v4")
     render_camera_name = tags_root.find(f".//*[@name='{render_node}']").attrib['camera']
     camera_tag = tags_root.find(f".//*[@name='{render_camera_name}']")
-    for populator_tag in populator_tag_list:
-        populator_tag.attrib['area_centre'] = camera_tag.attrib['position']
 
+    for populator_tag in populator_tag_list:
+
+        populator_position_list = []
+        for pos, val in enumerate(camera_tag.attrib['position'].split(' ')):
+            if pos == 0:
+                populator_position_list.insert(pos, str(float(val) + float(populator_tag.attrib['area_length_a'])))
+            if pos == 1:
+                populator_position_list.insert(pos, str(float(val) + float(populator_tag.attrib['area_length_b'])))
+            else:
+                populator_position_list.insert(pos, val)
+        populator_position = ' '.join(populator_position_list)
+
+        populator_tag.attrib['area_centre'] = populator_position
     return tags_root

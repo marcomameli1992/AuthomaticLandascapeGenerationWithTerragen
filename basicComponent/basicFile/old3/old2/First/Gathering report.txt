@@ -1,0 +1,62 @@
+Project Gathering Report
+
+----
+Asset: Grass.tgo
+
+Node: /Pop Grass1.tgo/Grass1.tgo
+	Param: Filename
+----
+Asset: fe01le04.tif
+
+Node: /Pop Grass1.tgo/Grass1.tgo/Fern01_L3
+	Param: Colour image
+Node: /Pop Grass1.tgo/Grass1.tgo/Fern01_L3
+	Param: Opacity image
+----
+Asset: fe01le02.tif
+
+Node: /Pop Grass1.tgo/Grass1.tgo/Fern01_L2
+	Param: Colour image
+Node: /Pop Grass1.tgo/Grass1.tgo/Fern01_L2
+	Param: Opacity image
+----
+Asset: fe01le01.tif
+
+Node: /Pop Grass1.tgo/Grass1.tgo/Fern01_L1
+	Param: Colour image
+Node: /Pop Grass1.tgo/Grass1.tgo/Fern01_L1
+	Param: Opacity image
+----
+Asset: Pine.tgo
+
+Node: /Pop Pine.tgo/Pine.tgo
+	Param: Filename
+----
+Asset: Pine01_bark.tif
+
+Node: /Pop Pine.tgo/Pine.tgo/Pine01_1Trunk
+	Param: Colour image
+----
+Asset: Pine01_needle.tif
+
+Node: /Pop Pine.tgo/Pine.tgo/Pine01_1Needle
+	Param: Colour image
+Node: /Pop Pine.tgo/Pine.tgo/Pine01_1Needle
+	Param: Opacity image
+----
+Asset: Pine01small.tgo
+
+Node: /Pop Pine01small.tgo/Pine01small.tgo
+	Param: Filename
+----
+Asset: Pine01_bark_C70D0E46-793D-4EA2-8680-60FD7D190B5C.tif
+
+Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Trunk
+	Param: Colour image
+----
+Asset: Pine01_needle_9AE90FBF-1C21-46DF-9E95-90DEFA20DD82.tif
+
+Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Needle
+	Param: Colour image
+Node: /Pop Pine01small.tgo/Pine01small.tgo/Pine01small_Needle
+	Param: Opacity image

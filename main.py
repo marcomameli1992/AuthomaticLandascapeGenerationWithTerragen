@@ -144,7 +144,6 @@ def render(folder_path:str, output_path:str, terragen_command_path:str, n_file:i
     import logging
     import os
     import platform
-    import subprocess
     import glob
     import basicComponent.opening as O
     import basicComponent.render as R

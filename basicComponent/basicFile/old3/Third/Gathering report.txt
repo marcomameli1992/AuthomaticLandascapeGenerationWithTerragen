@@ -1,0 +1,28 @@
+Project Gathering Report
+
+----
+Asset: Grass01_3.tgo
+
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo
+	Param: Filename
+----
+Asset: gr01st01.tif
+
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo/Gras01_3_Stalk
+	Param: Colour image
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo/Gras01_3_Leaf
+	Param: Colour image
+----
+Asset: gr01fp02.tif
+
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo/Gras01_3_FP2
+	Param: Colour image
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo/Gras01_3_FP2
+	Param: Opacity image
+----
+Asset: gr01fp01.tif
+
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo/Gras01_3_FP1
+	Param: Colour image
+Node: /Pop Grass01_3.tgo/Grass01_3.tgo/Gras01_3_FP1
+	Param: Opacity image

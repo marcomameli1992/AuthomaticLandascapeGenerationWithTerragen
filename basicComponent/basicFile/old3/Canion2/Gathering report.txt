@@ -1,0 +1,78 @@
+Project Gathering Report
+
+----
+Asset: 1.chan
+
+Node: /Camera1
+	Param: Import filename
+----
+Asset: Grass01_2.tgo
+
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo
+	Param: Filename
+----
+Asset: gr01st01.tif
+
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_Stalk
+	Param: Colour image
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_Leaf
+	Param: Colour image
+----
+Asset: gr01fp02.tif
+
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_FP2
+	Param: Colour image
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_FP2
+	Param: Opacity image
+----
+Asset: gr01fp01.tif
+
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_FP1
+	Param: Colour image
+Node: /Pop Grass01_2.tgo/Grass01_2.tgo/Gras01_2_FP1
+	Param: Opacity image
+----
+Asset: 7.chan
+
+Node: /Camera7
+	Param: Import filename
+----
+Asset: 6.chan
+
+Node: /Camera6
+	Param: Import filename
+----
+Asset: 2.chan
+
+Node: /Camera2
+	Param: Import filename
+----
+Asset: 3.chan
+
+Node: /Camera3
+	Param: Import filename
+----
+Asset: 4.chan
+
+Node: /Camera4
+	Param: Import filename
+----
+Asset: 5.chan
+
+Node: /Camera5
+	Param: Import filename
+----
+Asset: 8.chan
+
+Node: /Camera8
+	Param: Import filename
+----
+Asset: 9.chan
+
+Node: /Camera9
+	Param: Import filename
+----
+Asset: 10.chan
+
+Node: /Camera10
+	Param: Import filename

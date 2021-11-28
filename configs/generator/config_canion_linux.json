@@ -5,7 +5,7 @@
   "save_path": "./generatedFile/Terragen4/files/Canion",
   "use_multiprocess": false,
   "n_files": 1,
-  "base_file_path": "./basicComponent/basicFile/Canion/Base_file_canion.tgd",
+  "base_file_path": "./basicComponent/basicFile/Canion/Base_file_canion2.tgd",
 
   "enable_light_change": true,
   "enable_terrain_change": true,
